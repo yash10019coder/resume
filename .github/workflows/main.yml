@@ -26,9 +26,10 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Upload Resume to google drive.
         uses: adityak74/google-drive-upload-git-action@main
         with:
-          credentials: ${{ secrets.GOOGLE_DRIVE_API_KEY }}
+          credentials: ${{ secrets.CREDENTIALS }}
           filename: "Yash_Verma_CV.pdf"
           overwrite: true
+          folderId: ${{ secrets.ID }}
