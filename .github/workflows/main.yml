@@ -33,3 +33,4 @@ jobs:
           filename: "Yash_Verma_CV.pdf"
           overwrite: true
           folderId: ${{ secrets.ID }}
+          useCompleteSourceFileAsName: true
