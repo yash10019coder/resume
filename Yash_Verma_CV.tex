@@ -10,6 +10,16 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 
+%Custom code for links--------------------------
+
+\usepackage{fontawesome}
+
+% Redefinition, symbol included in link:
+\let\orighref\href
+\renewcommand{\href}[2]{\orighref{#1}{#2\,\faExternalLink}}
+
+%Custom code for links--------------------------
+
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
