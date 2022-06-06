@@ -6,9 +6,9 @@ name: Resume Google Drive Upadate
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
-    branches: [ "master" ]
+    branches: ["master"]
   pull_request:
-    branches: [ "master" ]
+    branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,14 +23,32 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
-      - name: Upload Resume to google drive.
-        uses: adityak74/google-drive-upload-git-action@main
+      - name: Clone the Project.
+        uses: actions/checkout@v3
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
         with:
+          root_file: Yash_Verma_CV.tex
+          compiler: pdflatex
+
+      - name: Upload PDF to Google Drive
+        uses: baymac/upload-pdf-to-drive@main
+        with:
+          target: Yash_Verma_CV.pdf
           credentials: ${{ secrets.CREDENTIALS }}
-          filename: "Yash_Verma_CV.pdf"
-          overwrite: true
           folderId: ${{ secrets.ID }}
-          useCompleteSourceFilenameAsName: true
+          filename: Yash_Verma_CV.pdf # optional (defaults to upload.pdf)
+          overwrite: true # optional (defaults to not overwrite)
+
+
+      # # Runs a single command using the runners shell
+      # - name: Upload Resume to google drive.
+      #   uses: adityak74/google-drive-upload-git-action@main
+      #   with:
+      #     credentials: ${{ secrets.CREDENTIALS }}
+      #     filename: "Yash_Verma_CV.pdf"
+      #     overwrite: true
+      #     folderId: ${{ secrets.ID }}
+      #     useCompleteSourceFilenameAsName: true
