@@ -27,16 +27,11 @@ jobs:
       - name: Clone the Project.
         uses: actions/checkout@v3
 
-      # - name: Compile LaTeX document
-      #   uses: xu-cheng/latex-action@v2
-      #   with:
-      #     root_file: Yash_Verma_CV.tex
-      #     compiler: pdflatex
-
-      # Runs a single command using the runners shell
-      - name: Run
-        run: |
-          ls -a
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: Yash_Verma_CV.tex
+          compiler: pdflatex
 
       - name: Upload Resume to google drive.
         uses: adityak74/google-drive-upload-git-action@main
