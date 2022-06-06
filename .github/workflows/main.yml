@@ -34,6 +34,10 @@ jobs:
       #     compiler: pdflatex
 
       # Runs a single command using the runners shell
+      - name: Run
+        run: |
+          ls -a
+
       - name: Upload Resume to google drive.
         uses: adityak74/google-drive-upload-git-action@main
         with:
