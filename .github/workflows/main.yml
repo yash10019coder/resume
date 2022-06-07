@@ -34,10 +34,10 @@ jobs:
           compiler: pdflatex
 
       - name: Upload Resume to google drive.
-        uses: adityak74/google-drive-upload-git-action@main
+        uses: adityak74/google-drive-upload-git-action@v0.1
         with:
           credentials: ${{ secrets.CREDENTIALS }}
-          filename: "Yash_Verma_CV_Remote.pdf"
+          filename: "Yash_Verma_CV.pdf"
+          name: "Yash_Verma_CV_Remote.pdf"
           overwrite: true
           folderId: ${{ secrets.ID }}
-          useCompleteSourceFilenameAsName: true
