@@ -32,15 +32,15 @@ jobs:
         with:
           root_file: Yash_Verma_CV.tex
           compiler: pdflatex
-      
+
       - name: Changing Filename to Yash_Verma_CV_Remote.pdf
         run: mv Yash_Verma_CV.pdf Yash_Verma_CV_Remote.pdf
-        
+
       - name: Upload Resume to google drive.
         uses: adityak74/google-drive-upload-git-action@v0.1
         with:
           credentials: ${{ secrets.CREDENTIALS }}
           filename: "Yash_Verma_CV_Remote.pdf"
-          name: "Yash_Verma_CV_Remote.pdf"
           overwrite: true
           folderId: ${{ secrets.ID }}
+          useCompleteSourceFilenameAsName: true
