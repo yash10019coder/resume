@@ -30,7 +30,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: Yash_Verma_CV_Remote.tex
+          root_file: Yash_Verma_CV.tex
           compiler: pdflatex
 
       - name: Upload Resume to google drive.
