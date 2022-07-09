@@ -1,14 +1,14 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Resume Google Drive Upadate
+name: College Resume Google Drive Upadate
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
-    branches: ["remote-job-resume"]
+    branches: ["college-resume-2"]
   pull_request:
-    branches: ["remote-job-resume"]
+    branches: ["college-resume-2"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -27,14 +27,10 @@ jobs:
       - name: Clone the Project.
         uses: actions/checkout@v3
 
-      - name: Rename filename
-        run: |
-          mv Yash_Verma_CV.tex Yash_Verma_CV_Remote.tex
-      
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: Yash_Verma_CV_Remote.tex
+          root_file: Yash_Verma_CV.tex
           compiler: pdflatex
       
 
@@ -42,7 +38,7 @@ jobs:
         uses: adityak74/google-drive-upload-git-action@main
         with:
           credentials: ${{ secrets.CREDENTIALS }}
-          filename: "Yash_Verma_CV_Remote.pdf"
+          filename: "Yash_Verma_CV.pdf"
           overwrite: true
           folderId: ${{ secrets.ID }}
           useCompleteSourceFilenameAsName: true
