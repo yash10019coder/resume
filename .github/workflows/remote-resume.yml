@@ -26,20 +26,18 @@ jobs:
 
       - name: Clone the Project.
         uses: actions/checkout@v3
-
-      - name: Checkout branch remote-job-resume.
-        run: git checkout remote-job-resume
+        with:
+          ref: remote-job-resume
 
       - name: Rename filename
         run: |
           mv Yash_Verma_CV.tex Yash_Verma_CV_Remote.tex
-      
+
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
           root_file: Yash_Verma_CV_Remote.tex
           compiler: pdflatex
-      
 
       - name: Upload Resume to google drive.
         uses: adityak74/google-drive-upload-git-action@main

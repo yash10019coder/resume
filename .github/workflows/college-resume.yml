@@ -26,9 +26,8 @@ jobs:
 
       - name: Clone the Project.
         uses: actions/checkout@v3
-
-      - name: Checkout branch remote-job-resume.
-        run: git checkout college-resume-2
+        with:
+          ref: college-resume-2
 
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
