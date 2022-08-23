@@ -12,6 +12,17 @@
 
 %Custom code for links--------------------------
 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Yash Verma's CV},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
 \usepackage{fontawesome}
 
 % Redefinition, symbol included in link:
@@ -73,7 +84,8 @@
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+\title{Yash Verma's CV}
+\author{Yash Verma(yash10019coder)}
 
 \begin{document}
 
@@ -90,6 +102,7 @@
 \resumeSubheading
 {Indian Institute of Information Technology, Lucknow}{Lucknow}
 {Bachelor of Information Technology;  CGPA: 8.32}{Apr. 2020 -- Apr. 2024}
+\resumeItem{Relevant Courses}{Data Structures \& Algorithms, Operating System, System Design, DBMS, Object Oriented Programming, Design Patterns.}
 \resumeSubHeadingListEnd
 
 
@@ -98,7 +111,7 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{\href{https://0chain.net}{0chain}}{Cupertino, CA}
+{\href{https://0chain.net}{0chain}}{Cupertino, CA (Remote)}
 {Android Engineer}{Feb 2022 -- Present}
 \resumeItemListStart
 \resumeItem{MVVM}
@@ -124,7 +137,7 @@
 \resumeItemListEnd
 
 \resumeSubheading
-{\href{https://oppia.org}{Oppia Foundation} \href{https://github.com/oppia/oppia-android}{Github Link} \href{https://github.com/oppia/oppia-android/commits?author=yash10019coder}{[Link to Merged PRs]}}{Mountain View, CA}
+{\href{https://oppia.org}{Oppia Foundation} \href{https://github.com/oppia/oppia-android}{Github Link} \href{https://github.com/oppia/oppia-android/commits?author=yash10019coder}{[Link to Merged PRs]}}{Mountain View, CA (Remote)}
 {Open Source Contributor Android}{Aug 2021 -- Present}
 \resumeItemListStart
 \resumeItem{Gradle,Bazel}
@@ -138,7 +151,7 @@
 \resumeItemListEnd
 
 \resumeSubheading
-{\href{https://gnome.org}{Gnome Foundation}}{US}
+{\href{https://gnome.org}{Gnome Foundation}}{Remote}
 {Open Source Contributor}{Sept 2021 -- Feb 2022}
 \resumeItemListStart
 \resumeItem{GTK4}
@@ -148,7 +161,7 @@
 \resumeItemListEnd
 
 \resumeSubheading
-{BSHAPP \href{https://github.com/yash10019coder/bshapp}{Link of App}}{Android Freelance Developer}{Andhra Pradesh}{May 2021 -- June 2021}
+{BSHAPP \href{https://github.com/yash10019coder/bshapp}{Link of App}}{Andhra Pradesh}{Android Freelance Developer}{May 2021 -- June 2021}
 \resumeItemListStart
 \resumeItem{Multi Language}
 {Added Support for multiple Languages.}
@@ -159,12 +172,14 @@
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
------------Awards and achivements--------------
+% -----------Awards and achivements--------------
 \section{Awards and Achievements}
 \begin{itemize}
 	\item \textbf{\href{https://summerofcode.withgoogle.com/programs/2022/projects/zGrrUdxM}{Google Summer of Code 2022}} {at Oppia Foundation.}
 	      \begin{itemize}
 		      \item Android Release Automation for signing, building, testing and uploading to Google Play.
+		      \item Writing custom \textbf{kotlin} scripts for most common tasks like building the aab, signing the aab, uploading the aab to Google Play.
+		      \item Use of \textbf{github actions} along with the custom \textbf{kotlin} scritps exectued with \textbf{bazel} for \textbf{cd pipelines} for alpha, beta and nigthly releases on daily cron jobs.
 	      \end{itemize}
 \end{itemize}
 
@@ -177,6 +192,9 @@
 {Written in \textbf{python} to download files from google drive and automatically arranging sorting and extracting them.}
 \resumeItem{\href{https://github.com/yash10019coder/Whats-App}{What's App Clone}}
 {Peer to Peer and group chat Android App with thread based model and equipped with Google and email authentication.}
+\resumeItem{\href{https://github.com/yash10019coder/Video-Chatting}{Video-Chatting}}
+{Android app made with \href{https://github.com/jitsi/jitsi-meet}{jitsi-meet-api} also deployed a custom scalable video server on Ubutnu VM along with setting up nginx server and TLS layer to make it secure.}
+\resumeItem{\href{https://github.com/yash10019coder/resume}{My-Resume}}{Personal Resume with seperate tracks and \textbf{cd pipeline} with \textbf{github actions} and \textbf{Google Cloud Platform} to automatically upload the new version of the resume to \textbf{Google Drive}.}
 \resumeSubHeadingListEnd
 
 %
@@ -187,10 +205,16 @@
             \textbf{Programming Languages}{: Java, Kotlin, Python, JavaScript/NodeJS, C, C++, SQL, bash}
       }
 \item{
-            \textbf{Technologies/Frameworks}{: AndroidSDK, Docker, Kubernetes, Google Cloud, Express, MongoDB, Realm, Git, MySQL, Firebase, Gradle, Bazel, Nginx, JSON, Regex}
+            \textbf{Technologies/Frameworks}{: Linux, AndroidSDK, Dagger/Hilt, Android Jetpack, Docker, Kubernetes, Google Cloud, Github actions, CI/CD pipelines, Express, MongoDB, Realm, Git, MySQL, Firebase, Gradle, Bazel, Nginx, JSON, Regex}
       }
 \resumeSubHeadingListEnd
 
-
+\section{Position of Responsibilities}
+\begin{itemize}
+	\item \textbf{Onboarding mentor} at Oppia Foundation.
+	\item Member of \textbf{Developer Workflow} Team at Oppia Foundation.
+	\item Member of \textbf{Android Welfare} Team at Oppia Foundation.
+	\item Senior Member at \textbf{Axios, IIITLucknow}.
+\end{itemize}
 %-------------------------------------------
 \end{document}
