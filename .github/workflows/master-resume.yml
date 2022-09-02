@@ -29,10 +29,6 @@ jobs:
         with:
           ref: remote-job-resume
 
-      - name: Rename filename
-        run: |
-          mv Yash_Verma_CV.tex Yash_Verma_CV.tex
-
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
