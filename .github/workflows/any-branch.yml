@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Any Branch Resume Google Drive Update.
+name: Any Branch Resume Drive Update.
 
 # Controls when the workflow will run
 on:
@@ -29,7 +29,8 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: '*.tex'
+          root_file: "*.tex"
+          glob-root_file: true
           compiler: pdflatex
 
       - name: Upload Resume to google drive.
