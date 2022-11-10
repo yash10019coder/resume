@@ -24,12 +24,21 @@ jobs:
       - name: Clone the Project.
         uses: actions/checkout@v3
         with:
-          ref: ''
+          ref: ""
 
+      - name: Get Resume name.
+        id: resume-name
+        run: |
+          ls_tex="$(ls *.tex)"
+          search_string="."
+          string_after_search=${ls_tex#*$search_string}
+          dot_index=$(( ${#ls_tex} - ${#string_after_search} - ${#search_string} ))
+          filename=${ls_tex:0:$dot_index}
+          echo "::set-output name=name::$filename"
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "*.tex"
+          root_file: ${{ steps.resume-name.outputs.name }}.tex
           glob-root_file: true
           compiler: pdflatex
 
@@ -37,7 +46,7 @@ jobs:
         uses: adityak74/google-drive-upload-git-action@main
         with:
           credentials: ${{ secrets.CREDENTIALS }}
-          filename: "*.pdf"
+          filename: ${{ steps.resume-name.outputs.name }}.pdf
           overwrite: true
           folderId: ${{ secrets.ID }}
           useCompleteSourceFilenameAsName: true
