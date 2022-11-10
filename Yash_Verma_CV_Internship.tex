@@ -1,0 +1,237 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+%Custom code for links--------------------------
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Yash Verma's CV},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
+\usepackage{fontawesome}
+
+% Redefinition, symbol included in link:
+\let\orighref\href
+\renewcommand{\href}[2]{\orighref{#1}{#2\,\faExternalLink}}
+
+%Custom code for links--------------------------
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Yash Verma's CV}
+\author{Yash Verma(yash10019coder)}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{{\Large Yash Verma}} & Email : \href{mailto:yashverma10019@gmail.com}{yashverma10019@gmail.com}\\
+	Linkedin: \href{https://www.linkedin.com/in/yash10019coder}{www.linkedin.com/in/yash10019coder} & Github: \href{https://github.com/yash10019coder}{https://github.com/yash10019coder}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Indian Institute of Information Technology, Lucknow}{Lucknow}
+{Bachelor of Information Technology;  CGPA: 8.32}{Apr. 2020 -- Apr. 2024}
+\resumeItem{Relevant Courses}{Data Structures \& Algorithms, Operating System, System Design, DBMS, Object Oriented Programming, Distributed Systems, Software Management, Design Patterns.}
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Google Summer of Code Oppia Foundation \href{https://docs.google.com/document/d/150Yk14Cxmy8OAbSSwgP1aXDBLo1b8HtuIhmrRhzEWU4/edit}{link}}{Remote}
+{Gsoc Student}{Apr 2022 -- Sept 2022}
+\resumeItemListStart
+\resumeItem{Design Docs}{Designed and architected the whole ci/cd artitecutre for the builds. }
+\resumeItem{Pipelines/Github workflows}{Auto-triggers builds for \textbf{alpha}, \textbf{beta} and \textbf{test} releases, uploads and signs the binary to google drive, gcp bucket and google play store tracks.}
+\resumeItem{Cherry Picks}{Automated cherry picking workflow which automatically merges the cherry picks on the flavour branch.}
+\resumeItem{Issue tracker releases}{Automated logging of each build and release steps of the release on the github issue along with workflows triggering and from commenting on the issue.} 
+\resumeItemListEnd
+\begin{itemize}
+  \item \textbf{Android Release Automation} for \textbf{signing}, \textbf{building}, \textbf{testing} and \textbf{uploading} to Google Play.
+		      \item Writing custom \textbf{kotlin} scripts for most common tasks like building the \textbf{aab}, \textbf{signing} the aab, \textbf{uploading} the aab to Google Play.
+		      \item Use of \textbf{github actions} along with the custom \textbf{kotlin} scritps exectued with \textbf{bazel} for \textbf{cd pipelines} for alpha, beta and nigthly releases on daily cron jobs.
+\end{itemize}
+\resumeSubheading
+{\href{https://0chain.net}{0chain}}{Cupertino, CA (Remote)}
+{Android Engineer}{Feb 2022 -- Present}
+\resumeItemListStart
+\resumeItem{MVVM}
+{Migrated and refactored the code to follow the  \textbf{MVVM} architecture.}
+
+\resumeItem{Dagger/Hilt}
+{Used them for \textbf{dependency injection} for third party libraries and classes.}
+
+\resumeItem{Xml}
+{Converted the \textbf{figma wireframes} to high quality xml layouts and used \textbf{Gosdk} to write backend code in \textbf{java} for them.}
+
+\resumeItem{Realm}
+{Used the \textbf{Realm} database to store data and \textbf{sync} with \textbf{online} database.}
+
+\resumeItem{Retrofit}
+{Made API endpoints in \textbf{Android} with \textbf{Retrofit} to make http requests with \textbf{TLS} encryption and parsed the data with \textbf{gson}.}
+
+\resumeItem{Okhttp}
+{Used \textbf{okhttp} as a http client for making requests and also used a \textbf{Interceptor} to log requests.}
+
+\resumeItem{Bash Scripting  }
+{Added a pre-commit hook for codebase to run eslint checks and typescript checks which reduced the lint and type errors by \textbf{100\%} in the codebase.}
+\resumeItemListEnd
+
+\resumeSubheading
+{\href{https://oppia.org}{Oppia Foundation} \href{https://github.com/oppia/oppia-android}{Github Link} \href{https://github.com/oppia/oppia-android/commits?author=yash10019coder}{[Link to Merged PRs]}}{Mountain View, CA (Remote)}
+{Open Source Contributor Android}{Aug 2021 -- Present}
+\resumeItemListStart
+\resumeItem{Gradle,Bazel}
+{Helped in build system migration from \textbf{gradle} to \textbf{bazel} which increases build speeds by \textbf{10x}.}
+\resumeItem{Tablet Support}
+{Created new new \textbf{fragments} which are wrapped inside their own \textbf{activities} in mobile so that both open seamlessly in mobile and tablets supporting \textbf{multiple} screen sizes. }
+\resumeItem{MVVM+MVP}
+{Followed \textbf{MVVM}(Model View View Model)+\textbf{MVP}(Model View Presenter) architecture to code all of the activities and fragments.}
+\resumeItem{TDD(Test Driven Development)}
+{Written \textbf{70+} Unit Tests, \textbf{20+} Instrumentation and End-to-end tests in \textbf{Espresso}, \textbf{Robolectric} and \textbf{UIAutomator} with \textbf{JUnit} as test runner for Android.}
+\resumeItem{Mentoring}{Successfully mentored \textbf{3+} students in the \textbf{Android} repository and ]textbf{onboarded} them as \textbf{collaborators}.}
+\resumeItem{Wiki}{Written wiki github documentation on \textbf{Protobuf} for which greatly improved the understanding of the \textbf{protobuf} library in the \textbf{repository}.}
+\resumeItem{GSOC}{Helped a GSOC student in \textbf{bazel} errors and reviewed the PR.}
+\resumeItemListEnd
+
+\resumeSubheading
+{\href{https://gnome.org}{Gnome Foundation}}{Remote}
+{Open Source Contributor}{Sept 2021 -- Feb 2022}
+\resumeItemListStart
+\resumeItem{GTK4}
+{Added a new feature in the pathbar of \href{https://gitlab.gnome.org/GNOME/nautilus}{\textbf{Nautilus}} file manager to open folders and files with other applications seamlessly.}
+\resumeItem{Xml}
+{Made the wireframe and program of the new button with Xml.}
+\resumeItemListEnd
+
+\resumeSubheading
+{BSHAPP \href{https://github.com/yash10019coder/bshapp}{Link of App}}{Andhra Pradesh}{Android Freelance Developer}{May 2021 -- June 2021}
+\resumeItemListStart
+\resumeItem{Multi Language}
+{Added Support for multiple Languages.}
+\resumeItem{Jetpack Navigation}
+{Used Jetpack Navigation with single activity and multi fragment artitecture.}
+\resumeItem{Retrofit}
+{Integerated \textbf{REST} api with Retrofit to make \textbf{HTTP} requests.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% -----------Awards and achivements--------------
+% \section{Awards and Achievements}
+% \begin{itemize}
+% 	\item \textbf{\href{https://summerofcode.withgoogle.com/proposals/details/nQ9e5GZr}{Google Summer of Code 2022}} {at Oppia Foundation.}
+% 	      \begin{itemize}
+% 		      \item Android Release Automation for signing, building, testing and uploading to Google Play.
+% 		      \item Writing custom \textbf{kotlin} scripts for most common tasks like building the aab, signing the aab, uploading the aab to Google Play.
+% 		      \item Use of \textbf{github actions} along with the custom \textbf{kotlin} scritps exectued with \textbf{bazel} for \textbf{cd pipelines} for alpha, beta and nigthly releases on daily cron jobs.
+% 	      \end{itemize}
+% \end{itemize}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeItem{\href{https://github.com/yash10019coder/festify-android}{Festify}}{Hackathon and event management \textbf{Android} app with \textbf{NodeJs} \href{https://github.com/yash10019coder/festify-node-server}{Backend link} and \textbf{MongoDB database.}}
+{Open source python library for financial data analysis and machine learning for finance.}
+\resumeItem{\href{https://github.com/yash10019coder/Gui-Automator}{GUI-Automator}}
+{Written in \textbf{python} to download files from google drive and automatically arranging sorting and extracting them.}
+\resumeItem{\href{https://github.com/yash10019coder/Whats-App}{What's App Clone}}
+{Peer to Peer and group chat Android App with thread based model and equipped with Google and email authentication.}
+\resumeItem{\href{https://github.com/yash10019coder/Video-Chatting}{Video-Chatting}}
+{Android app made with \href{https://github.com/jitsi/jitsi-meet}{jitsi-meet-api} also deployed a custom scalable video server on Ubutnu VM along with setting up nginx server and TLS layer to make it secure.}
+\resumeItem{\href{https://github.com/yash10019coder/resume}{My-Resume}}{Personal Resume with seperate tracks and \textbf{cd pipeline} with \textbf{github actions} and \textbf{Google Cloud Platform} to automatically upload the new version of the resume to \textbf{Google Drive}.}
+\resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+\resumeSubHeadingListStart
+\item{
+            \textbf{Programming Languages}{: Java, Kotlin, Python, JavaScript/NodeJS, C, C++, SQL, bash}
+      }
+\item{
+            \textbf{Technologies/Frameworks}{: Linux, AndroidSDK, Dagger/Hilt, Android Jetpack, Docker, Kubernetes, Google Cloud, Github actions, CI/CD pipelines, Express, MongoDB, Realm, Git, MySQL, Firebase, Gradle, Bazel, Nginx, JSON, Regex}
+      }
+\resumeSubHeadingListEnd
+
+\section{Position of Responsibilities}
+\begin{itemize}
+	\item \textbf{Onboarding mentor} at Oppia Foundation.
+	\item Member of \textbf{Developer Workflow} Team at Oppia Foundation.
+	\item Member of \textbf{Android Welfare} Team at Oppia Foundation.
+	\item Senior Member at \textbf{Axios, IIITLucknow}.
+\end{itemize}
+%-------------------------------------------
+\end{document}
