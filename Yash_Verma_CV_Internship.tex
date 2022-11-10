@@ -101,7 +101,7 @@
 \resumeSubHeadingListStart
 \resumeSubheading
 {Indian Institute of Information Technology, Lucknow}{Lucknow}
-{Bachelor of Information Technology;  CGPA: 8.32}{Apr. 2020 -- Apr. 2024}
+{Bachelor of Information Technology;  \textbf{CGPA: 8.32/10}}{Apr. 2020 -- Apr. 2024}
 \resumeItem{Relevant Courses}{Data Structures \& Algorithms, Operating System, System Design, DBMS, Object Oriented Programming, Distributed Systems, Software Management, Design Patterns.}
 \resumeSubHeadingListEnd
 
@@ -112,60 +112,37 @@
 
 \resumeSubheading
 {Google Summer of Code Oppia Foundation \href{https://docs.google.com/document/d/150Yk14Cxmy8OAbSSwgP1aXDBLo1b8HtuIhmrRhzEWU4/edit}{link}}{Remote}
-{Gsoc Student}{Apr 2022 -- Sept 2022}
+{Gsoc Student}{Aug 2021 -- Sept 2022}
+
 \resumeItemListStart
-\resumeItem{Design Docs}{Designed and architected the whole ci/cd artitecutre for the builds. }
-\resumeItem{Pipelines/Github workflows}{Auto-triggers builds for \textbf{alpha}, \textbf{beta} and \textbf{test} releases, uploads and signs the binary to google drive, gcp bucket and google play store tracks.}
-\resumeItem{Cherry Picks}{Automated cherry picking workflow which automatically merges the cherry picks on the flavour branch.}
-\resumeItem{Issue tracker releases}{Automated logging of each build and release steps of the release on the github issue along with workflows triggering and from commenting on the issue.} 
+
+\resumeItem{\href{https://docs.google.com/document/d/150Yk14Cxmy8OAbSSwgP1aXDBLo1b8HtuIhmrRhzEWU4/edit}{Technical Design Docs}}{Designed and architected the whole \textbf{ci/cd} architecture for the builds. }
+\resumeItem{Release Automation}{Automated \textbf{signing}, \textbf{building}, \textbf{testing} and \textbf{uploading} to Google Play along with automated cherry-picks.}
+\resumeItem{Gradle,Bazel}
+{Helped in build system migration from \textbf{gradle} to \textbf{bazel} which increases build speeds by \textbf{10x}.}
+\resumeItem{Tablet Support}
+{ Added support for tablet devices in the app which increased the user base by \textbf{20\%}. }
+\resumeItem{TDD(Test Driven Development)}
+{Written \textbf{70+} Unit Tests, \textbf{20+} Instrumentation and End-to-end tests in \textbf{Espresso}, \textbf{Robolectric} and \textbf{UIAutomator} with \textbf{JUnit} as test runner for Android.}
+
 \resumeItemListEnd
-\begin{itemize}
-  \item \textbf{Android Release Automation} for \textbf{signing}, \textbf{building}, \textbf{testing} and \textbf{uploading} to Google Play.
-		      \item Writing custom \textbf{kotlin} scripts for most common tasks like building the \textbf{aab}, \textbf{signing} the aab, \textbf{uploading} the aab to Google Play.
-		      \item Use of \textbf{github actions} along with the custom \textbf{kotlin} scritps exectued with \textbf{bazel} for \textbf{cd pipelines} for alpha, beta and nigthly releases on daily cron jobs.
-\end{itemize}
 \resumeSubheading
 {\href{https://0chain.net}{0chain}}{Cupertino, CA (Remote)}
 {Android Engineer}{Feb 2022 -- Present}
 \resumeItemListStart
-\resumeItem{MVVM}
-{Migrated and refactored the code to follow the  \textbf{MVVM} architecture.}
-
-\resumeItem{Dagger/Hilt}
-{Used them for \textbf{dependency injection} for third party libraries and classes.}
 
 \resumeItem{Xml}
 {Converted the \textbf{figma wireframes} to high quality xml layouts and used \textbf{Gosdk} to write backend code in \textbf{java} for them.}
 
-\resumeItem{Realm}
-{Used the \textbf{Realm} database to store data and \textbf{sync} with \textbf{online} database.}
-
-\resumeItem{Retrofit}
-{Made API endpoints in \textbf{Android} with \textbf{Retrofit} to make http requests with \textbf{TLS} encryption and parsed the data with \textbf{gson}.}
-
-\resumeItem{Okhttp}
-{Used \textbf{okhttp} as a http client for making requests and also used a \textbf{Interceptor} to log requests.}
+\resumeItem{Database migration}
+{Migrated from \textbf{Realm} to \textbf{Room} databse which decreased the app size by \textbf{5MB}.}
 
 \resumeItem{Bash Scripting  }
 {Added a pre-commit hook for codebase to run eslint checks and typescript checks which reduced the lint and type errors by \textbf{100\%} in the codebase.}
 \resumeItemListEnd
-
-\resumeSubheading
-{\href{https://oppia.org}{Oppia Foundation} \href{https://github.com/oppia/oppia-android}{Github Link} \href{https://github.com/oppia/oppia-android/commits?author=yash10019coder}{[Link to Merged PRs]}}{Mountain View, CA (Remote)}
-{Open Source Contributor Android}{Aug 2021 -- Present}
-\resumeItemListStart
-\resumeItem{Gradle,Bazel}
-{Helped in build system migration from \textbf{gradle} to \textbf{bazel} which increases build speeds by \textbf{10x}.}
-\resumeItem{Tablet Support}
-{Created new new \textbf{fragments} which are wrapped inside their own \textbf{activities} in mobile so that both open seamlessly in mobile and tablets supporting \textbf{multiple} screen sizes. }
-\resumeItem{MVVM+MVP}
-{Followed \textbf{MVVM}(Model View View Model)+\textbf{MVP}(Model View Presenter) architecture to code all of the activities and fragments.}
-\resumeItem{TDD(Test Driven Development)}
-{Written \textbf{70+} Unit Tests, \textbf{20+} Instrumentation and End-to-end tests in \textbf{Espresso}, \textbf{Robolectric} and \textbf{UIAutomator} with \textbf{JUnit} as test runner for Android.}
-\resumeItem{Mentoring}{Successfully mentored \textbf{3+} students in the \textbf{Android} repository and ]textbf{onboarded} them as \textbf{collaborators}.}
-\resumeItem{Wiki}{Written wiki github documentation on \textbf{Protobuf} for which greatly improved the understanding of the \textbf{protobuf} library in the \textbf{repository}.}
-\resumeItem{GSOC}{Helped a GSOC student in \textbf{bazel} errors and reviewed the PR.}
-\resumeItemListEnd
+\begin{itemize}
+	\item Handled both the android apps of the organization made consistent releases and also made numerous features from scratch.
+\end{itemize}
 
 \resumeSubheading
 {\href{https://gnome.org}{Gnome Foundation}}{Remote}
@@ -177,41 +154,20 @@
 {Made the wireframe and program of the new button with Xml.}
 \resumeItemListEnd
 
-\resumeSubheading
-{BSHAPP \href{https://github.com/yash10019coder/bshapp}{Link of App}}{Andhra Pradesh}{Android Freelance Developer}{May 2021 -- June 2021}
-\resumeItemListStart
-\resumeItem{Multi Language}
-{Added Support for multiple Languages.}
-\resumeItem{Jetpack Navigation}
-{Used Jetpack Navigation with single activity and multi fragment artitecture.}
-\resumeItem{Retrofit}
-{Integerated \textbf{REST} api with Retrofit to make \textbf{HTTP} requests.}
-\resumeItemListEnd
 \resumeSubHeadingListEnd
-
-% -----------Awards and achivements--------------
-% \section{Awards and Achievements}
-% \begin{itemize}
-% 	\item \textbf{\href{https://summerofcode.withgoogle.com/proposals/details/nQ9e5GZr}{Google Summer of Code 2022}} {at Oppia Foundation.}
-% 	      \begin{itemize}
-% 		      \item Android Release Automation for signing, building, testing and uploading to Google Play.
-% 		      \item Writing custom \textbf{kotlin} scripts for most common tasks like building the aab, signing the aab, uploading the aab to Google Play.
-% 		      \item Use of \textbf{github actions} along with the custom \textbf{kotlin} scritps exectued with \textbf{bazel} for \textbf{cd pipelines} for alpha, beta and nigthly releases on daily cron jobs.
-% 	      \end{itemize}
-% \end{itemize}
 
 %-----------PROJECTS-----------------
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeItem{\href{https://github.com/yash10019coder/festify-android}{Festify}}{Hackathon and event management \textbf{Android} app with \textbf{NodeJs} \href{https://github.com/yash10019coder/festify-node-server}{Backend link} and \textbf{MongoDB database.}}
-{Open source python library for financial data analysis and machine learning for finance.}
-\resumeItem{\href{https://github.com/yash10019coder/Gui-Automator}{GUI-Automator}}
-{Written in \textbf{python} to download files from google drive and automatically arranging sorting and extracting them.}
+\resumeItem{\href{https://github.com/yash10019coder/festify-android}{Festify}}
+{Hackathon and event management \textbf{Android} app with \textbf{NodeJs} \href{https://github.com/yash10019coder/festify-node-server}{Backend link} and \textbf{MongoDB database.}}
+
 \resumeItem{\href{https://github.com/yash10019coder/Whats-App}{What's App Clone}}
 {Peer to Peer and group chat Android App with thread based model and equipped with Google and email authentication.}
+
 \resumeItem{\href{https://github.com/yash10019coder/Video-Chatting}{Video-Chatting}}
 {Android app made with \href{https://github.com/jitsi/jitsi-meet}{jitsi-meet-api} also deployed a custom scalable video server on Ubutnu VM along with setting up nginx server and TLS layer to make it secure.}
-\resumeItem{\href{https://github.com/yash10019coder/resume}{My-Resume}}{Personal Resume with seperate tracks and \textbf{cd pipeline} with \textbf{github actions} and \textbf{Google Cloud Platform} to automatically upload the new version of the resume to \textbf{Google Drive}.}
+
 \resumeSubHeadingListEnd
 
 %
@@ -222,16 +178,16 @@
             \textbf{Programming Languages}{: Java, Kotlin, Python, JavaScript/NodeJS, C, C++, SQL, bash}
       }
 \item{
-            \textbf{Technologies/Frameworks}{: Linux, AndroidSDK, Dagger/Hilt, Android Jetpack, Docker, Kubernetes, Google Cloud, Github actions, CI/CD pipelines, Express, MongoDB, Realm, Git, MySQL, Firebase, Gradle, Bazel, Nginx, JSON, Regex}
+            \textbf{Technologies/Frameworks}{: Linux, AndroidSDK, Dagger/Hilt, Android Jetpack, Docker, Google Cloud, Github actions, CI/CD pipelines, Express, MongoDB, Realm, Git, MySQL, Firebase, Gradle, Bazel, JSON, Regex}
       }
 \resumeSubHeadingListEnd
 
-\section{Position of Responsibilities}
-\begin{itemize}
-	\item \textbf{Onboarding mentor} at Oppia Foundation.
-	\item Member of \textbf{Developer Workflow} Team at Oppia Foundation.
-	\item Member of \textbf{Android Welfare} Team at Oppia Foundation.
-	\item Senior Member at \textbf{Axios, IIITLucknow}.
-\end{itemize}
+% \section{Position of Responsibilities}
+% \begin{itemize}
+% 	\item \textbf{Onboarding mentor} at Oppia Foundation.
+% 	\item Member of \textbf{Developer Workflow} Team at Oppia Foundation.
+% 	\item Member of \textbf{Android Welfare} Team at Oppia Foundation.
+% 	\item Senior Member at \textbf{Axios, IIITLucknow}.
+% \end{itemize}
 %-------------------------------------------
 \end{document}
