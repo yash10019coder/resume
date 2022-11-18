@@ -9,6 +9,7 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{fontawesome5}
 
 %Custom code for links--------------------------
 
@@ -88,103 +89,77 @@
 \author{Yash Verma(yash10019coder)}
 
 \begin{document}
-
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-	\textbf{{\Large Yash Verma}} & Email : \href{mailto:yashverma10019@gmail.com}{yashverma10019@gmail.com}\\
-	Linkedin: \href{https://www.linkedin.com/in/yash10019coder}{www.linkedin.com/in/yash10019coder} & Github: \href{https://github.com/yash10019coder}{https://github.com/yash10019coder}
+	\textbf{{\Large Yash Verma}} & \href{https://www.linkedin.com/in/yash10019coder}{\faicon{linkedin} yash10019coder}\\
+	\href{mailto:yashverma10019@gmail.com}{\faicon{envelope} yashverma10019@gmail.com}& \href{https://github.com/yash10019coder}{\faicon{github} yash10019coder} \\
+	\faicon{phone} +918957557113 & \href{https://twitter.com/yash10019coder}{\faicon{twitter} yash10019coder}
 \end{tabular*}
-
-
 %-----------EDUCATION-----------------
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
 {Indian Institute of Information Technology, Lucknow}{Lucknow}
-{Bachelor of Information Technology;  \textbf{CGPA: 8.32/10}}{Apr. 2020 -- Apr. 2024}
-\resumeItem{Relevant Courses}{Data Structures \& Algorithms, Operating System, System Design, DBMS, Object Oriented Programming, Distributed Systems, Software Management, Design Patterns.}
+{B.Tech in Information Technology;  \textbf{CG-PA: 8.32/10}}{Apr. 2020 -- Apr. 2024}
 \resumeSubHeadingListEnd
-
-
 %-----------EXPERIENCE-----------------
 \section{Experience}
 \resumeSubHeadingListStart
-
-\resumeSubheading
-{Google Summer of Code Oppia Foundation \href{https://docs.google.com/document/d/150Yk14Cxmy8OAbSSwgP1aXDBLo1b8HtuIhmrRhzEWU4/edit}{link}}{Remote}
-{Gsoc Student}{Aug 2021 -- Sept 2022}
-
-\resumeItemListStart
-
-\resumeItem{Tech Stack}{Kotlin, Github Actions, JUnit, UIAutomator, Gradle, Bazel, Starlark, AndroidSDK}
-\resumeItem{\href{https://docs.google.com/document/d/150Yk14Cxmy8OAbSSwgP1aXDBLo1b8HtuIhmrRhzEWU4/edit}{Technical Design Docs}}{Designed and architected the whole \textbf{ci/cd} architecture for the builds. }
-\resumeItem{Release Automation}{Automated \textbf{signing}, \textbf{building}, \textbf{testing} and \textbf{uploading} to Google Play along with automated cherry-picks.}
-\resumeItem{Gradle,Bazel}
-{Helped in build system migration from \textbf{gradle} to \textbf{bazel} which increases build speeds by \textbf{10x}.}
-\resumeItem{Tablet Support}
-{ Added support for tablet devices in the app which increased the user base by \textbf{20\%}. }
-\resumeItem{TDD(Test Driven Development)}
-{Written \textbf{70+} Unit Tests, \textbf{20+} Instrumentation and End-to-end tests in \textbf{Espresso}, \textbf{Robolectric} and \textbf{UIAutomator} with \textbf{JUnit} as test runner for Android.}
-
-\resumeItemListEnd
 \resumeSubheading
 {\href{https://0chain.net}{0chain}}{Cupertino, CA (Remote)}
 {Android Engineer}{Feb 2022 -- Present}
 \resumeItemListStart
-
 \resumeItem{Tech Stack}{Kotlin, Java, Gradle, AndroidSDK, Retrofit, Room, Dagger/Hilt, Golang.}
-\resumeItem{Xml}
-{Converted the \textbf{figma wireframes} to high quality xml layouts and used \textbf{Gosdk} to write backend code in \textbf{java} for them.}
-
+\resumeItem{XML}
+{Converted the \textbf{fig-ma wire frames} to high quality XML layouts and used \textbf{Gosdk} to write back end code in \textbf{java} for them.}
 \resumeItem{Database migration}
-{Migrated from \textbf{Realm} to \textbf{Room} databse which decreased the app size by \textbf{5MB}.}
-
+{Migrated from \textbf{Realm} to \textbf{Room} database which decreased the app size by \textbf{5MB}.}
 \resumeItem{Bash Scripting  }
-{Added a pre-commit hook for codebase to run eslint checks and typescript checks which reduced the lint and type errors by \textbf{100\%} in the codebase.}
+{Added a pre-commit hook for the code-base to run es lint checks and typescript checks which reduced the lint and type errors by \textbf{100\%} in the codebase.}
+\item {Handled both the android apps of the organization made consistent releases and also made numerous features from scratch.}
 \resumeItemListEnd
-\begin{itemize}
-	\item Handled both the android apps of the organization made consistent releases and also made numerous features from scratch.
-\end{itemize}
-
+\resumeSubheading
+{Google Summer of Code Oppia Foundation \href{https://docs.google.com/document/d/150Yk14Cxmy8OAbSSwgP1aXDBLo1b8HtuIhmrRhzEWU4/edit}{link}}{Remote}
+{Gsoc Student}{Aug 2021 -- Sept 2022}
+\resumeItemListStart
+\resumeItem{Tech Stack}{Kotlin, GitHub Actions, JUnit, UIAutomator, Gradle, Bazel, Starlark, AndroidSDK}
+\resumeItem{\href{https://docs.google.com/document/d/150Yk14Cxmy8OAbSSwgP1aXDBLo1b8HtuIhmrRhzEWU4/edit}{Technical Design Docs}}{Designed and architect-ed the whole \textbf{CI/CD} architecture for the builds. }
+\resumeItem{Release Automation}{Automated \textbf{signing}, \textbf{building}, \textbf{testing} and \textbf{uploading} to Google Play along with automated cherry-picks.}
+\resumeItem{Gradle,Bazel}
+{Helped in build system migration from \textbf{Gradle} to \textbf{Bazel} which increases build speeds by \textbf{10x}.}
+\resumeItem{Tablet Support}
+{ Added support for tablet devices in the app which increased the user base by \textbf{20\%}. }
+\resumeItem{TDD(Test Driven Development)}
+{Written \textbf{70+} Unit Tests, \textbf{20+} Instrumentation and End-to-end tests in \textbf{Espresso}, \textbf{Robolectric} and \textbf{UIAutomator} with \textbf{JUnit} as test runner for Android.}
+\resumeItemListEnd
 \resumeSubheading
 {\href{https://gnome.org}{Gnome Foundation}}{Remote}
 {Open Source Contributor}{Sept 2021 -- Feb 2022}
 \resumeItemListStart
-\resumeItem{Tech Stack}{C, Xml, GTK+}
+\resumeItem{Tech Stack}{C, XML, GTK+}
 \resumeItem{GTK4}
-{Added a new feature in the pathbar of \href{https://gitlab.gnome.org/GNOME/nautilus}{\textbf{Nautilus}} file manager to open folders and files with other applications seamlessly.}
-\resumeItem{Xml}
-{Made the wireframe and program of the new button with Xml.}
+{Added a new feature in the path bar of \href{https://gitlab.gnome.org/GNOME/nautilus}{\textbf{Nautilus}} file manager to open folders and files with other applications seamlessly.}
+\resumeItem{XML}
+{Made the wire frame and program of the new button with XML.}
 \resumeItemListEnd
-
 \resumeSubHeadingListEnd
-
 %-----------PROJECTS-----------------
 \section{Projects}
 \resumeSubHeadingListStart
 \resumeItem{\href{https://github.com/yash10019coder/festify-android}{Festify}}
-{Hackathon and event management \textbf{Android} app with \textbf{NodeJs} \href{https://github.com/yash10019coder/festify-node-server}{Backend link} and \textbf{MongoDB database.}}
-
+{Hackathon and event management \textbf{Android} app with \textbf{NodeJs} \href{https://github.com/yash10019coder/festify-node-server}{Back-end link} and \textbf{MongoDB database.}}
 \resumeItem{\href{https://github.com/yash10019coder/Whats-App}{What's App Clone}}
-{Peer to Peer and group chat Android App with thread based model and equipped with Google and email authentication.}
-
+{Peer to Peer and group chat Android App with thread-based model and equipped with Google and email authentication.}
 \resumeItem{\href{https://github.com/yash10019coder/Video-Chatting}{Video-Chatting}}
-{Android app made with \href{https://github.com/jitsi/jitsi-meet}{jitsi-meet-api} also deployed a custom scalable video server on Ubutnu VM along with setting up nginx server and TLS layer to make it secure.}
-
+{Android app made with \href{https://github.com/jitsi/jitsi-meet}{\textbf{jitsi-meet-api}} also deployed a custom scalable video server on Ubuntu VM along with setting up \textbf{Nginx} server and \textbf{TLS} layer to make it secure.}
 \resumeSubHeadingListEnd
-
-%
 %--------PROGRAMMING SKILLS------------
 \section{Technical Skills}
 \resumeSubHeadingListStart
-\item{
-            \textbf{Programming Languages}{: Java, Kotlin, Python, JavaScript, C, C++, SQL, bash, Golang}
-      }
-\item{
-            \textbf{Technologies/Frameworks}{: Linux, AndroidSDK, Dagger/Hilt, Android Jetpack, NodeJS, Docker, Google Cloud, Github actions, CI/CD pipelines, Express, MongoDB, Realm, Git, MySQL, Firebase, Gradle, Bazel, JSON, Regex}
-      }
+\resumeItem{Programming Languages}{: Java, Kotlin, Python, JavaScript, C, C++, SQL, bash, Golang}
+\resumeItem{Technologies/Frameworks}{: Linux, AndroidSDK, Dagger/Hilt, Android Jetpack, NodeJS, Docker, Google Cloud, GitHub actions, CI/CD pipelines, Express, MongoDB, Realm, Git, MySQL, Firebase, Gradle, Bazel, JSON, Regex}
+\resumeItem{Coursework}{Data Structures \& Algorithms, Operating System, System Design, DBMS, Object Oriented Programming, Distributed Systems, Software Management, Design Patterns.}
 \resumeSubHeadingListEnd
-
 % \section{Position of Responsibilities}
 % \begin{itemize}
 % 	\item \textbf{Onboarding mentor} at Oppia Foundation.
