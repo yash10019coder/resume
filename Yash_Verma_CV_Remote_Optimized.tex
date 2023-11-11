@@ -35,8 +35,8 @@
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\headrulewidth}{-5pt}
+\renewcommand{\footrulewidth}{-5pt}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.375in}
@@ -65,14 +65,14 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-3.3pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-9pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -162,6 +162,9 @@
 %-----------PROJECTS-----------------
 \section{Projects}
 \begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
+  \item \href{https://github.com/yash10019coder/Wake-Lock}{\textbf{Wake-Lock}}: Runs a sticky service in background which adds a partial wake lock to your screen.
+  \item \href{https://github.com/yash10019coder/AutomatedWindowManager}{\textbf{Automated Window Manager}} : A cli tool to automate window management in Linux.
+  \item \href{https://github.com/yash10019coder/backup-system-ubuntu}{\textbf{Backup System Ubuntu}}: A bash script to get all of the apt, snap and other etc config files.
   \item \href{https://github.com/0chain/HelloWorld-Android}{\textbf{Hello World}}: Android application showcasing 0Chain blockchain storage SDK, implemented in Kotlin.
   \item \href{https://github.com/yash10019coder/festify-android}{\textbf{Festify}}: Hackathon and event management Android app with NodeJs backend and MongoDB database.
   \item \href{https://github.com/yash10019coder/Gui-Automator}{\textbf{GUI-Automator}}: Python script for downloading, sorting, and extracting files from Google Drive.
