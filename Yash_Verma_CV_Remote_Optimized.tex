@@ -1,0 +1,191 @@
+\documentclass[letterpaper,1pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+%Custom code for links--------------------------
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Yash Verma's CV},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
+
+% Redefinition, symbol included in link:
+\let\orighref\href
+\renewcommand{\href}[2]{\orighref{#1}{#2\,\faExternalLink}}
+
+%Custom code for links--------------------------
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{-5pt}
+\renewcommand{\footrulewidth}{-5pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3.3pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-9pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Yash Verma's CV}
+\author{Yash Verma(yash10019coder)}
+
+\begin{document}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Yash Verma}} & \href{https://www.linkedin.com/in/yash10019coder}{\faicon{linkedin} yash10019coder}\\
+  \href{mailto:yashverma10019.work@gmail.com}{\faicon{envelope} yashverma10019.work@gmail.com}& \href{https://github.com/yash10019coder}{\faicon{github} yash10019coder} \\
+  \faicon{phone} +918957557113 & \href{https://twitter.com/yash10019coder}{\faicon{twitter} yash10019coder}
+\end{tabular*}
+\itemsep-0.2em
+\vspace{-5pt}
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Indian Institute of Information Technology, Lucknow}{Lucknow}
+{Bachelor of Information Technology;  CGPA: 8.32}{Apr. 2020 -- Apr. 2024}
+\resumeItem{Relevant Courses}{Data Structures \& Algorithms, Operating System, System Design, DBMS, Object Oriented Programming, Distributed Systems, Software Management, Design Patterns.}
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\href{https://0chain.net}{0chain}}{Cupertino, CA (Remote)}
+{Android Engineer}{Feb 2022 -- Present}
+
+\begin{itemize}
+  \item \textbf{Tech Stacks}: \textbf{Kotlin, Java, Golang, AndroidSDK, NDK, Github actions}.
+  \item Developing \textbf{two} Android apps Bolt, Vult for a decentralized storage built upon ZCN cryptocurrency.
+  \item Reduced \textbf{Bolt} and \textbf{Vult} app size by \textbf{12\%} by migrating from \textbf{Realm} to \textbf{Room} database.
+  \item  Written \textbf{E2E} and \textbf{unit tests}, Along with developing an automated pipeline for build and release.
+  \item Leading and mentoring two junior devs in daily tasks and overseeing scrum meetings and code reviews.
+\end{itemize}
+
+
+\resumeSubheading
+{Google Summer of Code Oppia Foundation \href{https://docs.google.com/document/d/150Yk14Cxmy8OAbSSwgP1aXDBLo1b8HtuIhmrRhzEWU4/edit}{link}}{Remote}
+{Open Source Contributor - Gsoc Student}{June 2021 -- Sept 2022}
+\begin{itemize}[itemsep=1pt, parsep=0pt]
+  \item \textbf{Tech Stack}: \textbf{Kotlin, GitHub Actions, JUnit, UIAutomator, Gradle, Bazel, AndroidSDK}.
+  \item Pioneered CI/CD pipeline enhancements, expediting build and deployment processes.
+  \item Spearheaded Gradle to Bazel transition, amplifying build efficiency by an order of magnitude.
+  \item Expanded the application's reach by integrating tablet support, boosting potential user base.
+  \item Orchestrated and refined over 90 automated tests, elevating codebase stability and reliability.
+\end{itemize}
+
+
+\resumeSubheading
+{\href{https://gnome.org}{Gnome Foundation}}{Remote}
+{Open Source Contributor}{Sept 2021 -- Feb 2022}
+\resumeItemListStart
+\resumeItem{Tech Stack}{\textbf{C, XML, GTK+}}
+\resumeItem{GTK4}
+{Added a new feature in the pathbar of \href{https://gitlab.gnome.org/GNOME/nautilus}{\textbf{Nautilus}} file manager to open folders and files with other applications seamlessly.}
+\resumeItem{Xml}
+{Made the wireframe and program of the new button with Xml.}
+\resumeItemListEnd
+
+\resumeSubheading
+{BSHAPP \href{https://github.com/yash10019coder/bshapp}{Link of App}}{Andhra Pradesh}{Android Freelance Developer}{May 2021 -- June 2021}
+\resumeItemListStart
+\resumeItem{Multi Language}
+{Added Support for multiple Languages.}
+\resumeItem{Jetpack Navigation}
+{Used Jetpack Navigation with single activity and multi fragment artitecture.}
+\resumeItem{Retrofit}
+{Integerated \textbf{REST} api with Retrofit to make \textbf{HTTP} requests.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
+  \item \href{https://github.com/yash10019coder/Wake-Lock}{\textbf{Wake-Lock}}: Runs a sticky service in background which adds a partial wake lock to your screen.
+  \item \href{https://github.com/yash10019coder/AutomatedWindowManager}{\textbf{Automated Window Manager}} : A cli tool to automate window management in Linux.
+  \item \href{https://github.com/yash10019coder/backup-system-ubuntu}{\textbf{Backup System Ubuntu}}: A bash script to get all of the apt, snap and other etc config files.
+  \item \href{https://github.com/0chain/HelloWorld-Android}{\textbf{Hello World}}: Android application showcasing 0Chain blockchain storage SDK, implemented in Kotlin.
+  \item \href{https://github.com/yash10019coder/festify-android}{\textbf{Festify}}: Hackathon and event management multi-module Android app with NodeJs backend and MongoDB database.
+  \item \href{https://github.com/yash10019coder/Gui-Automator}{\textbf{GUI-Automator}}: Python script for downloading, sorting, and extracting files from Google Drive.
+  \item \href{https://github.com/yash10019coder/Whats-App}{\textbf{What's App Clone}}: Android chat app featuring Google and email authentication.
+  \item \href{https://github.com/yash10019coder/Video-Chatting}{\textbf{Video Chatting}}: Android app for video conferencing using Jitsi Meet API with a secure server setup.
+  \item \href{https://github.com/yash10019coder/resume}{\textbf{My Resume}}: Automated deployment of resume updates using GitHub Actions and GCP to Google Drive.
+\end{itemize}
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
+  \selectfont\small
+  \setlength\itemsep{0em}
+  \setlength\parsep{0em}
+  \item \textbf{Programming \& Scripting}: Java, Kotlin, Python, JavaScript, C, C++, SQL, Bash
+  \item \textbf{Frameworks \& Tools}: AndroidSDK, Dagger/Hilt, RxJava, Retrofit, Okhttp, Android Jetpack, Express, Git, Gradle, Bazel
+  \item \textbf{Testing \& Databases}: JUnit, Mockito, Robolectric, Espresso, UIAutomator, MySQL, MongoDB, Realm, SQLite, Firebase
+  \item \textbf{DevOps, Cloud \& Security}: Linux, GCP, Docker, Kubernetes, Github Actions, CI/CD pipelines, Nginx, TLS, SSL, Bash Scripting
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
