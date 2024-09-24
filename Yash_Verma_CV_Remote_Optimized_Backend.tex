@@ -58,9 +58,9 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+\newcommand{\resumeItem}[1]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-15pt}}
+    #1 \vspace{-1pt}
   }
 }
 
@@ -69,10 +69,10 @@
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-2.9pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-9pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-13pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -100,7 +100,6 @@
 \section*{Summary}
 Experienced Full Stack Developer with a strong background in developing backend and optimizing scalable android apps, fault-tolerant systems. Proficient in Go, Java, Python, and Kotlin with extensive experience in CI/CD, database management, and cloud-based solutions. Passionate about crafting efficient and reliable software solutions, with a proven track record in delivering high-quality projects within dynamic, fast-paced environments.
 
-
 %-----------EDUCATION-----------------
 \section{Education}
 \resumeSubHeadingListStart
@@ -120,34 +119,38 @@ Experienced Full Stack Developer with a strong background in developing backend 
 {\href{https://0chain.net}{0chain}}{Cupertino, CA (Remote)}
 {Full Stack Engineer}{Feb 2022 -- Present}
 
-\begin{itemize}[]
-  \item \textbf{Tech Stacks}: \textbf{Kotlin, Java, Golang, AndroidSDK, NDK, Github actions}.
-  \item Developed two Android apps, \textbf{Bolt} and \textbf{Vult}, increasing the Android user base by \textbf{20\%} for decentralized storage using \textbf{ZCN cryptocurrency}.
-  \item Designed and implemented a \textbf{UAT test suite} for enterprise blobbers, reducing production bugs by \textbf{30\%} and improving release quality.
-  \item Led and mentored two junior developers, improving \textbf{code quality} by \textbf{40\%} and ensuring \textbf{95\%} on-time delivery through effective \textbf{scrum leadership}.
-\end{itemize}
-
+\resumeItemListStart
+% \begin{itemize}[]
+\resumeItem {\textbf{Tech Stacks}: \textbf{Kotlin, Java, Golang, AndroidSDK, NDK, Github actions}.}
+\resumeItem {Developed two Android apps, \textbf{Bolt} and \textbf{Vult}, increasing the Android user base by \textbf{20\%} for decentralized storage using \textbf{ZCN cryptocurrency}.}
+\resumeItem {Designed and implemented a \textbf{UAT test suite} for enterprise blobbers, reducing production bugs by \textbf{30\%} and improving release quality.}
+\resumeItem {Led and mentored two junior developers, improving \textbf{code quality} by \textbf{40\%} and ensuring \textbf{95\%} on-time delivery through effective \textbf{scrum leadership}.}
+% \end{itemize}
+\resumeItemListEnd
 
 \resumeSubheading
 {Google Summer of Code Oppia Foundation \href{https://docs.google.com/document/d/150Yk14Cxmy8OAbSSwgP1aXDBLo1b8HtuIhmrRhzEWU4/edit}{link}}{Remote}
 {Open Source Contributor - Gsoc Student}{June 2021 -- Sept 2022}
-\begin{itemize}[itemsep=1pt, parsep=0pt]
-  \item \textbf{Tech Stack}: \textbf{Kotlin, GitHub Actions, JUnit, UIAutomator, Gradle, Bazel, AndroidSDK}.
-  \item Pioneered \textbf{CI/CD pipeline enhancements}, reducing \textbf{build and deployment time} by \textbf{40\%}, leading to faster release cycles.
-  \item Spearheaded \textbf{Gradle to Bazel transition}, increasing \textbf{build efficiency} by \textbf{60\%}, accelerating development cycles.
-  \item Expanded the application’s reach by integrating \textbf{tablet support}, resulting in a \textbf{25\%} increase in the potential user base.
-  \item Orchestrated and refined over \textbf{90 automated tests}, increasing \textbf{codebase stability} by \textbf{30\%} and reducing production bugs by \textbf{20\%}.
-\end{itemize}
-
+\resumeItemListStart
+% \begin{itemize}[itemsep=1pt, parsep=0pt]
+\resumeItem {\textbf{Tech Stack}: \textbf{Kotlin, GitHub Actions, JUnit, UIAutomator, Gradle, Bazel, AndroidSDK}.}
+\resumeItem {Pioneered \textbf{CI/CD pipeline enhancements}, reducing \textbf{build and deployment time} by \textbf{40\%}, leading to faster release cycles.}
+\resumeItem {Spearheaded \textbf{Gradle to Bazel transition}, increasing \textbf{build efficiency} by \textbf{60\%}, accelerating development cycles.}
+\resumeItem {Expanded the application’s reach by integrating \textbf{tablet support}, resulting in a \textbf{25\%} increase in the potential user base.}
+\resumeItem {Orchestrated and refined over \textbf{90 automated tests}, increasing \textbf{codebase stability} by \textbf{30\%} and reducing production bugs by \textbf{20\%}.}
+% \end{itemize}
+\resumeItemListEnd
 
 \resumeSubheading
 {\href{https://gnome.org}{Gnome Foundation}}{Remote}
 {Open Source Contributor}{Sept 2021 -- Feb 2022}
-\begin{itemize}[itemsep=1pt, parsep=0pt]
-  \item Tech Stack \textbf{C, XML, GTK+}
-  \item Added a new feature in the \textbf{pathbar of Nautilus file manager}, improving \textbf{user efficiency} by \textbf{20\%} by enabling seamless opening of folders and files.
-  \item Designed and implemented a new button using \textbf{XML}, enhancing \textbf{user interaction} by \textbf{15\%} through improved interface functionality.
-\end{itemize}
+\resumeItemListStart
+% \begin{itemize}[itemsep=1pt, parsep=0pt]
+\resumeItem {Tech Stack \textbf{C, XML, GTK+}}
+\resumeItem {Added a new feature in the \textbf{pathbar of Nautilus file manager}, improving} \textbf{user efficiency} by \textbf{20\%} by enabling seamless opening of folders and files.
+\resumeItem {Designed and implemented a new button using \textbf{XML}, enhancing \textbf{user interaction} by \textbf{15\%} through improved interface functionality.}
+% \end{itemize}
+\resumeItemListEnd
 
 % \resumeSubheading
 % {BSHAPP \href{https://github.com/yash10019coder/bshapp}{Link of App}}{Andhra Pradesh}{Android Freelance Developer}{May 2021 -- June 2021}
@@ -170,8 +173,8 @@ Experienced Full Stack Developer with a strong background in developing backend 
   \item \href{https://github.com/0chain/HelloWorld-Android}{\textbf{Hello World}}: Android application showcasing 0Chain blockchain storage SDK, implemented in Kotlin.
         % \item \href{https://github.com/yash10019coder/Wake-Lock}{\textbf{Wake-Lock}}: Runs a sticky service in the background which adds a partial wake lock to your screen.
   \item \href{https://github.com/yash10019coder/AutomatedWindowManager}{\textbf{Automated Window Manager}}: A CLI tool to automate window management in Linux.
-  % \item \href{https://github.com/yash10019coder/backup-system-ubuntu}{\textbf{Backup System Ubuntu}}: A bash script to back up apt, snap, and other config files.
-  % \item \href{https://github.com/yash10019coder/Gui-Automator}{\textbf{GUI-Automator}}: Python script for downloading, sorting, and extracting files from Google Drive.
+        % \item \href{https://github.com/yash10019coder/backup-system-ubuntu}{\textbf{Backup System Ubuntu}}: A bash script to back up apt, snap, and other config files.
+        % \item \href{https://github.com/yash10019coder/Gui-Automator}{\textbf{GUI-Automator}}: Python script for downloading, sorting, and extracting files from Google Drive.
         % \item \href{https://github.com/yash10019coder/Whats-App}{\textbf{What's App Clone}}: Android chat app featuring Google and email authentication.
         % \item \href{https://github.com/yash10019coder/Video-Chatting}{\textbf{Video Chatting}}: Android app for video conferencing using Jitsi Meet API with a secure server setup.
   \item \href{https://github.com/yash10019coder/resume}{\textbf{My Resume}}: Automated deployment of resume updates using GitHub Actions and GCP to Google Drive.
@@ -190,7 +193,6 @@ Experienced Full Stack Developer with a strong background in developing backend 
   \item \textbf{Testing \& Databases}: JUnit, Mockito, Robolectric, Espresso, UIAutomator, MySQL, MongoDB, Realm, SQLite, Firebase
   \item \textbf{DevOps, Cloud \& Security}: Linux, GCP, Docker, Kubernetes, Github Actions, CI/CD pipelines, Nginx, TLS, SSL, Bash Scripting
 \end{itemize}
-
 
 %-------------------------------------------
 \end{document}
