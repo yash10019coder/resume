@@ -53,32 +53,32 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    #1 \vspace{-1.1pt}
+    #1 \vspace{-2pt}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
   \item
-    \begin{tabular*}{0.99\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & {\small #4} \\
+      \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-3.45pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\vspace{-2pt}\resumeItem{#1}\vspace{-13pt}}
+\newcommand{\resumeSubItem}[1]{\vspace{-2pt}\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=1pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=8pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
 
 %-------------------------------------------
@@ -89,15 +89,39 @@
 
 \begin{document}
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large Yash Verma}} & \href{https://www.linkedin.com/in/yash10019coder}{\faicon{linkedin} yash10019coder}\\
-  \href{mailto:yashverma10019.work@gmail.com}{\faicon{envelope} yashverma10019.work@gmail.com}& \href{https://github.com/yash10019coder}{\faicon{github} yash10019coder} \\
-  \faicon{phone} +918957557113 & \href{https://twitter.com/yash10019coder}{\faicon{twitter} yash10019coder}
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{{\Large Yash Verma}} & \href{https://www.linkedin.com/in/yash10019coder}{\faicon{linkedin} yash10019coder}\\
+%   \href{mailto:yashverma10019.work@gmail.com}{\faicon{envelope} yashverma10019.work@gmail.com}& \href{https://github.com/yash10019coder}{\faicon{github} yash10019coder} \\
+%   \faicon{phone} +918957557113 & \href{https://twitter.com/yash10019coder}{\faicon{twitter} yash10019coder}
+% \end{tabular*}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+
+  \textbf{{\LARGE Yash Verma}} \vspace{.7em} \\
+  \hspace{1 mm}
+
+  \hspace{-6mm}
+  \begin{tabular}{c|c|c|c|c}
+    \faEnvelope  \hspace{0.5mm} \href{mailto:yashverma10019.work@gmail.com}{yashverma10019.work@gmail.com}
+    % \faEnvelope  \hspace{0.5mm} \href{mailto:lit2020054@iiitl.ac.in}{lit2020054@iiitl.ac.in} 
+    \hspace{1mm} & \hspace{1mm}
+
+    \faPhone  \hspace{0.5mm} +91 8957557113
+    % \faPhone  \hspace{0.5mm} +91-6207806656
+    \hspace{1mm} & \hspace{1mm}
+    \faLinkedin\hspace{0.5mm}\href{https://www.linkedin.com/in/yash10019coder/}{LinkedIn}
+    \hspace{1mm} & \hspace{1mm}
+    \faGithub \hspace{0.5mm} \href{https://github.com/yash10019coder/}{GitHub} \hspace{1mm}
+    % &  \hspace{1mm}
+    % \faCode \hspace{0.5mm} \href{https://portfolio-rushikesh.vercel.app/}{Portfolio} \\
+  \end{tabular}
 \end{tabular*}
+
 % \itemsep-0.2em
 % \vspace{-10pt}
 
 % \section*{Summary}
+% Love tinerking with tech and doing open source. Also have interestes in Reverse engineering, Linux. Passionate about working on large scale systems and solving complex problems.
 % Experienced Full Stack Developer with a strong background in developing backend and optimizing scalable android apps, fault-tolerant systems. Proficient in Go, Java, Python, and Kotlin with extensive experience in CI/CD, database management, and cloud-based solutions. Passionate about crafting efficient and reliable software solutions, with a proven track record in delivering high-quality projects within dynamic, fast-paced environments.
 
 %-----------EXPERIENCE-----------------
@@ -162,8 +186,8 @@
 
   \item \href{https://github.com/yash10019coder/ParkingLotBackend}{\textbf{Parking Lot Management System}}: Developed a RESTful API using \textbf{Node.js}, \textbf{Express.js}, and \textbf{MongoDB} to manage parking spaces. Integrated \textbf{Winston} for logging and conducted unit and integration testing with \textbf{Jest}.
   \item \href{https://github.com/yash10019coder/airline-ticketing-system}{\textbf{Airline ticketing system}}: Built using \textbf{Spring Boot} in \textbf{MVC architecture} where a user can book tickets, query fights and cancel tickets also \textbf{Dockerized}.
-        % \item \href{https://github.com/yash10019coder/TravelSpringBoot}{\textbf{Trip Feedback System}}: Designed a feedback system for \textbf{Travelers} and \textbf{Transport Managers} with secure feedback submission, user authentication, using \textbf{Spring Framework}.
-        % \item \href{https://github.com/yash10019coder/festify-android}{\textbf{Festify}}: Hackathon and event management multi-module Android app with NodeJs backend and MongoDB database.
+        \item \href{https://github.com/yash10019coder/TravelSpringBoot}{\textbf{Trip Feedback System}}: Designed a feedback system for \textbf{Travelers} and \textbf{Transport Managers} with secure feedback submission, user authentication, using \textbf{Spring Framework}.
+        \item \href{https://github.com/yash10019coder/festify-android}{\textbf{Festify}}: Hackathon and event management multi-module Android app with NodeJs backend and MongoDB database.
   \item \href{https://github.com/0chain/HelloWorld-Android}{\textbf{Hello World}}: Android application showcasing 0Chain blockchain storage SDK, designed in Kotlin.
         % \item \href{https://github.com/yash10019coder/Wake-Lock}{\textbf{Wake-Lock}}: Runs a sticky service in the background which adds a partial wake lock to your screen.
         % \item \href{https://github.com/yash10019coder/AutomatedWindowManager}{\textbf{Automated Window Manager}}: A CLI tool to automate window management in Linux.
@@ -171,7 +195,7 @@
         % \item \href{https://github.com/yash10019coder/Gui-Automator}{\textbf{GUI-Automator}}: Python script for downloading, sorting, and extracting files from Google Drive.
         % \item \href{https://github.com/yash10019coder/Whats-App}{\textbf{What's App Clone}}: Android chat app featuring Google and email authentication.
         % \item \href{https://github.com/yash10019coder/Video-Chatting}{\textbf{Video Chatting}}: Android app for video conferencing using Jitsi Meet API with a secure server setup.
-  \item \href{https://github.com/yash10019coder/resume}{\textbf{My Resume}}: \textbf{Automated deployment} of resume updates using \textbf{GitHub Actions} and \textbf{GCP} to \textbf{Google Drive}.
+  \item \href{https://github.com/yash10019coder/resume}{\textbf{My Resume}}: \b{Automated deployment} of resume updates using \b{GitHub Actions} and \b{GCP} to Google Drive.
 
 \end{itemize}
 
@@ -204,14 +228,14 @@
 %
 %--------PROGRAMMING SKILLS------------
 \section{Technical Skills}
-\begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
+\begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt,rightmargin=-5pt]
   \selectfont\small
   \setlength\itemsep{0em}
   \setlength\parsep{0em}
   \item \textbf{Programming \& Scripting}: Java, Go, Kotlin, Python, JavaScript, C, C++, SQL, Bash
-  \item \textbf{Frameworks \& Tools}: SpringBoot, Gin, AndroidSDK, Dagger/Hilt, RxJava, Retrofit, Okhttp, Express, Git, Gradle, Bazel
-  \item \textbf{Testing \& Databases}: JUnit, Mockito, Robolectric, Espresso, UIAutomator, MySQL, MongoDB, Realm, Postgres, Firebase
-  \item \textbf{DevOps, Cloud \& Security}: Linux, GCP, Docker, Kubernetes, GitHub Actions, CI/CD, Prometheus, Grafana, Loki, Helm
+  \item \textbf{Frameworks \& Tools}: \hspace{0.7cm} SpringBoot, Gin, AndroidSDK, Dagger/Hilt, RxJava, Retrofit, Okhttp, Express, Git, Gradle, Bazel
+  \item \textbf{Testing \& Databases}:\hspace{1cm}JUnit, Mockito, Robolectric, Espresso, UIAutomator, MySQL, MongoDB, Realm, Postgres, Firebase
+  \item \textbf{DevOps, Cloud \& Security}:\hspace{0.001cm} Linux, GCP, Docker, Kubernetes, GitHub Actions, CI/CD, Prometheus, Grafana, Loki, Helm
 \end{itemize}
 
 %-------------------------------------------
