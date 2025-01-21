@@ -67,19 +67,19 @@
 \newcommand{\resumeSubheading}[4]{
   \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-3.45pt}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{\small#3} & \textbf{\textit{\small #4}} \\
+    \end{tabular*}
 }
 
-\newcommand{\resumeSubItem}[1]{\vspace{-2pt}\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\vspace{0pt}\resumeItem{#1}\vspace{1pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=1pt]}
+\newcommand{\resumeSubHeadingListStart}{\vspace{-3pt}\begin{itemize}[leftmargin=*,itemsep=1pt,parsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\vspace{-3.5pt}\begin{itemize}[leftmargin=8pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+\newcommand{\resumeItemListStart}{\vspace{-5pt}\begin{itemize}[leftmargin=8pt,itemsep=1pt,parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,7 +98,7 @@
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
 
   \textbf{{\LARGE Yash Verma}} \vspace{.7em} \\
-  \hspace{1 mm}
+  \hspace{3.5 mm}
 
   \hspace{-6mm}
   \begin{tabular}{c|c|c|c|c}
@@ -218,7 +218,7 @@
 \resumeItem{\textbf{Relevant Courses:}}{Data Structures \& Algorithms, Operating System, System Design, DBMS, Object Oriented Programming, Distributed Systems, Software Management, Design Patterns.}
 \resumeSubHeadingListEnd
 
-\vspace{-10pt}
+% \vspace{-10pt}
 
 
 
@@ -229,10 +229,10 @@
   \selectfont\small
   \setlength\itemsep{0em}
   \setlength\parsep{0em}
-  \item \textbf{Programming \& Scripting}: \hspace{0.1cm}Java, Go, Kotlin, Python, JavaScript, C, C++, SQL, Bash
-  \item \textbf{Frameworks \& Tools}: \hspace{0.85cm} SpringBoot, Gin, AndroidSDK, Dagger/Hilt, RxJava, Retrofit, Okhttp, Express, Git, Gradle, Bazel
-  \item \textbf{Testing \& Databases}:\hspace{1.1cm}JUnit, Mockito, Robolectric, Espresso, UIAutomator, MySQL, MongoDB, Realm, Postgres, Firebase
-  \item \textbf{DevOps, Cloud \& Security}:\hspace{0.001cm} Linux, GCP, Docker, Kubernetes, GitHub Actions, CI/CD, Prometheus, Grafana, Loki, Helm
+  \item \textbf{Programming \& Scripting}: \hspace{0.2cm}Java, Go, Kotlin, Python, JavaScript, C, C++, SQL, Bash
+  \item \textbf{Frameworks \& Tools}: \hspace{0.95cm} SpringBoot, Gin, AndroidSDK, Dagger/Hilt, RxJava, Retrofit, Okhttp, Express, Git, Gradle, Bazel
+  \item \textbf{Testing \& Databases}:\hspace{1.2cm}JUnit, Mockito, Robolectric, Espresso, UIAutomator, MySQL, MongoDB, Realm, Postgres, Firebase
+  \item \textbf{DevOps, Cloud \& Security}:\hspace{0.035cm} Linux, GCP, Docker, Kubernetes, GitHub Actions, CI/CD, Prometheus, Grafana, Loki, Helm
 \end{itemize}
 
 %-------------------------------------------
