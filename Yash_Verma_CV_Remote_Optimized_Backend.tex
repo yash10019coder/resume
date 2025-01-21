@@ -67,8 +67,8 @@
 \newcommand{\resumeSubheading}[4]{
   \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{#2} \\
-      \textit{\small#3} & \textbf{\textit{\small #4}} \\
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}
 }
 
@@ -78,7 +78,11 @@
 
 \newcommand{\resumeSubHeadingListStart}{\vspace{-3pt}\begin{itemize}[leftmargin=*,itemsep=1pt,parsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\vspace{-5pt}\begin{itemize}[leftmargin=8pt,itemsep=1pt,parsep=0pt]}
+\newcommand{\resumeItemListStart}{\vspace{-5pt}\begin{itemize}[leftmargin=8pt,itemsep=1pt,parsep=0pt]
+  \selectfont\small
+  \setlength\itemsep{0em}
+  \setlength\parsep{0em}
+  }
 \newcommand{\resumeItemListEnd}{\end{itemize}}
 
 %-------------------------------------------
@@ -180,7 +184,9 @@
 %-----------PROJECTS-----------------
 \section{Projects}
 \begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
-
+  \selectfont\small
+  \setlength\itemsep{0em}
+  \setlength\parsep{0em}
   \item \href{https://github.com/yash10019coder/ParkingLotBackend}{\textbf{Parking Lot Management System}}: Developed a RESTful API using \textbf{Node.js}, \textbf{Express.js}, and \textbf{MongoDB} to manage parking spaces. Integrated \textbf{Winston} for logging and conducted unit and integration testing with \textbf{Jest}.
   \item \href{https://github.com/yash10019coder/airline-ticketing-system}{\textbf{Airline ticketing system}}: Built using \textbf{Spring Boot} in \textbf{MVC architecture} where a user can book tickets, query fights and cancel tickets also \textbf{Dockerized}.
   \item \href{https://github.com/yash10019coder/TravelSpringBoot}{\textbf{Trip Feedback System}}: Designed a feedback system for \textbf{Travelers} and \textbf{Transport Managers} with secure feedback submission, user authentication, using \textbf{Spring Framework}.
@@ -189,9 +195,9 @@
   \item \href{https://github.com/yash10019coder/Wake-Lock}{\textbf{Wake-Lock}}: Runs a sticky service in the background which adds a partial wake lock to your screen.
   \item \href{https://github.com/yash10019coder/AutomatedWindowManager}{\textbf{Automated Window Manager}}: A CLI tool to automate window management in Linux.
   \item \href{https://github.com/yash10019coder/backup-system-ubuntu}{\textbf{Backup System Ubuntu}}: A bash script to back up apt, snap, and other config files.
-        % \item \href{https://github.com/yash10019coder/Gui-Automator}{\textbf{GUI-Automator}}: Python script for downloading, sorting, and extracting files from Google Drive.
-        % \item \href{https://github.com/yash10019coder/Whats-App}{\textbf{What's App Clone}}: Android chat app featuring Google and email authentication.
-        % \item \href{https://github.com/yash10019coder/Video-Chatting}{\textbf{Video Chatting}}: Android app for video conferencing using Jitsi Meet API with a secure server setup.
+  \item \href{https://github.com/yash10019coder/Gui-Automator}{\textbf{GUI-Automator}}: Python script for downloading, sorting, and extracting files from Google Drive.
+  \item \href{https://github.com/yash10019coder/Whats-App}{\textbf{What's App Clone}}: Android chat app featuring Google and email authentication.
+  \item \href{https://github.com/yash10019coder/Video-Chatting}{\textbf{Video Chatting}}: Android app for video conferencing using Jitsi Meet API with a secure server setup.
   \item \href{https://github.com/yash10019coder/resume}{\textbf{My Resume}}: \b{Automated deployment} of resume updates using \b{GitHub Actions} and \b{GCP} to Google Drive.
 
 \end{itemize}
@@ -201,6 +207,9 @@
 
 \section{Achievements}
 \begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
+  \selectfont\small
+  \setlength\itemsep{0em}
+  \setlength\parsep{0em}
   \item Rated \textbf{Specialist} on \href{https://codeforces.com/profile/segment_trACk}{Codeforces} with a \textbf{max-rating} of \textbf{1509}.
   \item Practised over \textbf{500+} DSA problems on \href{https://leetcode.com/u/dynamo_518/}{Leetcode}.
   \item Google Summer of Code Designing Release Pipelines at \textbf{Oppia Foundation}.
@@ -225,7 +234,7 @@
 %
 %--------PROGRAMMING SKILLS------------
 \section{Technical Skills}
-\begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt,rightmargin=-5pt]
+\begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
   \selectfont\small
   \setlength\itemsep{0em}
   \setlength\parsep{0em}
