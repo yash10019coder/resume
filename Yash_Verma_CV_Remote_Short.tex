@@ -135,22 +135,22 @@
 
 \resumeSubheading
 {\href{https://browserstack.com}{BrowserStack}}{Mumbai (Mallard West)}
-{SDE - Backend - \textbf{Ruby, Rails, Express, JavaScript, SpringBoot, Java}}{Apr 2025 -- Present}
+{SDE - Backend - \textbf{Ruby, Rails, Express, JavaScript, SpringBoot, Java, ClickHouse, Helm, Jenkins}}{Apr 2025 -- Present}
 \resumeItemListStart
-\resumeItem{Implemented request-level user blocking in TestHub to isolate abusive traffic and prevent service impact for other users.}
-\resumeItem{Delivered project name sanitization across TestHub, Dashboard, and SDK validations, enabling consistent multilingual support and reducing cross-product mismatches.}
-\resumeItem{Expanded GRR compatibility for \textbf{Australia}, unblocking region-specific onboarding and execution workflows.}
-\resumeItem{Shipped Central Auth Phase 2 for A11y/AppA11y, reducing dependency from \textbf{2 Rails calls to 1 call} via SDK -> Config Server -> Ingestor orchestration.}
-\resumeItem{Led source-list optimization, cutting dashboard latency from \textbf{3--4 minutes to ~3 seconds} by replacing full table scans with index-driven queries and improving database efficiency.}
-\resumeItem{Built ClickHouse sync tables and RDS migration/backfill pipelines, unblocking \textbf{3+ teams} and moving analytical workloads off primary databases for better scalability.}
-\resumeItem{Implemented Connectors-as-Code using versioned YAML definitions for native Debezium connectors, synced through automated jobs for consistent provisioning.}
-\resumeItem{Added a Jenkins pre-deploy validation job to verify multi-region RDS migrations before release, reducing deployment risk and improving release reliability.}
+\resumeItem{Improved platform stability by shipping abuse-protection controls that prevented noisy traffic from impacting other users.}
+\resumeItem{Led naming standardization across product touchpoints, improving consistency between user-facing and developer-facing workflows.}
+\resumeItem{Expanded regional capability for \textbf{Australia}, unblocking onboarding and execution for region-specific customer use cases.}
+\resumeItem{Contributed to authentication flow simplification for accessibility products, reducing upstream dependency calls and improving response times.}
+\resumeItem{Drove a critical performance initiative that reduced dashboard load time from \textbf{3--4 minutes to ~3 seconds}.}
+\resumeItem{Delivered data migration and synchronization improvements that unblocked \textbf{3+ teams} and increased adoption of analytics workflows.}
+\resumeItem{Standardized connector provisioning through configuration-driven automation, improving reliability and operational consistency.}
+\resumeItem{Introduced pre-deployment validation checks across regions, lowering release risk and improving deployment confidence.}
 
 \resumeItemListEnd
 
 \resumeSubheading
 {\href{https://0chain.net}{Zus (formerly 0chain)}}{Cupertino, CA (Remote)}
-{Senior Software Engineer - Blockchain Storage \& Mobile - \textbf{Golang, Kotlin, GitHub Actions, Gin, Grafana}}{Feb 2022 -- Mar 2025}
+{Software Engineer - Blockchain Storage \& Mobile - \textbf{Golang, Kotlin, GitHub Actions, Gin, Grafana}}{Feb 2022 -- Mar 2025}
 \resumeItemListStart
 \resumeItem{Architected and deployed two production Android apps: \textbf{Bolt} (crypto wallet) and \textbf{Vult} (decentralized storage), driving \textbf{20\%} increase in platform adoption and processing \textbf{\$2M+} in transactions.}
 \resumeItem{Spearheaded comprehensive \textbf{UAT automation suite} for enterprise blockchain storage, reducing critical production bugs by \textbf{90\%} and cutting release cycles from \textbf{2 weeks to 3 days}.}
@@ -208,6 +208,11 @@
       \item \href{https://github.com/yash10019coder/airline-ticketing-system}{\textbf{Airline Ticketing System}}: \textbf{Spring Boot} MVC architecture with booking, querying, and cancellation features, \textbf{Dockerized}.
       \item \href{https://github.com/yash10019coder/TravelSpringBoot}{\textbf{Trip Feedback System}}: Secure feedback system using \textbf{Spring Framework} with user authentication.
       \item \href{https://github.com/yash10019coder/festify-android}{\textbf{Festify}}: Multi-module Android event management app with \textbf{Node.js} backend and \textbf{MongoDB}.
+      \item \textbf{ACID-Compliant Database Engine (From Scratch)}: Built a lightweight storage engine implementing \textbf{transactions}, \textbf{WAL}, \textbf{locking}, \textbf{crash recovery}, and \textbf{B-Tree indexing}.
+      \item \textbf{HTTP Server (From Scratch)}: Implemented an \textbf{HTTP/1.1} server with request parsing, routing, keep-alive connections, middleware, and concurrent worker handling.
+      \item \textbf{TCP Stack Components (From Scratch)}: Built socket-level networking modules with connection lifecycle handling, retransmission logic, and flow-control primitives.
+      \item \textbf{Event-Driven Processing Pipeline}: Built a Kafka-based workflow with producer services, consumer groups, partitioned topics, schema versioning, retry/backoff, dead-letter queues, and idempotent consumers for reliable event handling.
+      \item \textbf{Container Runtime Prototype (Docker-like)}: Built an isolated execution environment using Linux \textbf{namespaces}, \textbf{cgroups}, layered filesystem concepts, and process sandboxing.
 \end{itemize}
 
 % 
@@ -247,7 +252,7 @@
       \item \textbf{Databases \& Testing}: \hspace{1.0cm}
             MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Query Optimization, JUnit, Mockito, UIAutomator
       \item \textbf{Tools \& Libraries}: \hspace{1.55cm}
-            Git, Debezium, YAML, Retrofit/OkHttp, Gradle, Bazel, Android SDK, System Design
+            Git, Apache Kafka, Debezium, CDC, Event-Driven Architecture, Pub/Sub, DLQ, Idempotency, YAML, Retrofit/OkHttp, Gradle, Bazel, Android SDK, System Design
 \end{itemize}
 %-------------------------------------------
 
