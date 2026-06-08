@@ -1,4 +1,4 @@
-\documentclass[letterpaper,1pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -42,8 +42,8 @@
 \addtolength{\oddsidemargin}{-0.675in}
 \addtolength{\evensidemargin}{-0.675in}
 \addtolength{\textwidth}{1.48in}
-\addtolength{\topmargin}{-.9in}
-\addtolength{\textheight}{1.4in}
+\addtolength{\topmargin}{-1.0in}
+\addtolength{\textheight}{1.7in}
 
 \urlstyle{same}
 
@@ -53,8 +53,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-10pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-14pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
 %-------------------------
 % Custom commands
@@ -123,7 +123,7 @@
       \setlength\itemsep{0em}
       \setlength\parsep{0em}
       \item Backend engineer with \textbf{3+ years} building scalable distributed systems, microservices, and APIs in production.
-      \item Delivered measurable reliability and performance improvements, including reducing dashboard latency from \textbf{3--4 minutes to ~3 seconds} through query and data-path optimization.
+      \item Delivered measurable reliability and performance gains, including a \textbf{208$\times$ query speedup} on a 524M-row table and zero-downtime database migrations across \textbf{4 production regions}.
       \item Hands-on with \textbf{Java/Spring Boot, Ruby on Rails, SQL, Redis, ClickHouse, AWS (RDS), Jenkins, and CI/CD}, with strong ownership of deployments and operational excellence.
 \end{itemize}
 
@@ -137,16 +137,14 @@
 {\href{https://browserstack.com}{BrowserStack}}{Mumbai (Mallard West)}
 {SDE - Backend - \textbf{Ruby, Rails, Express, JavaScript, SpringBoot, Java, ClickHouse, Helm, Jenkins}}{Apr 2025 -- Present}
 \resumeItemListStart
-\resumeItem{Improved platform stability by shipping abuse-protection controls that prevented noisy traffic from impacting other users.}
-\resumeItem{Led naming standardization across product touchpoints, improving consistency between user-facing and developer-facing workflows.}
-\resumeItem{Expanded regional capability for \textbf{Australia}, unblocking onboarding and execution for region-specific customer use cases.}
-\resumeItem{Contributed to authentication flow simplification for accessibility products, reducing upstream dependency calls and improving response times.}
-\resumeItem{Drove a critical performance initiative that reduced dashboard load time from \textbf{3--4 minutes to ~3 seconds}.}
-\resumeItem{Delivered data migration and synchronization improvements that unblocked \textbf{3+ teams} and increased adoption of analytics workflows.}
-\resumeItem{Standardized connector provisioning through configuration-driven automation, improving reliability and operational consistency.}
-\resumeItem{Introduced pre-deployment validation checks across regions, lowering release risk and improving deployment confidence.}
-\resumeItem{Led Security Initiative to prevent \textbf{SQL Injection} vulnerabilities, implementing parameterized queries and input validation across entire codebase.}
-
+\resumeItem{Achieved a \textbf{208$\times$ query speedup} (9,652ms $\rightarrow$ 46ms) on a \textbf{524M-row} sessions table via a composite covering index and zero-downtime \textbf{gh-ost} migration across \textbf{4 regions} (US, EU, IN, AUS).}
+\resumeItem{Averted a projected production outage by executing zero-downtime \textbf{INT$\rightarrow$BIGINT} migrations on \textbf{3 billion-row} tables (~1TB each) growing \textbf{2.89M rows/day} across all regional RDS clusters.}
+\resumeItem{Remediated critical \textbf{SQL injection} vulnerabilities across \textbf{50+ API endpoints} spanning 4 teams, securing a production system handling \textbf{~4,000 req/s}.}
+\resumeItem{Drove org-wide \textbf{Semgrep SAST} adoption for automated SQLi prevention at CI level, authoring rules covering \textbf{56 P0/P1 API actions} (~\textbf{98\%} of API traffic).}
+\resumeItem{Resolved \textbf{2 P0} vulnerabilities (OS command injection/RCE and Axios SSRF bypass) on production endpoints before exploitation.}
+\resumeItem{Expanded production health monitoring from \textbf{18 to 101 tracked endpoints} across \textbf{4 regions}, with per-endpoint p90 latency alerting and a \textbf{BigQuery} trend-analysis pipeline.}
+\resumeItem{Cut primary-database load by migrating heavy aggregate queries from RDS to \textbf{ClickHouse}, re-architecting the Query Killer from cron- to worker-based execution, and reducing RDS master CPU from \textbf{96\%} to stable levels.}
+\resumeItem{Designed sharding for \textbf{35 Debezium MySQL CDC connectors} and executed Kafka history-topic splits across 3 regions, improving pipeline reliability and scalability.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -156,40 +154,22 @@
 \resumeItem{Architected and deployed two production Android apps: \textbf{Bolt} (crypto wallet) and \textbf{Vult} (decentralized storage), driving \textbf{20\%} increase in platform adoption and processing \textbf{\$2M+} in transactions.}
 \resumeItem{Spearheaded comprehensive \textbf{UAT automation suite} for enterprise blockchain storage, reducing critical production bugs by \textbf{90\%} and cutting release cycles from \textbf{2 weeks to 3 days}.}
 \resumeItem{Optimized \textbf{S3-compatible distributed storage} infrastructure handling \textbf{500M+ files} and \textbf{40TB+} data across \textbf{50+ nodes}, achieving consistent sub-\textbf{100ms} latency with \textbf{99.9\%} uptime.}
-\resumeItem{Built \textbf{real-time monitoring} dashboards using \textbf{Grafana/Prometheus}, tracking \textbf{blockchain consensus}, storage allocation, and network performance across distributed infrastructure.}
 \resumeItem{Developed \textbf{automated DevOps workflows} for dynamic \textbf{Sharder/Miner} management and view-change protocols, boosting developer productivity by \textbf{90\%} and reducing manual intervention.}
 \resumeItem{Enhanced \textbf{multi-wallet concurrency} handling with unified \textbf{GoSDK}, supporting \textbf{10K+ concurrent} transactions and improving load test performance by \textbf{300\%}.}
-\resumeItem{Implemented \textbf{Erasure Coding (EC)} optimization for video streaming workloads, reducing storage overhead by \textbf{40\%} while maintaining data integrity across parity nodes.}
 \resumeItemListEnd
 \resumeSubheading
-{\href{https://docs.google.com/document/d/150Yk14Cxmy8OAbSSwgP1aXDBLo1b8HtuIhmrRhzEWU4/edit}{Google Summer of Code Oppia Foundation}}{Remote}
-{GSOC - \textbf{Kotlin, GitHub Actions, JUnit, UIAutomator, Gradle, Bazel, AndroidSDK}}{Jun 2021 -- Sept 2022}
-\resumeItemListStart
-% \begin{itemize}[itemsep=1pt, parsep=0pt]
-% \resumeItem {\textbf{Tech Stack}: \textbf{Kotlin, GitHub Actions, JUnit, UIAutomator, Gradle, Bazel, AndroidSDK}.}
-% \resumeItem {Pioneered \textbf{CI/CD pipeline enhancements}, reducing \textbf{build and deployment time} by \textbf{40\%}, leading to faster release cycles.}
-% \resumeItem {Spearheaded \textbf{Gradle to Bazel transition}, increasing \textbf{build efficiency} by \textbf{60\%}, accelerating development cycles.}
-% \resumeItem {Expanded the application’s reach by integrating \textbf{tablet support}, resulting in a \textbf{25\%} increase in the potential user base.}
-% \resumeItem {Orchestrated and refined over \textbf{90 automated tests}, increasing \textbf{codebase stability} by \textbf{30\%} and reduced production bugs by \textbf{20\%}.}
-
-\resumeItem{Designed robust \textbf{CI/CD infrastructure} with automated build triggers for alpha, beta, and test releases.}
-\resumeItem{Implemented automated deployment to \textbf{Google Drive}, \textbf{GCP Bucket}, and \textbf{Google Play Store} tracks.}
-\resumeItem{Authored custom \textbf{Kotlin scripts} and \textbf{GitHub Actions} to optimize CD pipelines for scheduled releases.}
-\resumeItemListEnd
-
-\resumeSubheading
-{\href{https://oppia.org}{Oppia Foundation} \href{https://github.com/oppia/oppia-android}{Github Link} \href{https://github.com/oppia/oppia-android/commits?author=yash10019coder}{[Link to Merged PRs]}}{Mountain View, CA (Remote)}
-{Open Source Contributor Android}{June 2021 -- April 2022}
+{\href{https://oppia.org}{Oppia Foundation} (incl. \href{https://docs.google.com/document/d/150Yk14Cxmy8OAbSSwgP1aXDBLo1b8HtuIhmrRhzEWU4/edit}{GSoC}) \href{https://github.com/oppia/oppia-android/commits?author=yash10019coder}{[Merged PRs]}}{Mountain View, CA (Remote)}
+{OSS Contributor \& GSoC - \textbf{Kotlin, GitHub Actions, JUnit, Gradle, Bazel, Android SDK}}{Jun 2021 -- Sep 2022}
 \resumeItemListStart
 \resumeItem{Contributed to \textbf{Gradle to Bazel} migration, achieving \textbf{10x} improvement in build speeds.}
+\resumeItem{Designed robust \textbf{CI/CD infrastructure} (GSoC) with automated build triggers and deployment to \textbf{Google Drive}, \textbf{GCP Bucket}, and \textbf{Google Play Store} tracks via custom Kotlin scripts and GitHub Actions.}
 \resumeItem{Developed modular \textbf{MVVM/MVP} architectures with \textbf{tablet support} for multiple screen sizes.}
 \resumeItem{Authored \textbf{70+ Unit Tests} and \textbf{20+ E2E tests} using Espresso, Robolectric, and UIAutomator.}
-% \resumeItem{GSOC}{Helped a GSOC student in \textbf{bazel} errors and reviewed the PR.}
 \resumeItemListEnd
 
 \resumeSubheading
 {\href{https://gnome.org}{Gnome Foundation}}{Remote}
-{Open Source Contributor - \textbf{Tech Stack}: \textbf{C, XML, GTK+}}{Sept 2021 -- Feb 2022}
+{Open Source Contributor - \textbf{Tech Stack}: \textbf{C, XML, GTK+}}{Sep 2021 -- Feb 2022}
 \resumeItemListStart
 % \begin{itemize}[itemsep=1pt, parsep=0pt]
 % \resumeItem {\textbf{Tech Stack}: \textbf{C, XML, GTK+}.}
@@ -205,19 +185,7 @@
       \selectfont\small
       \setlength\itemsep{0em}
       \setlength\parsep{0em}
-      \item \href{https://github.com/yash10019coder/ParkingLotBackend}{\textbf{Parking Lot Management System}}: RESTful API using \textbf{Node.js}, \textbf{Express.js}, \textbf{MongoDB} with \textbf{Winston} logging and \textbf{Jest} testing.
-      \item \href{https://github.com/yash10019coder/airline-ticketing-system}{\textbf{Airline Ticketing System}}: \textbf{Spring Boot} MVC architecture with booking, querying, and cancellation features, \textbf{Dockerized}.
-      \item \href{https://github.com/yash10019coder/TravelSpringBoot}{\textbf{Trip Feedback System}}: Secure feedback system using \textbf{Spring Framework} with user authentication.
-      \item \href{https://github.com/yash10019coder/festify-android}{\textbf{Festify}}: Multi-module Android event management app with \textbf{Node.js} backend and \textbf{MongoDB}.
-      \item \textbf{ACID-Compliant Database Engine (From Scratch)}: Built a lightweight storage engine implementing \textbf{transactions}, \textbf{WAL}, \textbf{locking}, \textbf{crash recovery}, and \textbf{B-Tree indexing}.
-      \item \textbf{HTTP Server (From Scratch)}: Implemented an \textbf{HTTP/1.1} server with request parsing, routing, keep-alive connections, middleware, and concurrent worker handling.
-      \item \textbf{TCP Stack Components (From Scratch)}: Built socket-level networking modules with connection lifecycle handling, retransmission logic, and flow-control primitives.
-      \item \textbf{Event-Driven Processing Pipeline}: Built a Kafka-based workflow with producer services, consumer groups, partitioned topics, schema versioning, retry/backoff, dead-letter queues, and idempotent consumers for reliable event handling.
-      \item \textbf{Container Runtime Prototype (Docker-like)}: Built an isolated execution environment using Linux \textbf{namespaces}, \textbf{cgroups}, layered filesystem concepts, and process sandboxing.
       \item \textbf{Distributed Key-Value Store (Raft-based)}: Implemented a fault-tolerant KV store with leader election, log replication, and state machine application using the Raft consensus algorithm.
-      \item \textbf{Load Balancer (From Scratch)}: Developed a TCP/HTTP load balancer with round-robin and least-connections algorithms, health checks, and session persistence features.
-      \item \textbf{Distributed File Storage System}: Built a scalable storage solution with sharding, replication, and a custom protocol for client interactions, supporting large file uploads and downloads with fault tolerance.
-      \item \textbf{BitTorrent}: Implemented a peer-to-peer file sharing protocol with piece selection, choking/unchoking, and tracker communication for efficient file distribution.
 \end{itemize}
 
 % 
@@ -253,11 +221,11 @@
       \item \textbf{Backend Frameworks}: \hspace{1.0cm}
             Spring Boot, Ruby on Rails, Gin, Express.js, REST APIs, GraphQL, Microservices
       \item \textbf{DevOps \& Cloud}: \hspace{1.65cm}
-            AWS (RDS), Docker, Kubernetes, Jenkins, GitHub Actions, CI/CD, GCP, Linux, Helm, Prometheus/Grafana/Loki
+            AWS (RDS), Docker, Kubernetes, Jenkins, GitHub Actions, CI/CD, Helm, Prometheus/Grafana/Loki
       \item \textbf{Databases \& Testing}: \hspace{1.0cm}
-            MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Query Optimization, JUnit, Mockito, UIAutomator
+            MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Query Optimization, JUnit, Mockito
       \item \textbf{Tools \& Libraries}: \hspace{1.55cm}
-            Git, Apache Kafka, Debezium, CDC, Event-Driven Architecture, Pub/Sub, DLQ, Idempotency, YAML, Retrofit/OkHttp, Gradle, Bazel, Android SDK, System Design
+            Git, Apache Kafka, Debezium, CDC, gh-ost, Semgrep, Gradle, Bazel, System Design
 \end{itemize}
 %-------------------------------------------
 
