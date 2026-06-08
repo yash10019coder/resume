@@ -44,8 +44,8 @@
 \addtolength{\oddsidemargin}{-0.675in}
 \addtolength{\evensidemargin}{-0.675in}
 \addtolength{\textwidth}{1.48in}
-\addtolength{\topmargin}{-0.95in}
-\addtolength{\textheight}{1.85in}
+\addtolength{\topmargin}{-1.0in}
+\addtolength{\textheight}{2.6in}
 
 \urlstyle{same}
 
@@ -55,8 +55,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-10pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
 
 %-------------------------
 % Custom commands
@@ -78,11 +78,11 @@
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\vspace{-3pt}\begin{itemize}[leftmargin=*,itemsep=1pt,parsep=0pt]}
+\newcommand{\resumeSubHeadingListStart}{\vspace{-3pt}\begin{itemize}[leftmargin=*,itemsep=4pt,parsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\vspace{1pt}\begin{itemize}[leftmargin=8pt,itemsep=1pt,parsep=0pt]
+\newcommand{\resumeItemListStart}{\vspace{1pt}\begin{itemize}[leftmargin=8pt,itemsep=3pt,parsep=0pt]
   \selectfont\small
-  \setlength\itemsep{0em}
+  \setlength\itemsep{3pt}
   \setlength\parsep{0em}
   }
 \newcommand{\resumeItemListEnd}{\end{itemize}}
@@ -109,15 +109,6 @@
 % \itemsep-0.2em
 % \vspace{-10pt}
 
-%-----------EDUCATION-----------------
-\section{Education}
-\resumeSubHeadingListStart
-\resumeSubheading
-{Indian Institute of Information Technology, Lucknow}{Lucknow}
-{Bachelor of Information Technology;  CGPA: 8.32}{Apr 2020 - Apr 2024}
-\resumeItem{\textbf{Relevant Courses:} Data Structures \& Algorithms, Operating Systems, System Design, DBMS, Object-Oriented Programming, Distributed Systems.}
-\resumeSubHeadingListEnd
-
 %-----------PROFESSIONAL SUMMARY-----------------
 \section{Professional Summary}
 \begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
@@ -137,18 +128,22 @@
 
 \resumeSubheading
 {\href{https://browserstack.com}{BrowserStack}}{Mumbai}
-{SDE - Backend - \textbf{Ruby, Rails, Express, JavaScript, Spring Boot, Java, ClickHouse, Helm, Jenkins}}{Apr 2025 -- Present}
+{Backend SDE - \textbf{Ruby on Rails, Java/Spring Boot, Node.js, ClickHouse, Kafka, AWS}}{Apr 2025 -- Present}
 \resumeItemListStart
-\resumeItem{Led end-to-end bring-up of a new \textbf{Australia (GRR-AUS) region} for TestHub --- regional infra (RDS, Redis, IAM, quotas), Kafka topics, ClickHouse pipeline, ingestor routing, cross-region peering, and monitoring --- now serving \textbf{360K requests/hour} in production.}
-\resumeItem{Cut customer dashboard load times from \textbf{3--4 min $\rightarrow$ 3 s} by replacing full table scans with index scans on the TestHub DB, resolving a deal-blocking performance issue.}
-\resumeItem{Drove a \textbf{208$\times$ query speedup} (9,652ms$\rightarrow$46ms) on a \textbf{524M-row} table via a zero-downtime \textbf{gh-ost} migration across \textbf{4 regions}.}
-\resumeItem{Averted a projected outage via zero-downtime \textbf{INT$\rightarrow$BIGINT} migrations on \textbf{3 billion-row} tables ($\sim$1TB) growing \textbf{2.89M rows/day}.}
-\resumeItem{Shipped \textbf{project-name sanitization} across project create/search/list endpoints serving \textbf{100M+ API calls}, enabling \textbf{multi-language support across all products} and unifying dashboard/SDK validation so user builds stay in sync.}
-\resumeItem{Cut \textbf{RDS CPU from 96\%} by offloading aggregate queries to \textbf{ClickHouse} and moving the Query Killer to worker-based execution.}
-\resumeItem{Built \textbf{connectors-as-code (IaC)} for \textbf{35 Debezium CDC connectors} across \textbf{4 regions} (USE/APS/EUW/APSE2) with auto-sync after infra merges, eliminating manual config drift; split Kafka history topics across 3 regions for pipeline scalability.}
-\resumeItem{Halved auth Rails calls (\textbf{2 $\rightarrow$ 1}) for A11y/AppA11y by rerouting SDK auth through Config Server $\rightarrow$ Ingestor, eliminating \textbf{102,537 redundant auth calls/day} and reducing API/ingestor latency.}
-\resumeItem{Remediated critical \textbf{SQL injection} across \textbf{50+ API endpoints} spanning 4 teams on a system handling \textbf{4,000 req/s}; drove org-wide \textbf{Semgrep SAST} for CI-level SQLi prevention covering \textbf{56 P0/P1 API actions ($\sim$98\% of traffic)}.}
-\resumeItem{Resolved \textbf{2 P0 vulnerabilities} (OS Command Injection/RCE and Axios SSRF bypass) before exploitation; enabled \textbf{TLS for DB connections} and patched multiple high-severity CVEs (node-tar, Handlebars, minimatch ReDoS).}
+\resumeItem{Launched a new \textbf{AWS region (Australia)} for the testing platform, now serving \textbf{360K requests/hour} in production.}
+\resumeItem{Cut dashboard load time from \textbf{3--4 min $\rightarrow$ 3 s} via indexed queries, unblocking a stalled enterprise deal.}
+\resumeItem{Built the \textbf{access-control system} from the ground up --- \textbf{RBAC} with \textbf{multi-team} support across \textbf{$\sim$14 enforcement points}.}
+\resumeItem{Root-caused a stale role mapping that hid \textbf{756 builds} from customer dashboards; shipped the data and access-check fix.}
+\resumeItem{Drove a \textbf{208$\times$ query speedup} (9.6 s $\rightarrow$ 46 ms) on a \textbf{524M-row} table via a \textbf{zero-downtime} schema migration across \textbf{4 regions}.}
+\resumeItem{Averted an outage via \textbf{zero-downtime} primary-key migrations on \textbf{3 tables of 1B+ rows} ($\sim$1TB) growing \textbf{2.9M rows/day}.}
+\resumeItem{Shipped input validation on high-traffic APIs (\textbf{100M+ calls}), adding \textbf{multi-language support} across web and SDK clients.}
+\resumeItem{Built \textbf{test-run aggregation} combining a run and its re-runs into accurate consolidated duration, status, and ordering.}
+\resumeItem{Cut \textbf{database CPU from 96\%} to stable by offloading heavy aggregate queries to a columnar store (\textbf{ClickHouse}).}
+\resumeItem{Remediated \textbf{SQL injection} across \textbf{50+ APIs} and rolled out CI \textbf{security scanning} covering \textbf{$\sim$98\% of traffic}.}
+% --- Less-critical bullets (commented out to control length; re-enable as needed) ---
+% \resumeItem{Built \textbf{infrastructure-as-code} provisioning for \textbf{35 Debezium CDC connectors} across \textbf{4 regions} with auto-sync on infra changes, eliminating manual config drift.}
+% \resumeItem{Halved per-session auth calls (\textbf{2 $\rightarrow$ 1}) for the accessibility products by rerouting SDK authentication through a lightweight config service, cutting \textbf{$\sim$102K auth calls/day} and reducing latency.}
+% \resumeItem{Resolved \textbf{2 critical vulnerabilities} (OS command injection/RCE and SSRF bypass) before exploitation; enabled \textbf{TLS for database connections} and patched multiple high-severity CVEs.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -225,8 +220,17 @@
       \item \textbf{Databases \& Testing}: \hspace{1.0cm}
             MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Query Optimization, JUnit, Mockito
       \item \textbf{Tools \& Libraries}: \hspace{1.55cm}
-            Git, Apache Kafka, Debezium, CDC, gh-ost, Semgrep, Gradle, Bazel, System Design
+            Git, Apache Kafka, Change Data Capture (CDC), Schema Migrations, Static Analysis (SAST)
 \end{itemize}
 %-------------------------------------------
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Indian Institute of Information Technology, Lucknow}{Lucknow}
+{Bachelor of Information Technology;  CGPA: 8.32}{Apr 2020 - Apr 2024}
+% \resumeItem{\textbf{Relevant Courses:} Data Structures \& Algorithms, Operating Systems, System Design, DBMS, Object-Oriented Programming, Distributed Systems.}
+\resumeSubHeadingListEnd
 
 \end{document}
