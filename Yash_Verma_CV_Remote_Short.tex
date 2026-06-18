@@ -115,9 +115,7 @@
       \selectfont\small
       \setlength\itemsep{0em}
       \setlength\parsep{0em}
-      \item Backend engineer with \textbf{4+ years} building scalable distributed systems, microservices, and APIs in production.
-      \item Delivered measurable reliability and performance gains, including a \textbf{208$\times$ query speedup} on a 524M-row table and zero-downtime database migrations across \textbf{4 production regions}.
-      \item Hands-on with \textbf{Java/Spring Boot, Ruby on Rails, SQL, Redis, ClickHouse, AWS (RDS), Jenkins, and CI/CD}, with strong ownership of deployments and operational excellence.
+      \item Backend engineer with \textbf{4+ years} shipping product features and the platform infrastructure that powers them at scale. At BrowserStack, built enterprise-grade capabilities (\textbf{RBAC}, multi-language SDK support, geographic expansion) while driving \textbf{208$\times$} performance gains and zero-downtime migrations on tables with \textbf{1B+ rows}. Hands-on with \textbf{Java/Spring Boot, Ruby on Rails, Go, SQL, ClickHouse, Kafka, and AWS} --- with full ownership from design to production.
 \end{itemize}
 
 
@@ -128,64 +126,58 @@
 
 \resumeSubheading
 {\href{https://browserstack.com}{BrowserStack}}{Mumbai}
-{Backend SDE - \textbf{Ruby on Rails, Java/Spring Boot, Node.js, ClickHouse, Kafka, AWS}}{Apr 2025 -- Present}
+{\textbf{Software Engineer}}{Apr 2025 -- Present}
 \resumeItemListStart
-\resumeItem{Launched a new \textbf{AWS region (Australia)} for the testing platform, now serving \textbf{360K requests/hour} in production.}
-\resumeItem{Cut dashboard load time from \textbf{3--4 min $\rightarrow$ 3 s} via indexed queries, unblocking a stalled enterprise deal.}
-\resumeItem{Built the \textbf{access-control system} from the ground up --- \textbf{RBAC} with \textbf{multi-team} support across \textbf{$\sim$14 enforcement points}.}
-\resumeItem{Root-caused a stale role mapping that hid \textbf{756 builds} from customer dashboards; shipped the data and access-check fix.}
-\resumeItem{Drove a \textbf{208$\times$ query speedup} (9.6 s $\rightarrow$ 46 ms) on a \textbf{524M-row} table via a \textbf{zero-downtime} schema migration across \textbf{4 regions}.}
-\resumeItem{Averted an outage via \textbf{zero-downtime} primary-key migrations on \textbf{3 tables of 1B+ rows} ($\sim$1TB) growing \textbf{2.9M rows/day}.}
-\resumeItem{Shipped input validation on high-traffic APIs (\textbf{100M+ calls}), adding \textbf{multi-language support} across web and SDK clients.}
-\resumeItem{Built \textbf{test-run aggregation} combining a run and its re-runs into accurate consolidated duration, status, and ordering.}
-\resumeItem{Cut \textbf{database CPU from 96\%} to stable by offloading heavy aggregate queries to a columnar store (\textbf{ClickHouse}).}
-\resumeItem{Remediated \textbf{SQL injection} across \textbf{50+ APIs} and rolled out CI \textbf{security scanning} covering \textbf{$\sim$98\% of traffic}.}
-% --- Less-critical bullets (commented out to control length; re-enable as needed) ---
-% \resumeItem{Built \textbf{infrastructure-as-code} provisioning for \textbf{35 Debezium CDC connectors} across \textbf{4 regions} with auto-sync on infra changes, eliminating manual config drift.}
-% \resumeItem{Halved per-session auth calls (\textbf{2 $\rightarrow$ 1}) for the accessibility products by rerouting SDK authentication through a lightweight config service, cutting \textbf{$\sim$102K auth calls/day} and reducing latency.}
-% \resumeItem{Resolved \textbf{2 critical vulnerabilities} (OS command injection/RCE and SSRF bypass) before exploitation; enabled \textbf{TLS for database connections} and patched multiple high-severity CVEs.}
+%\item[]{\small Ruby on Rails $\cdot$ Java/Spring Boot $\cdot$ Node.js $\cdot$ ClickHouse $\cdot$ Kafka $\cdot$ AWS}
+
+\item[] \textit{\textbf{Product Features Shipped}} \vspace{-4pt}
+\resumeItem{Shipped an enterprise-grade \textbf{RBAC access-control system} (roles, hierarchies, \textbf{14 check-points}), enabling org-scale permission management for enterprise customers.}
+\resumeItem{Delivered \textbf{multi-language SDK support} across \textbf{100M+ API calls/month} via \textbf{client-aware routing}, expanding platform reach to non-English enterprise markets.}
+\resumeItem{Consolidated \textbf{test runs and re-runs} into \textbf{accurate aggregate results} (status, duration), eliminating duplicate entries for teams running large suites.}
+\resumeItem{Introduced a \textbf{CDC pipeline} from \textbf{MySQL to ClickHouse} for a \textbf{10TB} database, supporting \textbf{5B+ inserts/updates} for real-time analytics.}
+\resumeItem{Launched BrowserStack's \textbf{Australia AWS region} to meet \textbf{data-residency requirements}, now handling \textbf{360K requests/hour} in production.}
+\resumeItem{Built \textbf{IaC provisioning} for \textbf{35 Debezium CDC connectors} with auto-sync, eliminating manual config drift across 4 regions.}
+\resumeItem{Halved per-session auth calls (\textbf{2 $\rightarrow$ 1}) for accessibility products via a lightweight config service, cutting \textbf{102K auth calls/day}.}\vspace{-2pt}
+\item[] \textbf{\textit{Platform \& Performance}} \vspace{-4pt}
+\resumeItem{Drove \textbf{208$\times$ query speedup} (9.6s $\rightarrow$ 46ms) on a \textbf{524M-row analytics table} via zero-downtime schema migrations across 4 regions.}
+\resumeItem{Cut dashboard load from \textbf{3--4 min $\rightarrow$ 3s} by \textbf{indexing high-cardinality queries}, directly unblocking a stalled enterprise deal.}
+\resumeItem{Executed \textbf{zero-downtime PK migrations} on 3 tables of \textbf{1B+ rows} ($\sim$1 TB, \textbf{2.9M rows/day}) to prevent production outages.}
+\resumeItem{Offloaded heavy aggregate queries from MySQL to \textbf{ClickHouse}, \textbf{stabilizing database CPU from 96\%} and enabling future growth.}
+\resumeItem{Remediated \textbf{SQL injection} across 50+ APIs and shipped \textbf{SAST-based CI scanning} covering \textbf{$\sim$98\% of production traffic}.}
+\resumeItem{Resolved \textbf{2 critical vulnerabilities} (RCE and SSRF bypass) and enabled \textbf{TLS for database connections} to harden production security.}
 \resumeItemListEnd
 
 \resumeSubheading
 {\href{https://0chain.net}{Zus (formerly 0chain)}}{Cupertino, CA (Remote)}
-{Software Engineer - Blockchain Storage \& Mobile - \textbf{Golang, Kotlin, GitHub Actions, Gin, Grafana}}{Feb 2022 -- Mar 2025}
+{\textbf{Software Engineer - Blockchain Storage \& Mobile}}{Feb 2022 -- Mar 2025}
 \resumeItemListStart
-\resumeItem{Shipped 2 production Android apps, \textbf{Bolt} (crypto wallet) and \textbf{Vult} (storage), driving \textbf{20\%} adoption growth and \textbf{\$2M+} in transactions.}
+%\item[]{\small Golang $\cdot$ Kotlin $\cdot$ GitHub Actions $\cdot$ Gin $\cdot$ Grafana}
+\resumeItem{Shipped 2 production Android apps, \textbf{Bolt} and \textbf{Vult}, driving \textbf{20\% adoption growth} and \textbf{\$2M+} in transactions.}
 \resumeItem{Built a \textbf{UAT automation suite} for blockchain storage, cutting bugs by \textbf{90\%} and release cycles from \textbf{2 weeks to 3 days}.}
-\resumeItem{Optimized \textbf{S3-compatible storage} handling \textbf{500M+ files} and \textbf{40TB+} across \textbf{50+ nodes} at sub-\textbf{100ms} latency, \textbf{99.9\%} uptime.}
+\resumeItem{Optimized \textbf{S3-compatible storage} handling \textbf{500M+ files} and \textbf{40TB+} across \textbf{50+ nodes} at sub-\textbf{100ms} latency, \textbf{99.9\% uptime}.}
 \resumeItem{Automated dynamic \textbf{Sharder/Miner} management and view-change protocols, boosting developer productivity by \textbf{90\%}.}
-\resumeItem{Enhanced \textbf{multi-wallet concurrency} via unified \textbf{GoSDK}, supporting \textbf{10K+ concurrent} transactions and \textbf{300\%} load-test gains.}
-\resumeItemListEnd
-\resumeSubheading
-{\href{https://oppia.org}{Oppia Foundation} (incl. \href{https://docs.google.com/document/d/150Yk14Cxmy8OAbSSwgP1aXDBLo1b8HtuIhmrRhzEWU4/edit}{GSoC}) \href{https://github.com/oppia/oppia-android/commits?author=yash10019coder}{[Merged PRs]}}{Mountain View, CA (Remote)}
-{OSS Contributor \& GSoC - \textbf{Kotlin, GitHub Actions, JUnit, Gradle, Bazel, Android SDK}}{Jun 2021 -- Sep 2022}
-\resumeItemListStart
-\resumeItem{Contributed to \textbf{Gradle to Bazel} migration, achieving \textbf{10x} improvement in build speeds.}
-\resumeItem{Built \textbf{CI/CD pipelines} (GSoC) automating build triggers and deployment to \textbf{Google Drive}, \textbf{GCP Bucket}, and \textbf{Play Store} tracks.}
-\resumeItem{Developed modular \textbf{MVVM/MVP} architectures with \textbf{tablet support} for multiple screen sizes.}
-\resumeItem{Authored \textbf{70+ Unit Tests} and \textbf{20+ E2E tests} using Espresso, Robolectric, and UIAutomator.}
+\resumeItem{Enhanced \textbf{multi-wallet concurrency} via unified \textbf{GoSDK}, supporting \textbf{10K+ concurrent} transactions and \textbf{300\% load-test gains}.}
 \resumeItemListEnd
 
 \resumeSubheading
-{\href{https://gnome.org}{GNOME Foundation}}{Remote}
-{Open Source Contributor - \textbf{Tech Stack}: \textbf{C, XML, GTK+}}{Sep 2021 -- Feb 2022}
+{\href{https://oppia.org}{Oppia Foundation} (GSoC)}{Mountain View, CA (Remote)}
+{\textbf{OSS Contributor \& GSoC}}{Jun 2021 -- Sep 2022}
 \resumeItemListStart
-% \begin{itemize}[itemsep=1pt, parsep=0pt]
-% \resumeItem {\textbf{Tech Stack}: \textbf{C, XML, GTK+}.}
-\resumeItem{Enhanced \textbf{Nautilus file manager} with new path-bar features, improving user efficiency by \textbf{20\%}.}
-\resumeItem{Implemented \textbf{drag-and-drop support} and keyboard shortcuts for seamless file organization.}
+%\item[]{\small Kotlin $\cdot$ GitHub Actions $\cdot$ JUnit $\cdot$ Gradle $\cdot$ Bazel $\cdot$ Android SDK}
+\resumeItem{Contributed to \textbf{Gradle to Bazel} migration, achieving \textbf{10x improvement} in build speeds.}
+\resumeItem{Built \textbf{CI/CD pipelines} (GSoC) automating build triggers and deployment to \textbf{Google Drive}, \textbf{GCP}, and \textbf{Play Store}.}
+\resumeItem{Developed modular \textbf{MVVM/MVP} architectures with \textbf{tablet support} for multiple screen sizes.}
+\resumeItem{Authored \textbf{70+ Unit Tests} and \textbf{20+ E2E tests} using Espresso, Robolectric, and UIAutomator.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
-\section{Projects}
-\begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
-      \selectfont\small
-      \setlength\itemsep{0em}
-      \setlength\parsep{0em}
-      \item \href{https://github.com/0chain/HelloWorld-Android}{\textbf{Zus HelloWorld (Android)}}: Reference \textbf{Kotlin} app demonstrating \textbf{Zus/0chain GoSDK} integration --- \textbf{Bolt} crypto wallet (ZCN/Ethereum staking) and \textbf{Vult} decentralized storage with multi-file upload, download, and thumbnail generation.
-\end{itemize}
+% \section{Projects}
+% \begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
+%       \selectfont\small
+%       \item \href{https://github.com/0chain/HelloWorld-Android}{\textbf{Zus HelloWorld}}: Reference app demonstrating \textbf{Zus GoSDK} integration --- \textbf{Bolt} crypto wallet and \textbf{Vult} decentralized storage with multi-file upload, download, and thumbnail generation.
+% \end{itemize}
 
 % 
 % --------ACHIEVEMENTS -----------------
@@ -193,12 +185,10 @@
 \section{Achievements}
 \begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
       \selectfont\small
-      \setlength\itemsep{0em}
-      \setlength\parsep{0em}
       \item Selected for \textbf{Google Summer of Code 2022} (Oppia Foundation).
-      \item Won \textbf{top prize (16K INR)} at the \textbf{CAMS Hackathon} for developing its Android app.
-      \item Rated \textbf{Specialist} on \href{https://codeforces.com/profile/segment_trACk}{Codeforces} (max-rating \textbf{1509}) and \textbf{5-star} on \href{https://www.codechef.com/users/up84}{CodeChef}.
-      \item Practised \textbf{700+} DSA problems on \href{https://leetcode.com/u/nycstriker01/}{Leetcode}.
+      \item Won \textbf{top prize} at the \textbf{CAMS Hackathon} for developing its Android app.
+      \item Rated \textbf{Specialist} on Codeforces (max-rating \textbf{1509}) and \textbf{5-star} on CodeChef.
+      \item Practised \textbf{700+} DSA problems on Leetcode.
 \end{itemize}
 
 
@@ -207,21 +197,12 @@
 %
 %--------PROGRAMMING SKILLS------------
 \section{Technical Skills}
-\begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
-      \selectfont\small
-      \setlength\itemsep{0em}
-      \setlength\parsep{0em}
-      \item \textbf{Programming \& Scripting}: \hspace{0.2cm}
-            Java, Go, Kotlin, Python, JavaScript, SQL, Bash, C/C++
-      \item \textbf{Backend Frameworks}: \hspace{1.0cm}
-            Spring Boot, Ruby on Rails, Gin, Express.js, REST APIs, GraphQL, Microservices
-      \item \textbf{DevOps \& Cloud}: \hspace{1.65cm}
-            AWS (RDS), Docker, Kubernetes, Jenkins, GitHub Actions, CI/CD, Helm, Prometheus/Grafana/Loki
-      \item \textbf{Databases \& Testing}: \hspace{1.0cm}
-            MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Query Optimization, JUnit, Mockito
-      \item \textbf{Tools \& Libraries}: \hspace{1.55cm}
-            Git, Apache Kafka, Change Data Capture (CDC), Schema Migrations, Static Analysis (SAST)
-\end{itemize}
+\small
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}l}
+  \textbf{Languages:} Java, Go, Ruby, Kotlin, Python, SQL, C++, Bash & \textbf{Cloud \& Infra:} AWS, Docker, K8s, Kafka, Jenkins, Helm, CDC \\
+  \textbf{Frameworks:} Spring Boot, Rails, Node.js, Gin, REST, GraphQL & \textbf{Databases:} ClickHouse, MySQL, PostgreSQL, Redis, MongoDB \\
+  \textbf{DevOps \& Tools:} CI/CD, Prometheus, Grafana, Loki, SAST & \textbf{Testing \& Design:} JUnit, Mockito, Espresso, System Design \\
+\end{tabular*}
 %-------------------------------------------
 
 %-----------EDUCATION-----------------
@@ -230,7 +211,6 @@
 \resumeSubheading
 {Indian Institute of Information Technology, Lucknow}{Lucknow}
 {Bachelor of Information Technology;  CGPA: 8.32}{Apr 2020 - Apr 2024}
-% \resumeItem{\textbf{Relevant Courses:} Data Structures \& Algorithms, Operating Systems, System Design, DBMS, Object-Oriented Programming, Distributed Systems.}
 \resumeSubHeadingListEnd
 
 \end{document}
