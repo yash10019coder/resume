@@ -60,7 +60,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    #1 \vspace{-2pt}
+    #1 \vspace{1pt}
   }
 }
 
@@ -76,7 +76,7 @@
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\vspace{-3pt}\begin{itemize}[leftmargin=*,itemsep=1pt,parsep=0pt]}
+\newcommand{\resumeSubHeadingListStart}{\vspace{1pt}\begin{itemize}[leftmargin=*,itemsep=1pt,parsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\vspace{1pt}\begin{itemize}[leftmargin=8pt,itemsep=1pt,parsep=0pt]
   \selectfont\small
@@ -148,9 +148,22 @@
 {\href{https://browserstack.com}{Browerstack}}{Mumbai (Mallard West)}
 {SDE - Backend - \textbf{Ruby, Rails, Express, JavaScript, SpringBoot, Java}}{Apr 2025 -- Present}
 \resumeItemListStart
+%\item[]{\small Ruby on Rails $\cdot$ Java/Spring Boot $\cdot$ Node.js $\cdot$ ClickHouse $\cdot$ Kafka $\cdot$ AWS}
 
-\resumeItem{Integrated request blocking on production servers by utilizing Redis cache, significantly enhancing system performance and reducing latency by \textbf{30\%}.}
-
+\item[] \textit{\textbf{Product Features Shipped}} \vspace{1pt}
+\resumeItem{Shipped an enterprise-grade \textbf{RBAC access-control system} (roles, hierarchies, \textbf{14 check-points}), enabling organisation-wide permission management for \textbf{50k+} enterprise customers.}
+\resumeItem{Delivered \textbf{multi-language SDK support} across \textbf{5B+ API calls} via \textbf{client-aware routing}, expanding platform reach to non-English enterprise markets.}
+\resumeItem{Consolidated \textbf{150M} \textbf{test runs and re-runs} into \textbf{accurate aggregate results} (status, duration), eliminating duplicate entries.}
+\resumeItem{Built \textbf{CDC pipeline} from \textbf{MySQL to ClickHouse} for a \textbf{10TB} database, supporting \textbf{5B+ inserts/updates} for real-time analytics. Along with \textbf{IAC provisioning} for \textbf{35 Debezium CDC connectors} with auto-sync, eliminating manual config drift across 4 regions.}
+\resumeItem{Launched BrowserStack's \textbf{Australia AWS region} to meet \textbf{GRR/GDPR}, now handling \textbf{360K requests/hour} in production.}
+\resumeItem{Halved per-session auth calls (\textbf{2 $\rightarrow$ 1}) for accessibility products via a lightweight config service, cutting \textbf{102K auth calls/day}.}\vspace{4pt}
+\item[] \textbf{\textit{Platform \& Performance}} \vspace{1pt}
+\resumeItem{Drove \textbf{208$\times$ query speed up} (9.6s $\rightarrow$ 46ms) on a \textbf{524M-row analytics table} via zero-downtime schema migrations across 4 regions.}
+\resumeItem{Cut dashboard load from \textbf{4 min $\rightarrow$ 3s} by \textbf{indexing high-cardinality queries}, directly unblocking a stalled enterprise deal.}
+\resumeItem{Executed \textbf{zero-downtime PK migrations} on 3 tables of \textbf{1B+ rows} ($\sim$1 TB, \textbf{2.9M rows/day}) to prevent production outages.}
+\resumeItem{Offloaded heavy aggregate queries from MySQL to \textbf{ClickHouse}, \textbf{stabilizing database CPU from 96\%} and enabling future growth.}
+\resumeItem{Remediated \textbf{SQL injection} across 200+ APIs and shipped \textbf{Static CI security scanning} covering \textbf{$\sim$98\% of production traffic}.}
+\resumeItem{Resolved \textbf{2 critical vulnerabilities} (RCE and SSRF bypass) and enabled \textbf{TLS for database connections} to harden production security.}
 \resumeItemListEnd
 
 \resumeSubheading
