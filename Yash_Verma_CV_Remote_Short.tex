@@ -62,7 +62,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    #1 \vspace{-2pt}
+    #1 \vspace{-3pt}
   }
 }
 
@@ -129,8 +129,9 @@
 {\textbf{Software Engineer - Backend, Platform Team}}{Apr 2025 -- Present}
 \resumeItemListStart
 %\item[]{\small Ruby on Rails $\cdot$ Java/Spring Boot $\cdot$ Node.js $\cdot$ ClickHouse $\cdot$ Kafka $\cdot$ AWS}
-
+\vspace{-4pt}
 \item[] \textit{\textbf{Product Features Shipped}} \vspace{-4pt}
+\resumeItem{Built an \textbf{LLM-powered} pipeline (Claude) that auto-generates SDK framework support, cutting new-SDK delivery from \textbf{2 weeks} to \textbf{1 day} and shipping \textbf{5} to production.}
 \resumeItem{Shipped an enterprise-grade RBAC access-control system (roles, hierarchies, 14 check-points), enabling organisation-wide permission management for \textbf{50k+ enterprise customers}.}
 \resumeItem{Delivered multi-language SDK support across \textbf{5B+ API calls} via client-aware routing, expanding platform reach to non-English enterprise markets.}
 \resumeItem{Architected CDC pipeline from MySQL to ClickHouse for a \textbf{10TB} database, supporting \textbf{5B+ inserts/updates} for real-time analytics. Along with IAC provisioning for 35 Debezium CDC connectors with auto-sync, eliminating manual config drift across 4 regions.}
@@ -138,7 +139,7 @@
 \resumeItem{Halved per-session auth calls (2 to 1) for accessibility products via a lightweight config service, cutting \textbf{102K auth calls/day}.}\vspace{4pt}
 \item[] \textbf{\textit{Platform \& Performance}} \vspace{-4pt}
 \resumeItem{Drove \textbf{208$\times$ query speed up} (9.6s to 46ms) on a 524M-row analytics table via zero-downtime schema migrations across 4 regions.}
-\resumeItem{Cut dashboard load from \textbf{4 min to 3s} by indexing high-cardinality queries, directly unblocking a stalled enterprise deal.}
+\resumeItem{Cut dashboard load for \textbf{OpenAI} from \textbf{4 min to 3s} by indexing high-cardinality queries, directly unblocking a stalled enterprise deal.}
 \resumeItem{Executed zero-downtime PK migrations on 3 tables of \textbf{1B+ rows} ($\sim$1 TB, 2.9M rows/day) to prevent production outages.}
 \resumeItem{Offloaded heavy aggregate queries from MySQL to ClickHouse, stabilizing database CPU from \textbf{96\%} and enabling future growth.}
 \resumeItem{Remediated SQL injection across 200+ APIs and shipped Static CI security scanning covering \textbf{$\sim$98\% of production traffic}.}
@@ -149,6 +150,7 @@
 {\href{https://0chain.net}{Zus (formerly 0chain)}}{Cupertino, CA (Remote)}
 {\textbf{Software Engineer - Backend, Blockchain Storage \& Mobile}}{Feb 2022 -- Mar 2025}
 \resumeItemListStart
+\resumeItem{First adopter of \textbf{MCP} to integrate a file-server MCP which directly communicates with AI agents to \textbf{read/write} files on chain.}
 %\item[]{\small Golang $\cdot$ Kotlin $\cdot$ GitHub Actions $\cdot$ Gin $\cdot$ Grafana}
 \resumeItem{Shipped 2 production Android apps, Bolt and Vult, driving 20\% adoption growth and \textbf{\$2M+} in blockchain transactions.}
 \resumeItem{Built a UAT automation suite for blockchain storage, cutting bugs by \textbf{90\%} and release cycles from 2 weeks to 3 days.}
