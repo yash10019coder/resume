@@ -55,7 +55,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-8pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
 
 %-------------------------
@@ -131,19 +131,18 @@
 %\item[]{\small Ruby on Rails $\cdot$ Java/Spring Boot $\cdot$ Node.js $\cdot$ ClickHouse $\cdot$ Kafka $\cdot$ AWS}
 
 \item[] \textit{\textbf{Product Features Shipped}} \vspace{-4pt}
-\resumeItem{Shipped an enterprise-grade \textbf{RBAC access-control system} (roles, hierarchies, \textbf{14 check-points}), enabling organisation-wide permission management for \textbf{50k+} enterprise customers.}
-\resumeItem{Delivered \textbf{multi-language SDK support} across \textbf{5B+ API calls} via \textbf{client-aware routing}, expanding platform reach to non-English enterprise markets.}
-\resumeItem{Consolidated \textbf{150M} test runs and re-runs into accurate aggregate results (status, duration), eliminating duplicate entries.}
-\resumeItem{Architected \textbf{CDC pipeline} from \textbf{MySQL to ClickHouse} for a \textbf{10TB} database, supporting \textbf{5B+ inserts/updates} for real-time analytics. Along with \textbf{IAC provisioning} for \textbf{35 Debezium CDC connectors} with auto-sync, eliminating manual config drift across 4 regions.}
-\resumeItem{Launched BrowserStack's \textbf{Australia AWS region} to meet \textbf{GRR/GDPR}, now handling \textbf{360K requests/hour} in production.}
-\resumeItem{Halved per-session auth calls (\textbf{2 to 1}) for accessibility products via a lightweight config service, cutting \textbf{102K auth calls/day}.}\vspace{4pt}
+\resumeItem{Shipped an enterprise-grade RBAC access-control system (roles, hierarchies, 14 check-points), enabling organisation-wide permission management for \textbf{50k+ enterprise customers}.}
+\resumeItem{Delivered multi-language SDK support across \textbf{5B+ API calls} via client-aware routing, expanding platform reach to non-English enterprise markets.}
+\resumeItem{Architected CDC pipeline from MySQL to ClickHouse for a \textbf{10TB} database, supporting \textbf{5B+ inserts/updates} for real-time analytics. Along with IAC provisioning for 35 Debezium CDC connectors with auto-sync, eliminating manual config drift across 4 regions.}
+\resumeItem{Launched BrowserStack's Australia AWS region to meet GRR/GDPR, now handling \textbf{360K requests/hour} in production.}
+\resumeItem{Halved per-session auth calls (2 to 1) for accessibility products via a lightweight config service, cutting \textbf{102K auth calls/day}.}\vspace{4pt}
 \item[] \textbf{\textit{Platform \& Performance}} \vspace{-4pt}
-\resumeItem{Drove \textbf{208$\times$ query speed up} (9.6s to 46ms) on a \textbf{524M-row analytics table} via zero-downtime schema migrations across 4 regions.}
-\resumeItem{Cut dashboard load from \textbf{4 min to 3s} by \textbf{indexing high-cardinality queries}, directly unblocking a stalled enterprise deal.}
-\resumeItem{Executed \textbf{zero-downtime PK migrations} on 3 tables of \textbf{1B+ rows} ($\sim$1 TB, \textbf{2.9M rows/day}) to prevent production outages.}
-\resumeItem{Offloaded heavy aggregate queries from MySQL to \textbf{ClickHouse}, \textbf{stabilizing database CPU from 96\%} and enabling future growth.}
-\resumeItem{Remediated \textbf{SQL injection} across 200+ APIs and shipped \textbf{Static CI security scanning} covering \textbf{$\sim$98\% of production traffic}.}
-\resumeItem{Resolved \textbf{2 critical vulnerabilities} (RCE and SSRF bypass) and enabled \textbf{TLS for database connections} to harden production security.}
+\resumeItem{Drove \textbf{208$\times$ query speed up} (9.6s to 46ms) on a 524M-row analytics table via zero-downtime schema migrations across 4 regions.}
+\resumeItem{Cut dashboard load from \textbf{4 min to 3s} by indexing high-cardinality queries, directly unblocking a stalled enterprise deal.}
+\resumeItem{Executed zero-downtime PK migrations on 3 tables of \textbf{1B+ rows} ($\sim$1 TB, 2.9M rows/day) to prevent production outages.}
+\resumeItem{Offloaded heavy aggregate queries from MySQL to ClickHouse, stabilizing database CPU from \textbf{96\%} and enabling future growth.}
+\resumeItem{Remediated SQL injection across 200+ APIs and shipped Static CI security scanning covering \textbf{$\sim$98\% of production traffic}.}
+\resumeItem{Resolved \textbf{2 critical vulnerabilities} (RCE and SSRF bypass) and enabled TLS for database connections to harden production security.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -151,11 +150,11 @@
 {\textbf{Software Engineer - Backend, Blockchain Storage \& Mobile}}{Feb 2022 -- Mar 2025}
 \resumeItemListStart
 %\item[]{\small Golang $\cdot$ Kotlin $\cdot$ GitHub Actions $\cdot$ Gin $\cdot$ Grafana}
-\resumeItem{Shipped 2 production Android apps, \textbf{Bolt} and \textbf{Vult}, driving \textbf{20\% adoption growth} and \textbf{\$2M+} in blockchain transactions.}
-\resumeItem{Built a \textbf{UAT automation suite} for blockchain storage, cutting bugs by \textbf{90\%} and release cycles from \textbf{2 weeks to 3 days}.}
-\resumeItem{Optimized \textbf{S3-compatible storage} handling \textbf{500M+ files} and \textbf{40TB+} across \textbf{50+ nodes} at sub-\textbf{100ms} latency, \textbf{99.9\% uptime}.}
-\resumeItem{Automated dynamic \textbf{Sharder/Miner} management and view-change protocols, boosting developer productivity by \textbf{90\%}.}
-\resumeItem{Enhanced \textbf{multi-wallet concurrency} via unified \textbf{Go SDK}, supporting \textbf{10K+ concurrent} transactions and \textbf{300\% load-test gains}.}
+\resumeItem{Shipped 2 production Android apps, Bolt and Vult, driving 20\% adoption growth and \textbf{\$2M+} in blockchain transactions.}
+\resumeItem{Built a UAT automation suite for blockchain storage, cutting bugs by \textbf{90\%} and release cycles from 2 weeks to 3 days.}
+\resumeItem{Optimized S3-compatible storage handling \textbf{500M+ files} and 40TB+ across 50+ nodes at sub-100ms latency, 99.9\% uptime.}
+\resumeItem{Automated dynamic Sharder/Miner management and view-change protocols, boosting developer productivity by \textbf{90\%}.}
+\resumeItem{Enhanced multi-wallet concurrency via unified Go SDK, supporting \textbf{10K+ concurrent} transactions and 300\% load-test gains.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -168,6 +167,16 @@
 \resumeItem{Mentored and onboarded \textbf{3+} students in the Android repository, guiding them to become active collaborators.}
 \resumeItem{Developed modular \textbf{MVVM/MVP} architectures with \textbf{tablet support} for \textbf{30+} screen sizes.}
 \resumeItem{Authored \textbf{70+ Unit Tests} and \textbf{20+ E2E tests} using Espresso, Robolectric, and UIAutomator.}
+\resumeItemListEnd
+
+\resumeSubheading
+{\href{https://gnome.com}{Gnome}}{Remote}
+{\textbf{OSS Contributor}}{Jan 2021 -- May 2021}
+\resumeItemListStart
+%\item[]{\small C $\cdot$ GitLab CI $\cdot$ GTK $\cdot$ GObject $\cdot$ Glib}
+\resumeItem{Contributed to the \textbf{GNOME Shell} desktop environment, improving user experience and stability.}
+\resumeItem{Implemented a new feature for managing virtual desktops, allowing users to easily switch between workspaces.}
+\resumeItem{Fixed several bugs related to window management and system performance, enhancing overall usability.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
