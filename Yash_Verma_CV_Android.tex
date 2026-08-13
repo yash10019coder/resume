@@ -107,7 +107,7 @@
       \selectfont\small
       \setlength\itemsep{0em}
       \setlength\parsep{0em}
-      \item Software engineer with \textbf{4+ years} building for scale, including \textbf{2 years} architecting production \textbf{Android apps} (Kotlin, Java) on a decentralized storage platform handling \textbf{\$2M+} in transactions. Strong system design and architecture background from shipping enterprise-grade backend platforms (\textbf{RBAC}, multi-region infra, CDC pipelines) at BrowserStack. Hands-on with \textbf{Kotlin, MVVM, Dagger/Hilt, Room, RxJava, Retrofit, Android Jetpack}, unit/instrumentation testing, and automated CI/CD release pipelines to the Play Store.
+      \item Software engineer with \textbf{4+ years} building for scale, including \textbf{2 years} architecting production \textbf{Android apps} (Kotlin, Java) on a decentralized storage platform handling \textbf{\$2M+} in transactions. Strong system design and architecture background from shipping enterprise-grade backend platforms (\textbf{RBAC}, multi-region infra, CDC pipelines) at BrowserStack. Hands-on with \textbf{Kotlin, MVVM, Data Binding, LiveData, Dagger/Hilt, Room, WorkManager, RxJava, Retrofit, Android Jetpack}, unit/instrumentation testing, and automated CI/CD release pipelines to the Play Store.
 \end{itemize}
 
 
@@ -121,7 +121,8 @@
 {\textbf{Android Engineer (Contract)} --- Kotlin, Java, MVVM, Dagger/Hilt, RxJava}{Feb 2022 -- Mar 2024}
 \resumeItemListStart
 \resumeItem{Architected \textbf{2 production Android apps}, Bolt (crypto wallet) and Vult (decentralized storage), growing the Android user base by \textbf{20\%} and powering \textbf{\$2M+} in on-chain transactions.}
-\resumeItem{Migrated and refactored the codebase to a clean \textbf{MVVM} architecture with \textbf{Dagger/Hilt} dependency injection, structuring all activities and fragments for testability and scale.}
+\resumeItem{Migrated and refactored the codebase to a clean \textbf{MVVM} architecture with \textbf{Data Binding} and \textbf{LiveData} for reactive, lifecycle-aware UI state, and \textbf{Dagger/Hilt} dependency injection across all activities and fragments.}
+\resumeItem{Built \textbf{WorkManager}-based background task pipelines in Vult for reliable file \textbf{upload, download, and inventory} management, surviving process death and network loss.}
 \resumeItem{Migrated local storage from \textbf{Realm to Room database}, reducing app size by \textbf{12\%} and improving query efficiency.}
 \resumeItem{Built a \textbf{Split Key} Android module bridging the app and blockchain, enabling secure double-signing of transactions over \textbf{Bluetooth}.}
 \resumeItem{Designed and implemented automated \textbf{CI/CD release pipelines} for alpha/beta/prod tracks, cutting manual release effort and accelerating release cycles by \textbf{70\%}.}
@@ -185,12 +186,11 @@
 \section{Technical Skills}
 \small
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}l}
-  \textbf{Languages:} Kotlin, Java, Go, Python, SQL, C, C++, Bash & \textbf{Android:} MVVM, MVP, Dagger/Hilt, RxJava, Room \\
-  \textbf{Android Tools:} Jetpack Navigation, Retrofit, OkHttp, Gradle, Bazel & \textbf{Testing:} JUnit, Espresso, Robolectric, UIAutomator, Mockito \\
-  \textbf{Backend \& Cloud:} Spring Boot, REST/GraphQL APIs, AWS, GCP & \textbf{DevOps:} CI/CD, Docker, K8s, GitHub Actions, Play Store \\
+  \textbf{Languages:} Kotlin, Java, Go, Python, SQL, C, C++, Bash & \textbf{Android:} MVVM, MVP, Data Binding, LiveData, Dagger/Hilt \\
+  \textbf{Android Tools:} Room, WorkManager, Jetpack Navigation, RxJava & \textbf{Testing:} JUnit, Espresso, Robolectric, UIAutomator, Mockito \\
+  \textbf{Android Networking:} Retrofit, OkHttp, Gradle, Bazel & \textbf{Backend \& Cloud:} Spring Boot, REST/GraphQL, AWS, GCP \\
+  \textbf{DevOps:} CI/CD, Docker, K8s, GitHub Actions, Play Store & \textbf{Concepts:} System Design, Distributed Systems, Concurrency \\
 \end{tabular*}
-\vspace{2pt}\\
-\small \textbf{Concepts:} System Design \& Architecture, Distributed Systems, Concurrency, Query Optimization, Event-Driven Architecture
 
 %-----------EDUCATION-----------------
 \section{Education}
