@@ -1,0 +1,203 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+%Custom code for links--------------------------
+
+\definecolor{linkblue}{rgb}{0.10,0.36,0.68}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkblue,
+    filecolor=magenta,
+    urlcolor=linkblue,
+    pdftitle={Yash Verma's CV},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
+
+% Redefinition, symbol included in link:
+% \let\orighref\href
+% \renewcommand{\href}[2]{\orighref{#1}{#2\,\faExternalLink}}
+
+%Custom code for links--------------------------
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{-4pt}
+\renewcommand{\footrulewidth}{-4pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.675in}
+\addtolength{\evensidemargin}{-0.675in}
+\addtolength{\textwidth}{1.48in}
+\addtolength{\topmargin}{-0.80in}
+\addtolength{\textheight}{2.6in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    #1 \vspace{-3pt}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[1]{\vspace{1pt}\resumeItem{#1}\vspace{1pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\vspace{-3pt}\begin{itemize}[leftmargin=*,itemsep=4pt,parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\vspace{1pt}\begin{itemize}[leftmargin=8pt,itemsep=3pt,parsep=0pt]
+  \selectfont\small
+  \setlength\itemsep{3pt}
+  \setlength\parsep{0em}
+  }
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Yash Verma's CV}
+\author{Yash Verma(yash10019coder)}
+
+\begin{document}
+%----------HEADING-----------------
+
+\begin{center}
+{\large \bf Yash Verma}\\
+\href{mailto:yashverma10019.work@gmail.com}{yashverma10019.work@gmail.com} $|$ +91 8957557113 $|$ \href{https://linkedin.com/in/yash10019coder}{linkedin.com/in/yash10019coder} $|$ \href{https://github.com/yash10019coder}{github.com/yash10019coder}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------------
+\section{Professional Summary}
+\begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
+      \selectfont\small
+      \setlength\itemsep{0em}
+      \setlength\parsep{0em}
+      \item Software engineer with \textbf{4+ years} building for scale, including \textbf{2 years} architecting production \textbf{Android apps} (Kotlin, Java) on a decentralized storage platform handling \textbf{\$2M+} in transactions. Strong system design and architecture background from shipping enterprise-grade backend platforms (\textbf{RBAC}, multi-region infra, CDC pipelines) at BrowserStack. Hands-on with \textbf{Kotlin, MVVM, Dagger/Hilt, Room, RxJava, Retrofit, Android Jetpack}, unit/instrumentation testing, and automated CI/CD release pipelines to the Play Store.
+\end{itemize}
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\href{https://0chain.net}{Zus (formerly 0chain)}}{Cupertino, CA (Remote)}
+{\textbf{Android Engineer (Contract)} --- Kotlin, Java, MVVM, Dagger/Hilt, RxJava}{Feb 2022 -- Mar 2024}
+\resumeItemListStart
+\resumeItem{Architected \textbf{2 production Android apps}, Bolt (crypto wallet) and Vult (decentralized storage), growing the Android user base by \textbf{20\%} and powering \textbf{\$2M+} in on-chain transactions.}
+\resumeItem{Migrated and refactored the codebase to a clean \textbf{MVVM} architecture with \textbf{Dagger/Hilt} dependency injection, structuring all activities and fragments for testability and scale.}
+\resumeItem{Migrated local storage from \textbf{Realm to Room database}, reducing app size by \textbf{12\%} and improving query efficiency.}
+\resumeItem{Built a \textbf{Split Key} Android module bridging the app and blockchain, enabling secure double-signing of transactions over \textbf{Bluetooth}.}
+\resumeItem{Designed and implemented automated \textbf{CI/CD release pipelines} for alpha/beta/prod tracks, cutting manual release effort and accelerating release cycles by \textbf{70\%}.}
+\resumeItem{Led and mentored two junior Android developers, running scrum ceremonies and code reviews, improving code quality by \textbf{40\%} and on-time delivery to \textbf{95\%}.}
+\resumeItemListEnd
+
+\resumeSubheading
+{\href{https://browserstack.com}{BrowserStack}}{Mumbai}
+{\textbf{Software Engineer - Backend, Platform Team}}{Apr 2025 -- July 2026}
+\resumeItemListStart
+\resumeItem{Designed and shipped an \textbf{RBAC} system (roles, hierarchies, 14 check-points), enabling org-wide permissions for \textbf{50k+ customers} --- direct experience with framework and permissions architecture built from scratch.}
+\resumeItem{Delivered \textbf{multi-language SDK support} across \textbf{5B+ API calls} via client-aware routing, shipping secure, automated solutions at scale.}
+\resumeItem{Drove \textbf{208x query speed up} (9.6s to 46ms) on a 524M-row analytics table via zero-downtime schema migrations across 4 regions --- strong systems and architecture experience applicable to mobile-scale platforms.}
+\resumeItem{Remediated SQL injection across 200+ APIs and shipped Static CI security scanning covering \textbf{98\%} of production traffic, prioritizing security in every release.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------OPEN SOURCE CONTRIBUTIONS-----------------
+\section{Android Open Source Contributions}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\href{https://oppia.org}{Oppia Foundation} (\href{https://docs.google.com/document/d/150Yk14Cxmy8OAbSSwgP1aXDBLo1b8HtuIhmrRhzEWU4/edit}{GSoC}) \href{https://github.com/oppia/oppia-android/commits?author=yash10019coder}{[Merged PRs]}}{Mountain View, CA (Remote)}
+{\textbf{OSS Contributor \& GSoC} --- Kotlin, Gradle, Bazel, AndroidSDK}{Jun 2021 -- Jan 2022}
+\resumeItemListStart
+\resumeItem{Developed modular \textbf{MVVM/MVP} architectures for activities and fragments, with \textbf{tablet support} across \textbf{30+} screen sizes.}
+\resumeItem{Authored \textbf{70+ Unit Tests} and \textbf{20+ instrumentation/E2E tests} using \textbf{Espresso}, \textbf{Robolectric}, and \textbf{UIAutomator}, with \textbf{JUnit} as the test runner.}
+\resumeItem{Contributed to the \textbf{Gradle to Bazel} build system migration, achieving a \textbf{10x} improvement in build speeds.}
+\resumeItem{Built \textbf{CI/CD release pipelines} (GSoC) automating signed build triggers and deployment to \textbf{Google Play Store}, GCP Bucket, and Google Drive for \textbf{4+} release tracks.}
+\resumeItem{Mentored and onboarded \textbf{3+} students in the Android repository, guiding them to become active collaborators.}
+\resumeItemListEnd
+
+\resumeSubheading
+{BSHAPP \href{https://github.com/yash10019coder/bshapp}{[Link]}}{Andhra Pradesh}
+{\textbf{Android Freelance Developer} --- Kotlin, Retrofit, OkHttp}{May 2021 -- Jun 2021}
+\resumeItemListStart
+\resumeItem{Implemented \textbf{Jetpack Navigation} with a single-activity, multi-fragment architecture, improving app performance by \textbf{25\%}.}
+\resumeItem{Integrated \textbf{REST APIs} with \textbf{Retrofit} and optimized network caching with \textbf{OkHttp}, cutting data retrieval time by \textbf{20\%}.}
+\resumeItem{Refactored to \textbf{Kotlin Coroutines} for async processing, improving app responsiveness by \textbf{40\%}, and added \textbf{multi-language} support expanding the user base by \textbf{30\%}.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%--------ACHIEVEMENTS -----------------
+
+\section{Achievements}
+\begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
+      \selectfont\small
+      \item Selected for \textbf{Google Summer of Code 2022} (Oppia Foundation, Android track).
+      \item Won \textbf{top prize} at the \textbf{CAMS Hackathon} for developing its Android app.
+      \item Rated \textbf{Specialist} on Codeforces (max-rating \textbf{1509}) and \textbf{5-star} on CodeChef.
+      \item Practised \textbf{700+} DSA problems on Leetcode.
+\end{itemize}
+
+
+
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+\small
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}l}
+  \textbf{Languages:} Kotlin, Java, Go, Python, SQL, C, C++, Bash & \textbf{Android:} MVVM, MVP, Dagger/Hilt, RxJava, Room \\
+  \textbf{Android Tools:} Jetpack Navigation, Retrofit, OkHttp, Gradle, Bazel & \textbf{Testing:} JUnit, Espresso, Robolectric, UIAutomator, Mockito \\
+  \textbf{Backend \& Cloud:} Spring Boot, REST/GraphQL APIs, AWS, GCP & \textbf{DevOps:} CI/CD, Docker, K8s, GitHub Actions, Play Store \\
+\end{tabular*}
+\vspace{2pt}\\
+\small \textbf{Concepts:} System Design \& Architecture, Distributed Systems, Concurrency, Query Optimization, Event-Driven Architecture
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Indian Institute of Information Technology, Lucknow}{Lucknow}
+{Bachelor of Information Technology;  CGPA: 8.32}{Apr 2020 -- Apr 2024}
+\resumeSubHeadingListEnd
+
+\end{document}
