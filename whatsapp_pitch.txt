@@ -1,0 +1,21 @@
+Hey! Quick story of my journey so far 👋
+
+I've spent 4+ years building software that actually ships at scale — and a big chunk of that is Android.
+
+📱 Android roots (pre-AI era):
+Most of my Android work started back in 2021, years before ChatGPT/Copilot existed — so it's genuinely hand-built engineering, not AI-assisted. I got into Google Summer of Code 2022 with the Oppia Foundation, migrated their build system from Gradle to Bazel (10x faster builds), and shipped CI/CD pipelines that auto-signed and published builds straight to the Play Store.
+
+That led to 2 years as an Android Engineer at Zus (formerly 0chain), where I architected two production apps:
+• Bolt — a crypto wallet
+• Vult — a decentralized storage app
+Together they grew the user base by 20% and moved $2M+ in on-chain transactions. I rebuilt the app on clean MVVM (Data Binding, LiveData, Dagger/Hilt), used WorkManager to make file upload/download/inventory bulletproof against process death, and even built a Bluetooth-based split-key module for secure transaction signing. Along the way I mentored two junior devs and cut our release cycle time by 70%.
+
+🖥️ Backend heavyweight too:
+Since then I've been a backend engineer at BrowserStack, shipping an RBAC system for 50k+ customers, an LLM-powered SDK generation pipeline, and a 208x query speedup on a 500M+ row table — real systems-design work at serious scale.
+
+🏆 A few other things I'm proud of:
+• Top prize at the CAMS Hackathon (built its Android app)
+• Codeforces Specialist, 5-star on CodeChef
+• 700+ DSA problems solved
+
+I love building things end-to-end — from mobile UI down to the backend powering it — and I'm looking for my next challenge where I can bring both. Would love to chat if you know of anything! 🚀
