@@ -113,14 +113,11 @@
 \item[] \textit{\textbf{Infrastructure \& Reliability}} \vspace{-4pt}
 \resumeItem{Led the launch of BrowserStack's Australia AWS region (VPC, networking, compute) for GDPR/data-residency, now serving \textbf{360K requests/hour} in production.}
 \resumeItem{Architected a \textbf{CDC pipeline} (35 Debezium connectors) with \textbf{Terraform}-provisioned infrastructure, syncing \textbf{10TB} MySQL to \textbf{ClickHouse} across 4 regions, eliminating manual config drift.}
-\resumeItem{Drove \textbf{208x query speed up} (9.6s to 46ms) on a 524M-row analytics table via zero-downtime schema migrations across 4 regions.}
-\resumeItem{Executed zero-downtime primary-key migrations on 3 production tables of \textbf{1B+ rows} (1 TB, 2.9M rows/day) to prevent production outages.}
-\resumeItem{Offloaded heavy aggregate queries from MySQL to ClickHouse, cutting database CPU utilization from \textbf{96\% to 30\%} and enabling future capacity growth.}\vspace{4pt}
+\resumeItem{Drove \textbf{208x query speed up} (9.6s to 46ms) on a 524M-row analytics table and executed zero-downtime PK migrations on 3 tables of \textbf{1B+ rows} to prevent outages.}\vspace{4pt}
 \item[] \textbf{\textit{Incident Response \& Security Hardening}} \vspace{-4pt}
 \resumeItem{Resolved \textbf{2 critical production vulnerabilities} (RCE and SSRF bypass) end-to-end, from triage and root-cause analysis to fix and rollout.}
 \resumeItem{Remediated SQL injection across \textbf{200+ APIs} and shipped Static (SAST) CI security scanning covering \textbf{98\% of production traffic}.}
 \resumeItem{Enabled TLS for all database connections and led org-wide \textbf{RBAC} rollout (roles, hierarchies, 14 check-points) for \textbf{50k+ customers}.}
-\resumeItem{Halved per-session auth calls (2 to 1) via a lightweight config service, cutting \textbf{102K auth calls/day} and reducing downstream load.}\vspace{4pt}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -129,7 +126,6 @@
 \resumeItemListStart
 \resumeItem{Automated dynamic Sharder/Miner node management and view-change protocols across a distributed cluster, boosting developer productivity by \textbf{90\%}.}
 \resumeItem{Optimized S3-compatible distributed storage handling \textbf{500M+ files} and 40TB+ across \textbf{50+ nodes} at sub-100ms latency and \textbf{99.9\% uptime}.}
-\resumeItem{Built a \textbf{UAT automation suite} for blockchain storage infrastructure, cutting bugs by \textbf{90\%} and release cycles from 2 weeks to 3 days.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -172,7 +168,7 @@
       \item \textbf{Languages:} Go, Python, Java, Bash, SQL, Ruby, Kotlin, C, C++
       \item \textbf{Databases:} MySQL, ClickHouse, PostgreSQL, Redis, MongoDB
       \item \textbf{DevOps \& Tools:} Git, CI/CD, Jenkins, GitHub Actions, SAST, CDC
-      \item \textbf{Concepts:} Linux Systems Administration, Networking (TCP/IP, Load Balancing), Distributed Systems, Incident Response \& Root-Cause Analysis, Zero-Downtime Migrations, Microservices, Query Optimization
+      \item \textbf{Concepts:} Linux Administration, Networking (TCP/IP, Load Balancing), Distributed Systems, Incident Response, Zero-Downtime Migrations, Microservices
 \end{itemize}
 %-------------------------------------------
 
