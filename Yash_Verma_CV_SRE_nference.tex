@@ -137,14 +137,16 @@
 
 %-----------PROJECTS-----------------
 \section{Projects}
-\begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
-      \selectfont\small
-      \setlength\itemsep{0em}
-      \setlength\parsep{0em}
-      \item \href{https://github.com/yash10019coder/JOB-BORG}{\textbf{JOB-BORG}}: Multi-user job-search automation platform (\textbf{Django, Celery, Redis, PostgreSQL}) with a \textbf{Dockerized}, multi-container deployment instrumented end-to-end with \textbf{Prometheus, Loki, and Grafana} for metrics, logs, and dashboards.
-      \item \textbf{Container Runtime Prototype (Docker-like, From Scratch)}: Built an isolated execution environment using Linux \textbf{namespaces}, \textbf{cgroups}, layered filesystem concepts, and process sandboxing.
-      \item \textbf{Load Balancer \& TCP Stack (From Scratch)}: Built a TCP/HTTP load balancer (round-robin, least-connections, health checks) plus socket-level \textbf{networking} modules with connection lifecycle and flow-control primitives.
-\end{itemize}
+\resumeSubHeadingListStart
+\resumeSubheading
+{\href{https://github.com/yash10019coder/JOB-BORG}{JOB-BORG}}{Personal Project}
+{\textbf{Multi-User Job-Search Automation Platform} --- Django, Celery, PostgreSQL, Redis, Docker}{}
+\resumeItemListStart
+\resumeItem{Designed a modular \textbf{Ingestion → Classification → Matching → Recommendation} pipeline, each stage running as an independent \textbf{Celery} task on a Redis-backed queue with Celery Beat scheduling.}
+\resumeItem{Built \textbf{idempotent hourly ingestion} from the Greenhouse ATS API (keyed on source-ID pairs) so re-runs never duplicate data, plus change-aware classification that only reruns on content diffs.}
+\resumeItem{Shipped a \textbf{multi-container Docker} deployment (app, worker, beat, Postgres w/ pgvector, Redis) instrumented end-to-end with \textbf{Prometheus, Loki, and Grafana} for metrics, log aggregation, and dashboards.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-----------OPEN SOURCE CONTRIBUTIONS-----------------
 \section{Open Source Contributions}
@@ -154,8 +156,7 @@
 {\href{https://oppia.org}{Oppia Foundation} (\href{https://docs.google.com/document/d/150Yk14Cxmy8OAbSSwgP1aXDBLo1b8HtuIhmrRhzEWU4/edit}{GSoC}) \href{https://github.com/oppia/oppia-android/commits?author=yash10019coder}{[Merged PRs]}}{Mountain View, CA (Remote)}
 {\textbf{OSS Contributor \& GSoC}}{Jun 2021 -- Jan 2022}
 \resumeItemListStart
-\resumeItem{Contributed to \textbf{Gradle to Bazel} migration, achieving \textbf{10x improvement} in build speeds.}
-\resumeItem{Built \textbf{CI/CD pipelines} (GSoC) automating build triggers and deployment to \textbf{Google Drive}, \textbf{GCP}, and \textbf{Play Store} for \textbf{4+} tracks.}
+\resumeItem{Contributed to \textbf{Gradle to Bazel} migration and built \textbf{CI/CD pipelines} automating build triggers and deployment to \textbf{Google Drive}, \textbf{GCP}, and \textbf{Play Store} for \textbf{4+} tracks.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
