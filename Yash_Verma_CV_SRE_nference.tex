@@ -110,8 +110,7 @@
 \item[] \textbf{\textit{Incident Response \& Security Hardening}} \vspace{-4pt}
 \resumeItem{Resolved \textbf{2 critical production vulnerabilities} (RCE and SSRF bypass) end-to-end, from triage and root-cause analysis to fix and rollout.}
 \resumeItem{Remediated SQL injection across \textbf{200+ APIs} and shipped Static (SAST) CI security scanning covering \textbf{98\% of production traffic}.}
-\resumeItem{Enabled TLS for all database connections and led org-wide \textbf{RBAC} rollout (roles, hierarchies, 14 check-points) for \textbf{50k+ customers}.}
-\resumeItem{Halved per-session auth calls (2 to 1) via a lightweight config service, cutting \textbf{102K auth calls/day} and reducing downstream load.}\vspace{4pt}
+\resumeItem{Enabled TLS for all database connections and led org-wide \textbf{RBAC} rollout (roles, hierarchies, 14 check-points) for \textbf{50k+ customers}.}\vspace{4pt}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -120,7 +119,6 @@
 \resumeItemListStart
 \resumeItem{Automated dynamic Sharder/Miner node management and view-change protocols across a distributed cluster, boosting developer productivity by \textbf{90\%}.}
 \resumeItem{Optimized S3-compatible distributed storage handling \textbf{500M+ files} and 40TB+ across \textbf{50+ nodes} at sub-100ms latency and \textbf{99.9\% uptime}.}
-\resumeItem{Built a \textbf{UAT automation suite} for blockchain storage infrastructure, cutting bugs by \textbf{90\%} and release cycles from 2 weeks to 3 days.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -135,6 +133,7 @@
 \resumeItem{Designed a modular \textbf{Ingestion → Classification → Matching → Recommendation} pipeline, each stage running as an independent \textbf{Celery} task on a Redis-backed queue with Celery Beat scheduling.}
 \resumeItem{Built \textbf{idempotent hourly ingestion} from the Greenhouse ATS API (keyed on source-ID pairs) so re-runs never duplicate data, plus change-aware classification that only reruns on content diffs.}
 \resumeItem{Shipped a \textbf{multi-container Docker} deployment (app, worker, beat, Postgres w/ pgvector, Redis) instrumented end-to-end with \textbf{Prometheus, Loki, and Grafana} for metrics, log aggregation, and dashboards.}
+\resumeItem{Built a \textbf{Playwright}-driven auto-apply engine (stacked PR, in review) that fills real Greenhouse forms, constraining \textbf{LLM} answers to each field's actual options via a deterministic validation gate rather than trusting model output, and fails closed with typed exceptions on any unresolved field --- covered by \textbf{290} automated tests.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
