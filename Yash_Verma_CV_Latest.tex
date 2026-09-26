@@ -62,7 +62,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    #1 \vspace{-2pt}
+    #1 \vspace{-3pt}
   }
 }
 
@@ -78,11 +78,11 @@
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\vspace{-4pt}\begin{itemize}[leftmargin=*,itemsep=3pt,parsep=0pt]}
+\newcommand{\resumeSubHeadingListStart}{\vspace{-4pt}\begin{itemize}[leftmargin=*,itemsep=2pt,parsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\vspace{1pt}\begin{itemize}[leftmargin=8pt,itemsep=2pt,parsep=0pt]
+\newcommand{\resumeItemListStart}{\vspace{0pt}\begin{itemize}[leftmargin=8pt,itemsep=1pt,parsep=0pt]
   \selectfont\small
-  \setlength\itemsep{2pt}
+  \setlength\itemsep{1pt}
   \setlength\parsep{0em}
   }
 \newcommand{\resumeItemListEnd}{\end{itemize}}
@@ -138,10 +138,10 @@
 % out below, not deleted, so they're one uncomment away from restoring if this role needs more depth.
 % \resumeItem{Built an \textbf{LLM-powered} (Claude) pipeline auto-generating SDK framework support, cutting new-SDK delivery \textbf{2 weeks to 1 day}.}
 \resumeItem{Designed and shipped an \textbf{RBAC} system (roles, hierarchies, 14 check-points), enabling org-wide permissions for \textbf{50k+ customers}.}
+\resumeItem{Built a Central Authentication service in \textbf{Spring Boot}, replacing individual S2S calls between products and halving per-session auth calls (2 to 1), cutting \textbf{102K auth calls/day}.}
 % \resumeItem{Delivered \textbf{multi-language SDK support} across \textbf{5B+ API calls} via client-aware routing to non-English enterprise markets.}
 \resumeItem{Architected a \textbf{CDC pipeline} (35 Debezium connectors) syncing \textbf{10TB} MySQL to \textbf{ClickHouse}, supporting \textbf{5B+ inserts/updates}.}
 \resumeItem{Led the launch of BrowserStack's Australia AWS region for GDPR/data-residency, now handling \textbf{360K requests/hour} in production.}
-% \resumeItem{Halved per-session auth calls (2 to 1) for accessibility products via a lightweight config service, cutting \textbf{102K auth calls/day}.}
 \resumeItem{Drove \textbf{208x query speed up} (9.6s to 46ms) on a 524M-row analytics table via zero-downtime schema migrations across 4 regions.}
 \resumeItem{Cut dashboard load for \textbf{OpenAI} from \textbf{4 min to 3s} by indexing high-cardinality queries, unblocking a stalled enterprise deal.}
 % \resumeItem{Migrated primary keys on 3 tables of \textbf{1B+ rows} (1 TB, 2.9M rows/day) live in production, with no downtime or outages.}
