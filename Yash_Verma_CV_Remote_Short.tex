@@ -111,13 +111,13 @@
 % \vspace{-10pt}
 
 %-----------PROFESSIONAL SUMMARY-----------------
-\section{Professional Summary}
-\begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
-      \selectfont\small
-      \setlength\itemsep{0em}
-      \setlength\parsep{0em}
-      \item Backend Engineer (\textbf{3+ yrs} full-time, distributed systems \& scale) --- most recently at BrowserStack, where I drove a \textbf{208x} query speedup and zero-downtime migrations on \textbf{1B+ row} tables. Built enterprise-grade platform infra (RBAC, CDC pipelines, multi-region deployments) end-to-end, from design to production, on \textbf{Java/Spring Boot, Go, Ruby on Rails, SQL, ClickHouse, Kafka, and AWS}.
-\end{itemize}
+% \section{Professional Summary}
+% \begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
+%       \selectfont\small
+%       \setlength\itemsep{0em}
+%       \setlength\parsep{0em}
+%       \item Backend Engineer (\textbf{3+ yrs} full-time, distributed systems \& scale) --- most recently at BrowserStack, where I drove a \textbf{208x} query speedup and zero-downtime migrations on \textbf{1B+ row} tables. Built enterprise-grade platform infra (RBAC, CDC pipelines, multi-region deployments) end-to-end, from design to production, on \textbf{Java/Spring Boot, Go, Ruby on Rails, SQL, ClickHouse, Kafka, and AWS}.
+% \end{itemize}
 
 
 
@@ -176,7 +176,18 @@
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
-% \section{Projects}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubheading
+{JobBorg}{Personal Project}
+{Multi-User Job-Search Automation Platform --- Django, Celery, PostgreSQL, Redis, Docker}{}
+\resumeItemListStart
+\resumeItem{Designed a modular Ingestion $\to$ Classification $\to$ Matching $\to$ Recommendation pipeline, each stage an independent \textbf{Celery} task on a Redis-backed queue with Celery Beat scheduling.}
+\resumeItem{Built idempotent hourly ingestion from the \textbf{Greenhouse ATS API} (keyed on source-ID pairs), with change-aware classification that only reruns on content diffs.}
+\resumeItem{Shipped a multi-container \textbf{Docker} deployment (Postgres w/ pgvector, Redis, Prometheus, Loki, Grafana) for metrics, log aggregation, and dashboards.}
+\resumeItem{Built a \textbf{Playwright}-driven auto-apply engine that fills real Greenhouse forms, constraining LLM answers via a deterministic validation gate and failing closed on any unresolved field --- covered by \textbf{290 automated tests}.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 % \begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
 %       \selectfont\small
 %       \item \href{https://github.com/0chain/HelloWorld-Android}{\textbf{Zus HelloWorld}}: Reference app demonstrating \textbf{Zus GoSDK} integration --- \textbf{Bolt} crypto wallet and \textbf{Vult} decentralized storage with multi-file upload, download, and thumbnail generation.
