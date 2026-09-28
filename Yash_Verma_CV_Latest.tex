@@ -82,9 +82,9 @@
 \newcommand{\resumeSubHeadingListStart}{\vspace{-4pt}\begin{itemize}[leftmargin=*,itemsep=5pt,parsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 % space pass: wording tightened to free ~80pt at page bottom; spend ~half on bullet spacing (itemsep 1pt->2.5pt) and heading gap.
-\newcommand{\resumeItemListStart}{\vspace{-2pt}\begin{itemize}[leftmargin=8pt,itemsep=2.5pt,parsep=0pt]
+\newcommand{\resumeItemListStart}{\vspace{-2pt}\begin{itemize}[leftmargin=8pt,itemsep=1.5pt,parsep=0pt]
   \selectfont\small
-  \setlength\itemsep{2.5pt}
+  \setlength\itemsep{1.5pt}
   \setlength\parsep{0em}
   }
 \newcommand{\resumeItemListEnd}{\end{itemize}}
@@ -114,7 +114,7 @@
 % flagged YOE as ambiguous. Zus start date corrected to Feb 2023 (was Feb 2022), which also removes
 % the BTech-overlap concern the pipeline review flagged. Recomputed total: Zus (Feb 2023-Mar 2025,
 % ~2.1 yrs) + BrowserStack (~1.25 yrs) = ~3.3 yrs -> "3+ yrs" is the accurate figure.
-\textit{Backend Software Engineer, 3+ yrs (Java, Go, Python, JavaScript, Ruby) $|$ Immediately Available}\\
+\textit{Backend Software Engineer, 3+ years (Java, Go, Python, JavaScript, Ruby) $|$ Immediately Available}\\
 \href{mailto:yashverma10019.work@gmail.com}{yashverma10019.work@gmail.com} $|$ +91 8957557113 $|$ \href{https://linkedin.com/in/yash10019coder}{linkedin.com/in/yash10019coder} $|$ \href{https://github.com/yash10019coder}{github.com/yash10019coder}
 \end{center}
 
@@ -137,39 +137,47 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{\href{https://browserstack.com}{BrowserStack}}{Mumbai}
+% prev (recruiter pass): {\href{https://browserstack.com}{BrowserStack}}{Mumbai}
+{\href{https://browserstack.com}{BrowserStack}{\normalfont\itshape\small\ (cloud software-testing platform)}}{Mumbai}
 {\textbf{Software Engineer - Backend, Platform Team}}{Apr 2025 -- Jul 2026 (role eliminated)}
 \resumeItemListStart
 % Trimmed from 12 to 6 bullets per the 3-batch peer-resume review (see git log 09a44ea) -- commented
 % out below, not deleted, so they're one uncomment away from restoring if this role needs more depth.
 % \resumeItem{Built an \textbf{LLM-powered} (Claude) pipeline auto-generating SDK framework support, cutting new-SDK delivery \textbf{2 weeks to 1 day}.}
-\resumeItem{Designed and shipped an \textbf{RBAC} system (roles, hierarchies, 14 check-points), enabling org-wide permissions for \textbf{50K+ customers}.}
+% prev (recruiter pass): \resumeItem{Designed and shipped an \textbf{RBAC} system (roles, hierarchies, 14 check-points), enabling org-wide permissions for \textbf{50K+ customers}.}
 % prev: \resumeItem{Built a Central Authentication service in \textbf{Spring Boot}, replacing individual S2S calls between products and halving per-session auth calls (2 to 1), cutting \textbf{102K auth calls/day}.}
-\resumeItem{Built a \textbf{Spring Boot} Central Auth service replacing inter-product S2S calls, halving per-session auth calls (2$\to$1), saving \textbf{102K calls/day}.}
+% prev (recruiter pass): \resumeItem{Built a \textbf{Spring Boot} Central Auth service replacing inter-product S2S calls, halving per-session auth calls (2$\to$1), saving \textbf{102K calls/day}.}
 % \resumeItem{Delivered \textbf{multi-language SDK support} across \textbf{5B+ API calls} via client-aware routing to non-English enterprise markets.}
-\resumeItem{Architected a \textbf{CDC pipeline} (35 Debezium connectors) syncing \textbf{10TB} MySQL to \textbf{ClickHouse}, supporting \textbf{5B+ inserts/updates}.}
+% prev (recruiter pass): \resumeItem{Architected a \textbf{CDC pipeline} (35 Debezium connectors) syncing \textbf{10TB} MySQL to \textbf{ClickHouse}, supporting \textbf{5B+ inserts/updates}.}
 % Old bullet, replaced after checking core-cloud/infra-config/testhub-infra-ops/common-infra-ops git history: repos show AU (apse2) was a multi-team GRR rollout
 % (App A11y, da11y, hub, mobile also had AU work), and AU is not GDPR. Reworded to what commits under yash10019coder actually show (TestHub AU, Nov 2025 - May 2026).
 % \resumeItem{Led the launch of BrowserStack's Australia AWS region for GDPR/data-residency, now handling \textbf{360K requests/hour} in production.}
-\resumeItem{Provisioned \textbf{TestHub's Australia region} for data residency (GRR): EKS/FluxCD deploys, multi-AZ \textbf{MySQL RDS}, \textbf{Redis}, \textbf{MSK Kafka}, Route53/security groups, and region-local \textbf{Debezium-to-ClickHouse} pipelines, now serving \textbf{360K requests/hour}.}
-\resumeItem{Drove \textbf{208x query speedup} (9.6s to 46ms) on a 524M-row analytics table via zero-downtime schema migrations across 4 regions.}
-\resumeItem{Cut dashboard load for \textbf{OpenAI} from \textbf{4 min to 3s} by indexing high-cardinality queries, unblocking a stalled enterprise deal.}
+% prev (recruiter pass): \resumeItem{Provisioned \textbf{TestHub's Australia region} for data residency (GRR): EKS/FluxCD deploys, multi-AZ \textbf{MySQL RDS}, \textbf{Redis}, \textbf{MSK Kafka}, Route53/security groups, and region-local \textbf{Debezium-to-ClickHouse} pipelines, now serving \textbf{360K requests/hour}.}
 % \resumeItem{Migrated primary keys on 3 tables of \textbf{1B+ rows} (1 TB, 2.9M rows/day) live in production, with no downtime or outages.}
 % \resumeItem{Offloaded heavy aggregate queries from MySQL to ClickHouse, cutting database CPU from \textbf{96\% to 30\%} and enabling future growth.}
 % Below two bullets merged into one combined security bullet -- originals kept for reference:
 % \resumeItem{Remediated SQL injection across 200+ APIs and shipped Static CI security scanning covering \textbf{98\% of production traffic}.}
 % \resumeItem{Resolved \textbf{2 critical vulnerabilities} (RCE and SSRF bypass) and enabled TLS for database connections to harden production security.}
 % prev: \resumeItem{Remediated SQL injection across 200+ APIs, resolved \textbf{2 critical vulnerabilities} (RCE, SSRF bypass), and shipped SAST CI scanning covering \textbf{98\% of production traffic}.}
+% order: strongest quantified outcomes first (recruiter pass)
+\resumeItem{Cut dashboard load for \textbf{OpenAI} from \textbf{4 min to 3s} by indexing high-cardinality queries, unblocking a stalled enterprise deal.}
+\resumeItem{Drove \textbf{208x query speedup} (9.6s to 46ms) on a 524M-row analytics table via zero-downtime schema migrations across 4 regions.}
+\resumeItem{Designed and shipped role-based access control (\textbf{RBAC}): roles, hierarchies, 14 check-points, enabling org-wide permissions for \textbf{50K+ customers}.}
+\resumeItem{Architected a real-time data-sync (\textbf{CDC}) pipeline (35 Debezium connectors) syncing \textbf{10TB} MySQL to \textbf{ClickHouse}, supporting \textbf{5B+ inserts/updates}.}
+\resumeItem{Provisioned the \textbf{Australia region} of \textbf{TestHub} (central data platform for 13 product teams) for data residency: EKS/FluxCD deploys, multi-AZ \textbf{MySQL RDS}, \textbf{Redis}, Amazon \textbf{MSK} (Kafka), Route 53/security groups, and region-local \textbf{Debezium-to-ClickHouse} pipelines, now serving \textbf{360K requests/hour}.}
+\resumeItem{Built a \textbf{Spring Boot} Central Auth service replacing inter-product service-to-service calls, halving per-session auth calls (2$\to$1), saving \textbf{102K calls/day}.}
 \resumeItem{Fixed SQL injection in 200+ APIs and \textbf{2 critical vulnerabilities} (RCE, SSRF bypass); shipped SAST CI covering \textbf{98\% of production traffic}.}
 \resumeItemListEnd
 
 \resumeSubheading
-{\href{https://0chain.net}{Zus (formerly 0Chain)}}{Remote}
+% prev (recruiter pass): {\href{https://0chain.net}{Zus (formerly 0Chain)}}{Remote}
+{\href{https://0chain.net}{Zus (formerly 0Chain)}{\normalfont\itshape\small\ (decentralized storage network)}}{Remote}
 {\textbf{Software Engineer - Backend, Blockchain Storage} (Full-time Remote Contract)}{Feb 2023 -- Mar 2025}
 \resumeItemListStart
 \resumeItem{Architected and maintained core components of \textbf{0Chain's mainnet blockchain} (codebase, monitoring), sustaining \textbf{1.4 years} of uptime with zero major failures across \textbf{130M+ transactions}.}
 % prev: \resumeItem{Extended \textbf{blobber}, a distributed object storage system in \textbf{Go}, using concurrency primitives and \textbf{Merkle trees} for cryptographic proof-of-storage.}
-\resumeItem{Extended \textbf{blobber}, a distributed \textbf{Go} object store, with concurrency primitives and \textbf{Merkle trees} for cryptographic proof-of-storage.}
+% prev (recruiter pass): \resumeItem{Extended \textbf{blobber}, a distributed \textbf{Go} object store, with concurrency primitives and \textbf{Merkle trees} for cryptographic proof-of-storage.}
+\resumeItem{Extended \textbf{blobber}, a distributed \textbf{Go} storage node, with concurrency primitives and \textbf{Merkle trees} for cryptographic proof-of-storage.}
 \resumeItem{Implemented features in \href{https://github.com/0chain/gosdk/pulls?q=is:pr+is:merged+author:yash10019coder}{\textbf{gosdk}}, the client SDK (shipped as \textbf{WebAssembly} \& mobile SDK) for object storage, including \textbf{erasure encoding} for fault tolerance and \textbf{10K+ concurrent} transactions; also worked on its \href{https://github.com/0chain/zboxcli/pulls?q=is:pr+is:merged+author:yash10019coder}{\textbf{zboxcli}}/\textbf{zwalletcli} CLI tooling.}
 \resumeItem{Redesigned the \textbf{Storage Smart Contract} (allocation lifecycle, challenge generation/expiry, provider kill/shutdown), fixing critical defects that had caused production instability.}
 % prev: \resumeItem{Developed features for the \textbf{0Box API} (request flows, Kafka event replication, Stripe subscriptions), powering 5 web, 2 iOS, 2 Android, 1 macOS, and 1 Windows apps.}
@@ -198,7 +206,8 @@
 \resumeSubHeadingListStart
 \resumeSubheading
 {\href{https://github.com/yash10019coder/JOB-BORG}{JobBorg}}{Personal Project}
-{Multi-User Job-Search Automation Platform $|$ Django, Celery, PostgreSQL, Redis, Docker}{}
+% prev (style pass): {Multi-User Job-Search Automation Platform $|$ Django, Celery, PostgreSQL, Redis, Docker}{}
+{\textbf{Multi-User Job-Search Automation Platform} (Django, Celery, PostgreSQL, Redis, Docker)}{Jul 2026 -- Present}
 \resumeItemListStart
 \resumeItem{Designed a modular Ingestion $\to$ Classification $\to$ Matching $\to$ Recommendation pipeline, each stage an independent \textbf{Celery} task on a Redis-backed queue with Celery Beat scheduling.}
 % prev: \resumeItem{Built idempotent hourly ingestion from the \textbf{Greenhouse ATS API} (keyed on source-ID pairs), with change-aware classification that only reruns on content diffs.}
@@ -220,7 +229,7 @@
 \begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
       \selectfont\small
       \item Selected for \textbf{Google Summer of Code 2021} (Oppia Foundation).
-      \item Won \textbf{top prize} at the \textbf{CAMS Hackathon} for developing its Android app.
+      \item Won \textbf{top prize} at the \textbf{CAMS Hackathon} for developing an Android app.
       \item Rated \textbf{Specialist} on Codeforces (max-rating \textbf{1509}) and \textbf{5-star} on CodeChef.
 \end{itemize}
 
@@ -234,9 +243,9 @@
       \selectfont\small
       \setlength\itemsep{0em}
       \setlength\parsep{0em}
-      \item \textbf{Languages:} Java, Go, JavaScript, Ruby, SQL, Python, Kotlin, C, C++
+      \item \textbf{Languages:} Java, Go (Golang), JavaScript, Ruby, SQL, Python, Kotlin, C, C++
       \item \textbf{Frameworks:} Spring Boot, Rails, Node.js, Django, REST APIs, gRPC, Microservices Architecture
-      \item \textbf{Cloud \& Infra:} AWS, Docker, Kubernetes, Kafka, GitHub Actions, Jenkins, HCL, Helm, FluxCD, CDC, CI/CD
+      \item \textbf{Cloud \& Infra:} AWS, Docker, Kubernetes, Kafka, GitHub Actions, Jenkins, Terraform (HCL), Helm, FluxCD, CDC, CI/CD
       \item \textbf{Databases:} MySQL, PostgreSQL, ClickHouse, Redis, MongoDB
       \item \textbf{Concepts:} System Design, Distributed Systems, Event-Driven Architecture, Concurrency
       \item \textbf{Tools:} Prometheus, Grafana, JUnit, SAST, Claude Code, Cursor, MCP
@@ -248,7 +257,7 @@
 \resumeSubHeadingListStart
 \resumeSubheading
 {Indian Institute of Information Technology, Lucknow}{India}
-{Bachelor of Information Technology;  CGPA: 8.32}{Apr 2020 -- Apr 2024}
+{Bachelor of Information Technology;  CGPA: 8.32/10}{Apr 2020 -- Apr 2024}
 \resumeSubHeadingListEnd
 
 \end{document}
