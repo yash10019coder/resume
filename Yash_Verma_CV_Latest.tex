@@ -66,8 +66,9 @@
   }
 }
 
+% Style pass: \item[] drops the stray bullet glyph beside company/school names; itemsep 2pt->5pt separates roles.
 \newcommand{\resumeSubheading}[4]{
-  \item
+  \item[]
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -78,11 +79,12 @@
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\vspace{-4pt}\begin{itemize}[leftmargin=*,itemsep=2pt,parsep=0pt]}
+\newcommand{\resumeSubHeadingListStart}{\vspace{-4pt}\begin{itemize}[leftmargin=*,itemsep=5pt,parsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\vspace{0pt}\begin{itemize}[leftmargin=8pt,itemsep=1pt,parsep=0pt]
+% space pass: wording tightened to free ~80pt at page bottom; spend ~half on bullet spacing (itemsep 1pt->2.5pt) and heading gap.
+\newcommand{\resumeItemListStart}{\vspace{-2pt}\begin{itemize}[leftmargin=8pt,itemsep=2.5pt,parsep=0pt]
   \selectfont\small
-  \setlength\itemsep{1pt}
+  \setlength\itemsep{2.5pt}
   \setlength\parsep{0em}
   }
 \newcommand{\resumeItemListEnd}{\end{itemize}}
@@ -136,35 +138,42 @@
 
 \resumeSubheading
 {\href{https://browserstack.com}{BrowserStack}}{Mumbai}
-{\textbf{Software Engineer - Backend, Platform Team}}{Apr 2025 -- July 2026 (role eliminated)}
+{\textbf{Software Engineer - Backend, Platform Team}}{Apr 2025 -- Jul 2026 (role eliminated)}
 \resumeItemListStart
 % Trimmed from 12 to 6 bullets per the 3-batch peer-resume review (see git log 09a44ea) -- commented
 % out below, not deleted, so they're one uncomment away from restoring if this role needs more depth.
 % \resumeItem{Built an \textbf{LLM-powered} (Claude) pipeline auto-generating SDK framework support, cutting new-SDK delivery \textbf{2 weeks to 1 day}.}
-\resumeItem{Designed and shipped an \textbf{RBAC} system (roles, hierarchies, 14 check-points), enabling org-wide permissions for \textbf{50k+ customers}.}
-\resumeItem{Built a Central Authentication service in \textbf{Spring Boot}, replacing individual S2S calls between products and halving per-session auth calls (2 to 1), cutting \textbf{102K auth calls/day}.}
+\resumeItem{Designed and shipped an \textbf{RBAC} system (roles, hierarchies, 14 check-points), enabling org-wide permissions for \textbf{50K+ customers}.}
+% prev: \resumeItem{Built a Central Authentication service in \textbf{Spring Boot}, replacing individual S2S calls between products and halving per-session auth calls (2 to 1), cutting \textbf{102K auth calls/day}.}
+\resumeItem{Built a \textbf{Spring Boot} Central Auth service replacing inter-product S2S calls, halving per-session auth calls (2$\to$1), saving \textbf{102K calls/day}.}
 % \resumeItem{Delivered \textbf{multi-language SDK support} across \textbf{5B+ API calls} via client-aware routing to non-English enterprise markets.}
 \resumeItem{Architected a \textbf{CDC pipeline} (35 Debezium connectors) syncing \textbf{10TB} MySQL to \textbf{ClickHouse}, supporting \textbf{5B+ inserts/updates}.}
-\resumeItem{Led the launch of BrowserStack's Australia AWS region for GDPR/data-residency, now handling \textbf{360K requests/hour} in production.}
-\resumeItem{Drove \textbf{208x query speed up} (9.6s to 46ms) on a 524M-row analytics table via zero-downtime schema migrations across 4 regions.}
+% Old bullet, replaced after checking core-cloud/infra-config/testhub-infra-ops/common-infra-ops git history: repos show AU (apse2) was a multi-team GRR rollout
+% (App A11y, da11y, hub, mobile also had AU work), and AU is not GDPR. Reworded to what commits under yash10019coder actually show (TestHub AU, Nov 2025 - May 2026).
+% \resumeItem{Led the launch of BrowserStack's Australia AWS region for GDPR/data-residency, now handling \textbf{360K requests/hour} in production.}
+\resumeItem{Provisioned \textbf{TestHub's Australia region} for data residency (GRR): EKS/FluxCD deploys, multi-AZ \textbf{MySQL RDS}, \textbf{Redis}, \textbf{MSK Kafka}, Route53/security groups, and region-local \textbf{Debezium-to-ClickHouse} pipelines, now serving \textbf{360K requests/hour}.}
+\resumeItem{Drove \textbf{208x query speedup} (9.6s to 46ms) on a 524M-row analytics table via zero-downtime schema migrations across 4 regions.}
 \resumeItem{Cut dashboard load for \textbf{OpenAI} from \textbf{4 min to 3s} by indexing high-cardinality queries, unblocking a stalled enterprise deal.}
 % \resumeItem{Migrated primary keys on 3 tables of \textbf{1B+ rows} (1 TB, 2.9M rows/day) live in production, with no downtime or outages.}
 % \resumeItem{Offloaded heavy aggregate queries from MySQL to ClickHouse, cutting database CPU from \textbf{96\% to 30\%} and enabling future growth.}
 % Below two bullets merged into one combined security bullet -- originals kept for reference:
 % \resumeItem{Remediated SQL injection across 200+ APIs and shipped Static CI security scanning covering \textbf{98\% of production traffic}.}
 % \resumeItem{Resolved \textbf{2 critical vulnerabilities} (RCE and SSRF bypass) and enabled TLS for database connections to harden production security.}
-\resumeItem{Remediated SQL injection across 200+ APIs, resolved \textbf{2 critical vulnerabilities} (RCE, SSRF bypass), and shipped SAST CI scanning covering \textbf{98\% of production traffic}.}
+% prev: \resumeItem{Remediated SQL injection across 200+ APIs, resolved \textbf{2 critical vulnerabilities} (RCE, SSRF bypass), and shipped SAST CI scanning covering \textbf{98\% of production traffic}.}
+\resumeItem{Fixed SQL injection in 200+ APIs and \textbf{2 critical vulnerabilities} (RCE, SSRF bypass); shipped SAST CI covering \textbf{98\% of production traffic}.}
 \resumeItemListEnd
 
 \resumeSubheading
-{\href{https://0chain.net}{Zus (formerly 0chain)}}{Remote}
+{\href{https://0chain.net}{Zus (formerly 0Chain)}}{Remote}
 {\textbf{Software Engineer - Backend, Blockchain Storage} (Full-time Remote Contract)}{Feb 2023 -- Mar 2025}
 \resumeItemListStart
 \resumeItem{Architected and maintained core components of \textbf{0Chain's mainnet blockchain} (codebase, monitoring), sustaining \textbf{1.4 years} of uptime with zero major failures across \textbf{130M+ transactions}.}
-\resumeItem{Extended \textbf{blobber}, a distributed object storage system in \textbf{Golang}, using concurrency primitives and \textbf{Merkle trees} for cryptographic proof-of-storage.}
-\resumeItem{Implemented features in \href{https://github.com/0chain/gosdk/pulls?q=is:pr+is:merged+author:yash10019coder}{\textbf{gosdk}}, the client SDK (shipped as \textbf{WebAssembly} \& mobile SDK) for object storage, including \textbf{erasure encoding} for fault-tolerant, \textbf{10K+ concurrent} transactions; also worked on its \href{https://github.com/0chain/zboxcli/pulls?q=is:pr+is:merged+author:yash10019coder}{\textbf{zboxcli}}/\textbf{zwalletcli} CLI tooling.}
+% prev: \resumeItem{Extended \textbf{blobber}, a distributed object storage system in \textbf{Go}, using concurrency primitives and \textbf{Merkle trees} for cryptographic proof-of-storage.}
+\resumeItem{Extended \textbf{blobber}, a distributed \textbf{Go} object store, with concurrency primitives and \textbf{Merkle trees} for cryptographic proof-of-storage.}
+\resumeItem{Implemented features in \href{https://github.com/0chain/gosdk/pulls?q=is:pr+is:merged+author:yash10019coder}{\textbf{gosdk}}, the client SDK (shipped as \textbf{WebAssembly} \& mobile SDK) for object storage, including \textbf{erasure encoding} for fault tolerance and \textbf{10K+ concurrent} transactions; also worked on its \href{https://github.com/0chain/zboxcli/pulls?q=is:pr+is:merged+author:yash10019coder}{\textbf{zboxcli}}/\textbf{zwalletcli} CLI tooling.}
 \resumeItem{Redesigned the \textbf{Storage Smart Contract} (allocation lifecycle, challenge generation/expiry, provider kill/shutdown), fixing critical defects that had caused production instability.}
-\resumeItem{Developed features for the \textbf{0Box API} --- request flows, Kafka event replication, Stripe subscriptions --- powering 5 web, 2 iOS, 2 Android, 1 macOS, and 1 Windows apps.}
+% prev: \resumeItem{Developed features for the \textbf{0Box API} (request flows, Kafka event replication, Stripe subscriptions), powering 5 web, 2 iOS, 2 Android, 1 macOS, and 1 Windows apps.}
+\resumeItem{Built \textbf{0Box API} request flows, Kafka event replication \& Stripe subscriptions for 5 web, 2 iOS, 2 Android, 1 macOS, 1 Windows apps.}
 \resumeItem{Automated dynamic \textbf{Sharder/Miner} (consensus-node) management and helped land a major consensus upgrade (\textbf{View Change}) enabling dynamic node rotation via \textbf{Magic Blocks}, boosting developer productivity by \textbf{90\%}.}
 \resumeItemListEnd
 
@@ -189,12 +198,14 @@
 \resumeSubHeadingListStart
 \resumeSubheading
 {\href{https://github.com/yash10019coder/JOB-BORG}{JobBorg}}{Personal Project}
-{Multi-User Job-Search Automation Platform --- Django, Celery, PostgreSQL, Redis, Docker}{}
+{Multi-User Job-Search Automation Platform $|$ Django, Celery, PostgreSQL, Redis, Docker}{}
 \resumeItemListStart
 \resumeItem{Designed a modular Ingestion $\to$ Classification $\to$ Matching $\to$ Recommendation pipeline, each stage an independent \textbf{Celery} task on a Redis-backed queue with Celery Beat scheduling.}
-\resumeItem{Built idempotent hourly ingestion from the \textbf{Greenhouse ATS API} (keyed on source-ID pairs), with change-aware classification that only reruns on content diffs.}
-\resumeItem{Shipped a multi-container \textbf{Docker} deployment (Postgres w/ pgvector, Redis, Prometheus, Loki, Grafana) for metrics, log aggregation, and dashboards.}
-\resumeItem{Built a \textbf{Playwright}-driven auto-apply engine that fills real Greenhouse forms, constraining LLM answers via a deterministic validation gate and failing closed on any unresolved field --- covered by \textbf{290 automated tests}.}
+% prev: \resumeItem{Built idempotent hourly ingestion from the \textbf{Greenhouse ATS API} (keyed on source-ID pairs), with change-aware classification that only reruns on content diffs.}
+\resumeItem{Built idempotent hourly \textbf{Greenhouse ATS API} ingestion (source-ID keyed) and change-aware classification rerunning only on diffs.}
+% prev: \resumeItem{Shipped a multi-container \textbf{Docker} deployment (Postgres with pgvector, Redis, Prometheus, Loki, Grafana) for metrics, log aggregation, and dashboards.}
+\resumeItem{Shipped multi-container \textbf{Docker} stack (Postgres with pgvector, Redis, Prometheus, Loki, Grafana) for metrics, logs, dashboards.}
+\resumeItem{Built a \textbf{Playwright}-driven auto-apply engine that fills real Greenhouse forms, constraining LLM answers via a deterministic validation gate and failing closed on any unresolved field, covered by \textbf{290 automated tests}.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 % \begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
@@ -236,7 +247,7 @@
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Indian Institute of Information Technology, Lucknow}{Lucknow}
+{Indian Institute of Information Technology, Lucknow}{India}
 {Bachelor of Information Technology;  CGPA: 8.32}{Apr 2020 -- Apr 2024}
 \resumeSubHeadingListEnd
 
