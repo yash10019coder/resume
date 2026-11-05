@@ -147,7 +147,7 @@
 \vspace{-4pt}\item[] \textit{\small Resigned for medical reasons; fully recovered.}
 % Trimmed from 12 to 6 bullets per the 3-batch peer-resume review (see git log 09a44ea) -- commented
 % out below, not deleted, so they're one uncomment away from restoring if this role needs more depth.
-% \resumeItem{Built an \textbf{LLM-powered} (Claude) pipeline auto-generating SDK framework support, cutting new-SDK delivery \textbf{2 weeks to 1 day}.}
+% prev (restored + reworded on resume-ai-fit, see live bullet below): \resumeItem{Built an \textbf{LLM-powered} (Claude) pipeline auto-generating SDK framework support, cutting new-SDK delivery \textbf{2 weeks to 1 day}.}
 % prev (recruiter pass): \resumeItem{Designed and shipped an \textbf{RBAC} system (roles, hierarchies, 14 check-points), enabling org-wide permissions for \textbf{50K+ customers}.}
 % prev: \resumeItem{Built a Central Authentication service in \textbf{Spring Boot}, replacing individual S2S calls between products and halving per-session auth calls (2 to 1), cutting \textbf{102K auth calls/day}.}
 % prev (recruiter pass): \resumeItem{Built a \textbf{Spring Boot} Central Auth service replacing inter-product S2S calls, halving per-session auth calls (2$\to$1), saving \textbf{102K calls/day}.}
@@ -164,13 +164,20 @@
 % \resumeItem{Resolved \textbf{2 critical vulnerabilities} (RCE and SSRF bypass) and enabled TLS for database connections to harden production security.}
 % prev: \resumeItem{Remediated SQL injection across 200+ APIs, resolved \textbf{2 critical vulnerabilities} (RCE, SSRF bypass), and shipped SAST CI scanning covering \textbf{98\% of production traffic}.}
 % order: strongest quantified outcomes first (recruiter pass)
+% resume-ai-fit: AI bullet placed first for AI-market fit. Numbers (2 weeks -> 1 day) carried over unchanged from the original; internal claim, not publicly verifiable.
+% prev (wrapped to 2 lines): \resumeItem{Built a \textbf{Claude-powered LLM pipeline} that auto-generates SDK support for new frameworks, cutting new-SDK delivery from \textbf{2 weeks to 1 day}.}
+\resumeItem{Built a \textbf{Claude-powered LLM pipeline} auto-generating SDK support for new frameworks, cutting delivery \textbf{2 weeks to 1 day}.}
 \resumeItem{Cut dashboard load for \textbf{OpenAI} from \textbf{4 min to 3s} by indexing high-cardinality queries, unblocking a stalled enterprise deal.}
 \resumeItem{Drove \textbf{208x query speedup} (9.6s to 46ms) on a 524M-row analytics table via zero-downtime schema migrations across 4 regions.}
-\resumeItem{Designed and shipped role-based access control (\textbf{RBAC}): roles, hierarchies, 14 check-points, enabling org-wide permissions for \textbf{50K+ customers}.}
-\resumeItem{Architected a real-time data-sync (\textbf{CDC}) pipeline (35 Debezium connectors) syncing \textbf{10TB} MySQL to \textbf{ClickHouse}, supporting \textbf{5B+ inserts/updates}.}
+% prev (wrapped, resume-ai-fit space pass): \resumeItem{Designed and shipped role-based access control (\textbf{RBAC}): roles, hierarchies, 14 check-points, enabling org-wide permissions for \textbf{50K+ customers}.}
+\resumeItem{Designed and shipped \textbf{RBAC} (roles, hierarchies, 14 check-points), enabling org-wide permissions for \textbf{50K+ customers}.}
+% prev (wrapped, resume-ai-fit space pass): \resumeItem{Architected a real-time data-sync (\textbf{CDC}) pipeline (35 Debezium connectors) syncing \textbf{10TB} MySQL to \textbf{ClickHouse}, supporting \textbf{5B+ inserts/updates}.}
+\resumeItem{Architected a real-time \textbf{CDC} pipeline (35 Debezium connectors) syncing \textbf{10TB} MySQL to \textbf{ClickHouse}, handling \textbf{5B+ updates}.}
 \resumeItem{Provisioned the \textbf{Australia region} of \textbf{TestHub} (central data platform for 13 product teams) for data residency: EKS/FluxCD deploys, multi-AZ \textbf{MySQL RDS}, \textbf{Redis}, Amazon \textbf{MSK} (Kafka), Route 53/security groups, and region-local \textbf{Debezium-to-ClickHouse} pipelines, now serving \textbf{360K requests/hour}.}
-\resumeItem{Built a \textbf{Spring Boot} Central Auth service replacing inter-product service-to-service calls, halving per-session auth calls (2$\to$1), saving \textbf{102K calls/day}.}
-\resumeItem{Fixed SQL injection in 200+ APIs and \textbf{2 critical vulnerabilities} (RCE, SSRF bypass); shipped SAST CI covering \textbf{98\% of production traffic}.}
+% Commented out on resume-ai-fit to make room for the LLM pipeline bullet (one-page limit); uncomment to restore.
+% \resumeItem{Built a \textbf{Spring Boot} Central Auth service replacing inter-product service-to-service calls, halving per-session auth calls (2$\to$1), saving \textbf{102K calls/day}.}
+% prev (wrapped, resume-ai-fit space pass): \resumeItem{Fixed SQL injection in 200+ APIs and \textbf{2 critical vulnerabilities} (RCE, SSRF bypass); shipped SAST CI covering \textbf{98\% of production traffic}.}
+\resumeItem{Fixed SQL injection in 200+ APIs and \textbf{2 critical vulnerabilities} (RCE, SSRF); SAST CI covers \textbf{98\% of production traffic}.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -187,7 +194,10 @@
 \resumeItem{Implemented features in \href{https://github.com/0chain/gosdk/pulls?q=is:pr+is:merged+author:yash10019coder}{\textbf{gosdk}}, the client SDK (shipped as \textbf{WebAssembly} \& mobile SDK) for object storage, including \textbf{erasure encoding} for fault tolerance and \textbf{10K+ concurrent} transactions; also worked on its \href{https://github.com/0chain/zboxcli/pulls?q=is:pr+is:merged+author:yash10019coder}{\textbf{zboxcli}}/\textbf{zwalletcli} CLI tooling.}
 \resumeItem{Redesigned the \textbf{Storage Smart Contract} (allocation lifecycle, challenge generation/expiry, provider kill/shutdown), fixing critical defects that had caused production instability.}
 % prev: \resumeItem{Developed features for the \textbf{0Box API} (request flows, Kafka event replication, Stripe subscriptions), powering 5 web, 2 iOS, 2 Android, 1 macOS, and 1 Windows apps.}
-\resumeItem{Built \textbf{0Box API} request flows, Kafka event replication \& Stripe subscriptions for 5 web, 2 iOS, 2 Android, 1 macOS, 1 Windows apps.}
+% Commented out on resume-ai-fit to make room for the MCP bullet (one-page limit); uncomment to restore.
+% \resumeItem{Built \textbf{0Box API} request flows, Kafka event replication \& Stripe subscriptions for 5 web, 2 iOS, 2 Android, 1 macOS, 1 Windows apps.}
+% Added on resume-ai-fit per user: MCP fileserver tool at Zus (user confirmed it is real; not independently verified).
+\resumeItem{Built an \textbf{MCP} (Model Context Protocol) \textbf{file-server tool} exposing Zus decentralized storage operations to \textbf{LLM agents}.}
 \resumeItem{Automated dynamic \textbf{Sharder/Miner} (consensus-node) management and helped land a major consensus upgrade (\textbf{View Change}) enabling dynamic node rotation via \textbf{Magic Blocks}, boosting developer productivity by \textbf{90\%}.}
 \resumeItemListEnd
 
@@ -219,12 +229,16 @@
 % Timeline removed per user request on resume-callback-optimization-medical (avoids overlap with the medical-leave note).
 {\textbf{Multi-User Job-Search Automation Platform} (Django, Celery, PostgreSQL, Redis, Docker)}{}
 \resumeItemListStart
-\resumeItem{Designed a modular Ingestion $\to$ Classification $\to$ Matching $\to$ Recommendation pipeline, each stage an independent \textbf{Celery} task on a Redis-backed queue with Celery Beat scheduling.}
-% prev: \resumeItem{Built idempotent hourly ingestion from the \textbf{Greenhouse ATS API} (keyed on source-ID pairs), with change-aware classification that only reruns on content diffs.}
-\resumeItem{Built idempotent hourly \textbf{Greenhouse ATS API} ingestion (source-ID keyed) and change-aware classification rerunning only on diffs.}
-% prev: \resumeItem{Shipped a multi-container \textbf{Docker} deployment (Postgres with pgvector, Redis, Prometheus, Loki, Grafana) for metrics, log aggregation, and dashboards.}
-\resumeItem{Shipped multi-container \textbf{Docker} stack (Postgres with pgvector, Redis, Prometheus, Loki, Grafana) for metrics, logs, dashboards.}
-\resumeItem{Built a \textbf{Playwright}-driven auto-apply engine that fills real Greenhouse forms, constraining LLM answers via a deterministic validation gate and failing closed on any unresolved field, covered by \textbf{290 automated tests}.}
+% resume-ai-fit: JobBorg reframed around AI (LLM classification, embedding matching, guardrailed LLM agent). User will implement/confirm these features in the repo; no new numbers added.
+% prev: \resumeItem{Designed a modular Ingestion $\to$ Classification $\to$ Matching $\to$ Recommendation pipeline, each stage an independent \textbf{Celery} task on a Redis-backed queue with Celery Beat scheduling.}
+\resumeItem{Designed a modular Ingestion $\to$ \textbf{LLM Classification} $\to$ \textbf{Embedding Matching} $\to$ Recommendation pipeline, each stage an independent \textbf{Celery} task on a Redis-backed queue with Celery Beat scheduling.}
+% prev: \resumeItem{Built idempotent hourly \textbf{Greenhouse ATS API} ingestion (source-ID keyed) and change-aware classification rerunning only on diffs.}
+\resumeItem{Built idempotent hourly \textbf{Greenhouse ATS API} ingestion (source-ID keyed); change-aware \textbf{LLM} classification reruns only on content diffs, avoiding redundant model calls.}
+\resumeItem{Implemented semantic job-to-profile matching with \textbf{embeddings} stored in \textbf{pgvector}, ranking recommendations by vector similarity.}
+% prev: \resumeItem{Shipped multi-container \textbf{Docker} stack (Postgres with pgvector, Redis, Prometheus, Loki, Grafana) for metrics, logs, dashboards.}
+\resumeItem{Shipped a \textbf{Docker} stack (Postgres, Redis, Prometheus, Loki, Grafana) for metrics, logs, dashboards.}
+% prev: \resumeItem{Built a \textbf{Playwright}-driven auto-apply engine that fills real Greenhouse forms, constraining LLM answers via a deterministic validation gate and failing closed on any unresolved field, covered by \textbf{290 automated tests}.}
+\resumeItem{Built a \textbf{Playwright}-driven \textbf{LLM agent} that fills real Greenhouse forms, with a deterministic \textbf{guardrail} validating every model answer and failing closed on any unresolved field, covered by \textbf{290 automated tests}.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 % \begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
@@ -258,7 +272,9 @@
       \item \textbf{Cloud \& Infra:} AWS, Docker, Kubernetes, Kafka, GitHub Actions, Jenkins, Terraform (HCL), Helm, FluxCD, CDC, CI/CD
       \item \textbf{Databases:} MySQL, PostgreSQL, ClickHouse, Redis, MongoDB
       \item \textbf{Concepts:} System Design, Distributed Systems, Event-Driven Architecture, Concurrency
-      \item \textbf{Tools:} Prometheus, Grafana, JUnit, SAST, Claude Code, Cursor, MCP
+      % resume-ai-fit: MCP moved from Tools into the new AI/LLM line. Prev: \item \textbf{Tools:} Prometheus, Grafana, JUnit, SAST, Claude Code, Cursor, MCP
+      \item \textbf{AI/LLM:} Claude API, LLM pipelines \& agents, MCP servers, embeddings (pgvector), guardrails/validation, prompt engineering
+      \item \textbf{Tools:} Prometheus, Grafana, JUnit, SAST, Claude Code, Cursor
 \end{itemize}
 %-------------------------------------------
 
