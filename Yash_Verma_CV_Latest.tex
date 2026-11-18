@@ -131,22 +131,6 @@
 % \end{itemize}
 
 
-\section{Projects}
-\resumeSubHeadingListStart
-\resumeSubheading
-{\href{https://github.com/yash10019coder/JOB-BORG}{JobBorg}}{Personal Project}
-% prev (style pass): {Multi-User Job-Search Automation Platform $|$ Django, Celery, PostgreSQL, Redis, Docker}{}
-{\textbf{Multi-User Job-Search Automation Platform} (Django, Celery, PostgreSQL, Redis, Docker)}{Jul 2026 -- Present}
-\resumeItemListStart
-\resumeItem{Designed a modular Ingestion $\to$ Classification $\to$ Matching $\to$ Recommendation pipeline, each stage an independent \textbf{Celery} task on a Redis-backed queue with Celery Beat scheduling.}
-% prev: \resumeItem{Built idempotent hourly ingestion from the \textbf{Greenhouse ATS API} (keyed on source-ID pairs), with change-aware classification that only reruns on content diffs.}
-\resumeItem{Built idempotent hourly \textbf{Greenhouse ATS API} ingestion (source-ID keyed) and change-aware classification rerunning only on diffs.}
-% prev: \resumeItem{Shipped a multi-container \textbf{Docker} deployment (Postgres with pgvector, Redis, Prometheus, Loki, Grafana) for metrics, log aggregation, and dashboards.}
-\resumeItem{Shipped multi-container \textbf{Docker} stack (Postgres with pgvector, Redis, Prometheus, Loki, Grafana) for metrics, logs, dashboards.}
-\resumeItem{Built a \textbf{Playwright}-driven auto-apply engine that fills real Greenhouse forms, constraining LLM answers via a deterministic validation gate and failing closed on any unresolved field, covered by \textbf{290 automated tests}.}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-%
 
 
 %-----------EXPERIENCE-----------------
@@ -156,7 +140,7 @@
 \resumeSubheading
 % prev (recruiter pass): {\href{https://browserstack.com}{BrowserStack}}{Mumbai}
 {\href{https://browserstack.com}{BrowserStack}{\normalfont\itshape\small\ (cloud software-testing platform)}}{Mumbai}
-{\textbf{Software Engineer - Backend, Platform Team}}{Apr 2025 -- Jul 2026}
+{\textbf{Software Engineer - Backend, Platform Team}}{Apr 2025 -- Present}
 \resumeItemListStart
 % Trimmed from 12 to 6 bullets per the 3-batch peer-resume review (see git log 09a44ea) -- commented
 % out below, not deleted, so they're one uncomment away from restoring if this role needs more depth.
@@ -189,7 +173,7 @@
 \resumeSubheading
 % prev (recruiter pass): {\href{https://0chain.net}{Zus (formerly 0Chain)}}{Remote}
 {\href{https://0chain.net}{Zus (formerly 0Chain)}{\normalfont\itshape\small\ (decentralized storage network)}}{Remote}
-{\textbf{Software Engineer - Backend, Blockchain Storage} (Full-time Remote Contract)}{Feb 2023 -- Mar 2025}
+{\textbf{Software Engineer - Backend, Blockchain Storage}}{Feb 2023 -- Mar 2025}
 \resumeItemListStart
 \resumeItem{Architected and maintained core components of \textbf{0Chain's mainnet blockchain} (codebase, monitoring), sustaining \textbf{1.4 years} of uptime with zero major failures across \textbf{130M+ transactions}.}
 % prev: \resumeItem{Extended \textbf{blobber}, a distributed object storage system in \textbf{Go}, using concurrency primitives and \textbf{Merkle trees} for cryptographic proof-of-storage.}
@@ -218,25 +202,25 @@
 
 \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------------
-% \section{Projects}
-% \resumeSubHeadingListStart
-% \resumeSubheading
-% {\href{https://github.com/yash10019coder/JOB-BORG}{JobBorg}}{Personal Project}
-% % prev (style pass): {Multi-User Job-Search Automation Platform $|$ Django, Celery, PostgreSQL, Redis, Docker}{}
-% {\textbf{Multi-User Job-Search Automation Platform} (Django, Celery, PostgreSQL, Redis, Docker)}{Jul 2026 -- Present}
-% \resumeItemListStart
-% \resumeItem{Designed a modular Ingestion $\to$ Classification $\to$ Matching $\to$ Recommendation pipeline, each stage an independent \textbf{Celery} task on a Redis-backed queue with Celery Beat scheduling.}
-% % prev: \resumeItem{Built idempotent hourly ingestion from the \textbf{Greenhouse ATS API} (keyed on source-ID pairs), with change-aware classification that only reruns on content diffs.}
-% \resumeItem{Built idempotent hourly \textbf{Greenhouse ATS API} ingestion (source-ID keyed) and change-aware classification rerunning only on diffs.}
-% % prev: \resumeItem{Shipped a multi-container \textbf{Docker} deployment (Postgres with pgvector, Redis, Prometheus, Loki, Grafana) for metrics, log aggregation, and dashboards.}
-% \resumeItem{Shipped multi-container \textbf{Docker} stack (Postgres with pgvector, Redis, Prometheus, Loki, Grafana) for metrics, logs, dashboards.}
-% \resumeItem{Built a \textbf{Playwright}-driven auto-apply engine that fills real Greenhouse forms, constraining LLM answers via a deterministic validation gate and failing closed on any unresolved field, covered by \textbf{290 automated tests}.}
-% \resumeItemListEnd
-% \resumeSubHeadingListEnd
-% % \begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
-%       \selectfont\small
-%       \item \href{https://github.com/0chain/HelloWorld-Android}{\textbf{Zus HelloWorld}}: Reference app demonstrating \textbf{Zus GoSDK} integration --- \textbf{Bolt} crypto wallet and \textbf{Vult} decentralized storage with multi-file upload, download, and thumbnail generation.
+% -----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubheading
+{\href{https://github.com/yash10019coder/JOB-BORG}{JobBorg}}{Personal Project}
+% prev (style pass): {Multi-User Job-Search Automation Platform $|$ Django, Celery, PostgreSQL, Redis, Docker}{}
+{\textbf{Multi-User Job-Search Automation Platform} (Django, Celery, PostgreSQL, Redis, Docker)}{}
+\resumeItemListStart
+\resumeItem{Designed a modular Ingestion $\to$ Classification $\to$ Matching $\to$ Recommendation pipeline, each stage an independent \textbf{Celery} task on a Redis-backed queue with Celery Beat scheduling.}
+% prev: \resumeItem{Built idempotent hourly ingestion from the \textbf{Greenhouse ATS API} (keyed on source-ID pairs), with change-aware classification that only reruns on content diffs.}
+\resumeItem{Built idempotent hourly \textbf{Greenhouse ATS API} ingestion (source-ID keyed) and change-aware classification rerunning only on diffs.}
+% prev: \resumeItem{Shipped a multi-container \textbf{Docker} deployment (Postgres with pgvector, Redis, Prometheus, Loki, Grafana) for metrics, log aggregation, and dashboards.}
+\resumeItem{Shipped multi-container \textbf{Docker} stack (Postgres with pgvector, Redis, Prometheus, Loki, Grafana) for metrics, logs, dashboards.}
+\resumeItem{Built a \textbf{Playwright}-driven auto-apply engine that fills real Greenhouse forms, constraining LLM answers via a deterministic validation gate and failing closed on any unresolved field, covered by \textbf{290 automated tests}.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+% \begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
+      % \selectfont\small
+      % \item \href{https://github.com/0chain/HelloWorld-Android}{\textbf{Zus HelloWorld}}: Reference app demonstrating \textbf{Zus GoSDK} integration --- \textbf{Bolt} crypto wallet and \textbf{Vult} decentralized storage with multi-file upload, download, and thumbnail generation.
 % \end{itemize}
 
 % 
